@@ -268,12 +268,12 @@ alto, ancho y margen multimedia inside contenido */
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
     .multimediaInsideContent {
       height: 60vw;
-      width: 50vw;
+      width: 70vw;
       flex-direction: column;
       align-items: center; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .multimediaInsideContent {
-      height: 60vw;
+      height: 80vw;
       width: 70vw;
       flex-direction: column;
       align-items: center; } }
