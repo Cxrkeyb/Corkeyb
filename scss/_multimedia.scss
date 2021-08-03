@@ -1,0 +1,55 @@
+$tamanioMultimediaDesktop: 30vw;
+$tamanioMultimediaTablet: 40vw;
+$tamanioMultimediaMobile: 50vw;
+$centradoMultimedia: center;
+/*------ INICIO SECCIÓN MULTIMEDIA ------*/
+/* Background-color, borde y margen seccion base*/
+.seccionMultimediaBase{
+	border-radius: 0.8vw;
+	margin:0.25%;
+}
+/* Imagen multimedia */
+@each $multimedia in img, youtube {
+	.#{$multimedia}Multimedia { 
+		width: $tamanioMultimediaDesktop;
+		height: $tamanioMultimediaDesktop;
+		@media only screen and (min-width:768px) and (max-width:1239px){
+			width: $tamanioMultimediaTablet;
+			height: $tamanioMultimediaTablet;
+		}
+		@media only screen and (min-width:0px) and (max-width:767px){
+			width: $tamanioMultimediaMobile;
+			height: $tamanioMultimediaMobile;
+		}
+	 }
+	}
+/* Display flex, contenido dividido con wrap y contenido centrado secciones multimedia inside*/
+.multimediaInside{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: $centradoMultimedia;
+}
+/* Background, border, flex, texto centrado, contenido eje Y centrado, contenido eje x centrado, contenido wrap
+alto, ancho y margen multimedia inside contenido */
+.multimediaInsideContent{
+	@extend .multimediaInside;
+	border-radius: 1vw;
+	text-align: $centradoMultimedia;
+	align-content: $centradoMultimedia;
+	height: 40vw;
+	width: 40vw;
+	margin: 2vw 2vw;
+	@media only screen and (min-width:768px) and (max-width:1239px){
+		height: 60vw;
+		width: 50vw;
+		flex-direction: column;
+		align-items: $centradoMultimedia;
+	}
+	@media only screen and (min-width:0px) and (max-width:767px){
+		height: 60vw;
+		width: 70vw;
+		flex-direction: column;
+		align-items: $centradoMultimedia;
+	}
+}
+/*------ FIN SECCIÓN MULTIMEDIA ------*/

@@ -1,0 +1,33 @@
+/*------ INICIO SECCIÓN REFERENCIAS ------*/
+/* Posicion, alto, background, border y margin seccion base referencias*/
+.seccionBaseReferencias{
+	height: auto;
+	@extend .seccionInsideReferencias;
+}
+/* Borde, background y borde circular referencias*/
+.borderReferencias {
+   border: 0.2vw solid black;
+   border-radius: 1vw;
+   margin: 1vw;
+}
+/* Display flex y justify con espacio alrededor*/
+.flexReferencias{
+	display: flex;
+	justify-content: space-around;
+}
+/* background color, marge y borde circular*/
+.seccionInsideReferencias{
+	margin: 1vw;
+	border-radius: 1vw;
+}
+/* Quitar puntos de lista dentro de la tabla de referencias */
+.listaTabla{
+	list-style-type: none;
+}
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:767px){
+	.flexReferencias{
+		display: flex;
+		flex-direction: column;
+	}
+}

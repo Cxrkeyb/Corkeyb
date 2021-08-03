@@ -1,0 +1,77 @@
+$parrafoColor: #32394F;
+$tituloColor: #14161F;
+$insideColor: #A6A2A2;
+$inside2Color: #D7CCDF;
+$gray: #757CA3;
+$black: #14161F;
+$blue: #0000FF;
+$green: #008f39;
+p{
+    color: $parrafoColor
+}
+h1{
+    color: $tituloColor;
+}
+h2{
+    color: $tituloColor;
+}
+h3{
+    color: $tituloColor;
+}
+footer{
+    background-color:$insideColor;;
+}
+.seccionMultimediaBase{
+    background-color: $insideColor;
+}
+.soporteSeccionBase{
+	background-color: $insideColor;
+}
+.seccionInsideReferencias{
+	background-color: $inside2Color;
+}
+.seccionBaseReferencias{
+	background-color: $inside2Color;
+}
+.borderReferencias {
+    background-color: $insideColor;
+}
+.soporteSquareInside{
+	background-color: $inside2Color;
+}
+.tituloHelp{
+	color: $gray;
+}
+.multimediaInsideContent{
+	background-color: $inside2Color;
+}
+.seccionLoginInside{
+	background-color: $inside2Color;
+}
+.tituloLogin{
+	color: $black;
+}
+.cuadroLogin{
+	color: $parrafoColor;
+}
+.helpLogin{
+	color: $blue;
+}
+.border {
+    background-color: $insideColor;
+}
+.leftSection__BeneficiosTitulo{
+	color: $gray;
+}
+.leftSection__InsideIndex{
+	background-color: $inside2Color;
+}
+.header__NoSelectedNav{
+	color: $black;
+}
+header{
+	background-color: $insideColor;
+}
+.rightSectionTwo__parrafo{
+	color: red;
+}

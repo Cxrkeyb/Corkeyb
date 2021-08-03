@@ -1,0 +1,56 @@
+$centrado: center;
+/*------ INICIO INDEX ------*/
+/* Color de background, margin y borde circular secciones index inside */
+.leftSection__InsideIndex{
+	margin: 0.3vw;
+	border-radius: 0.8vw;
+}
+/* Color titulo, tamaño y grosor beneficios index */
+.leftSection__BeneficiosTitulo{
+	font-weight: 800;
+}
+/* Color, tamaño y grosor de contenido de lista beneficios y servicios index */
+.leftSection__Lista{
+	color: #99999c;
+	font-weight: 700;
+	list-style-type: none;
+}
+/* Tamaños alto, ancho, display flex, transition y justify centrado */
+.leftSection___YoutubeIndex{
+	width: 45vw;
+	height: 25vw;
+    @media only screen and (min-width:0px) and (max-width:767px){
+		width: 85vw;
+        height: 65vw;
+	}
+	display: flex;
+	justify-content: $centrado;
+	transition: height 2s, width 1s;
+    margin-left: 2vw;
+}
+/* Al pasar el cursor aumenta tamaño */
+.leftSection___YoutubeIndex:hover {
+   height: 35vw; width: 55vw;
+}
+.rightSection__ImageSizeIndex{
+    height: 20vw; width: 30vw;
+    @media only screen and (min-width:0px) and (max-width:767px){
+		height: 35vw; width: 55vw;
+	}
+}
+/* Borde circular, backgroun-color*/
+.border {
+   border: 0.12vw solid black;
+   border-radius: 0.5vw;
+}
+@each $position in right, center {
+	.#{$position}Section__ImageInside { 
+		text-align: $centrado;
+	 }
+}
+.rightSectionTwo__ImageInside{
+	text-align: $centrado;
+}
+.centerSection__ImageSizeIndex{
+	height: 30vw; width: 40vw;
+}

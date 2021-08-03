@@ -1,0 +1,19 @@
+$size-footer-logos: 10vw;
+/*------ INICIO FOOTER ------*/
+/* Tamaño logos redes sociales */
+.faLogos{
+	font-size: $size-footer-logos;
+}
+.imageInside{
+	text-align: center;
+}
+.footer__Flex__CoderLogoSize{
+	width:$size-footer-logos ; height:$size-footer-logos ;
+}
+/* Establecer padding y position de los logos redes sociales*/
+.footer__Flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+/*------ FIN FOOTER ------*/

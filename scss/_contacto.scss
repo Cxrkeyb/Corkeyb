@@ -1,0 +1,72 @@
+/*------ INICIO SECCIÓN CONTACTO ------*/
+/* Display flex, column, Color, tamaño y grosor cuadro login */
+.seccionContactoInside{
+	color: #32394F;
+	font-weight: 700;
+	background-color: #D7CCDF;
+	border-radius: 1vw;
+	display: flex;
+	flex-direction: column;
+    @media only screen and (min-width:0px) and (max-width:767px){
+        padding-left: 3vw;
+     }
+}
+/* alto y posicion seccion contacto base*/
+.seccionContactoBase{
+	height: 20vw;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+    margin: 1vw;
+    @media only screen and (min-width:768px) and (max-width:1239px){
+        height: 35vw;
+        margin: 5vw;
+    }
+    @media only screen and (min-width:0px) and (max-width:767px){
+        margin: 5vw;
+        height: 60vw;
+    }
+}
+/* Colores, tamaños, padding, alineaciones, margin y displays*/
+.formContacto{
+	color: #32394F;
+	font-weight: 700;
+	width: 40vw;
+	padding-top: 3vw;
+    @media only screen and (min-width:768px) and (max-width:1239px){
+        width: 65vw;
+    }
+    @media only screen and (min-width:0px) and (max-width:767px){
+        width: 50vw;
+    }
+}
+.formContactoInfo{
+	width: 60%;
+	height: 10vw;
+	display: inline-block;
+	text-align: center;
+}
+.formContactoInfo div {
+	margin-top: 3vw;
+	display: inline-block;
+}
+.formPropositoDiv{
+	padding-top: 4.15vw;
+	display: inline-block;
+	width: 39%;
+	height: 5.85vw;
+	text-align: center;
+    @media only screen and (min-width:0px) and (max-width:767px){
+        display: block;
+    }
+}
+.formCheckbox{
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.tituloContacto{
+	margin-left: 0.7vw;
+}
+/*------ FIN SECCIÓN CONTACTO ------*/

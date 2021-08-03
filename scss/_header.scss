@@ -1,0 +1,58 @@
+$base-font-weight: 700;
+$size-logo-desktop: 10vw;
+$size-logo-mobile: 18vw;
+$size-logo-tablet: 15vw;
+$padding-Logo: 0.2vw;
+$navSizeDesktop: 1.2vw;
+$navSizeMobile: 3vw;
+$navSizeTablet: 2vw; 
+/* INICIO NAV */
+/* Tamaño y posicion del logo */
+.header__LogoNav{
+	height: $size-logo-desktop;
+	width: $size-logo-desktop;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: $size-logo-mobile;
+		height: $size-logo-mobile;
+	}
+	@media only screen and (min-width:768px) and (max-width:1239px){
+		width: $size-logo-tablet;
+		height: $size-logo-tablet;
+	}
+	position: relative;
+	left: $padding-Logo;
+}
+/* Quitar subrayado de enlace, colores, tamaño y grosor del nav seleccionado */
+.header__NoSelectedNav{
+	font-weight: $base-font-weight;
+	text-decoration: none;
+	font-size: $navSizeDesktop;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		font-size: $navSizeMobile;
+	}
+	@media only screen and (min-width:768px) and (max-width:1239px){
+		font-size: $navSizeTablet;
+		}
+	}
+.header__SelectedNav{
+	color: #62088C;
+	font-weight: $base-font-weight;
+	font-size: $navSizeDesktop;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		font-size: $navSizeMobile;
+	}
+	@media only screen and (min-width:768px) and (max-width:1239px){
+		font-size: $navSizeTablet;
+		}
+	}
+/* FIN NAV */
+/* Grid area, quitar subrayado, background-color, display flex, direction, espacios entre ellos y centrado header */
+header{
+	grid-area: header;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 0.8vw;
+	}

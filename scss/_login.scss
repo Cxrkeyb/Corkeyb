@@ -1,0 +1,67 @@
+$tamanioLoginContainerMobile: 70vw;
+/*------ INICIO SECCIÓN LOGIN ------*/
+/* Posicion y altura seccion login base */
+.seccionLoginBase{
+	position: relative;
+	height: 30vw;
+	display: flex;
+	justify-content: center;
+	margin: 2vw;
+    @media only screen and (min-width:0px) and (max-width:767px){
+        height: $tamanioLoginContainerMobile;
+    }
+}
+/* Posicion, background, border, alto y ancho seccion login inside*/
+.seccionLoginInside{
+	border-radius: 1vw;
+	width: 50vw;
+    @media only screen and (min-width:0px) and (max-width:767px){
+        width: $tamanioLoginContainerMobile;
+        height: $tamanioLoginContainerMobile;
+    }
+}
+/* Color, grosor y position de login */
+.tituloLogin{
+	font-weight: 800;
+	margin-left: 2vw;
+}
+/* Color, tamaño y grosor cuadro login */
+.cuadroLogin{
+	font-weight: 700;
+}
+/* Margin, Color azul y subrayado quitado login*/
+.helpLogin{
+	text-decoration: none;
+	margin-left: 10vw;
+    @media only screen and (min-width:768px) and (max-width:1239px){
+         font-size: 4vw;
+    }
+}
+/* Display inline-block, texto centrado y tamaño del contenedor*/
+.formContactoInfo{
+	width: 60%;
+	height: 10vw;
+	display: inline-block;
+	text-align: center;
+}
+/* padding y margin  */
+.formLoginAccount{
+	padding-left: 12vw;
+	margin-top: 7vw;
+    @media only screen and (min-width:768px) and (max-width:1239px){
+        padding-left: 8vw;
+        font-size: 2.5vw;
+    }
+    @media only screen and (min-width:0px) and (max-width:767px){
+        padding-left: 2vw;
+        font-size: 5.5vw;
+    }
+}
+/* Display flex, contenido al final y margen */
+.formLoginSend{
+	justify-content: flex-end;
+	display: flex;
+	margin-right: 10vw;
+	margin-top: 3vw;
+}
+/*------ FIN SECCIÓN LOGIN ------*/

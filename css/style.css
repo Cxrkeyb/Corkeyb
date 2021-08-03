@@ -1,0 +1,645 @@
+@charset "UTF-8";
+body#bodyGeneral {
+  font-size: 1.2vw;
+  font-family: 'Piazzolla', serif; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    body#bodyGeneral {
+      font-size: 3vw; } }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    body#bodyGeneral {
+      font-size: 2.5vw; } }
+
+/* Ajustar margenes a valor 0*/
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Color background */
+body#bodyGeneral {
+  overflow-x: hidden;
+  position: relative;
+  background-color: #fbfbfb;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23615672' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+p {
+  color: #32394F; }
+
+h1 {
+  color: #14161F; }
+
+h2 {
+  color: #14161F; }
+
+h3 {
+  color: #14161F; }
+
+footer {
+  background-color: #A6A2A2; }
+
+.seccionMultimediaBase {
+  background-color: #A6A2A2; }
+
+.soporteSeccionBase {
+  background-color: #A6A2A2; }
+
+.seccionInsideReferencias, .seccionBaseReferencias {
+  background-color: #D7CCDF; }
+
+.seccionBaseReferencias {
+  background-color: #D7CCDF; }
+
+.borderReferencias {
+  background-color: #A6A2A2; }
+
+.soporteSquareInside {
+  background-color: #D7CCDF; }
+
+.tituloHelp {
+  color: #757CA3; }
+
+.multimediaInsideContent {
+  background-color: #D7CCDF; }
+
+.seccionLoginInside {
+  background-color: #D7CCDF; }
+
+.tituloLogin {
+  color: #14161F; }
+
+.cuadroLogin {
+  color: #32394F; }
+
+.helpLogin {
+  color: #0000FF; }
+
+.border {
+  background-color: #A6A2A2; }
+
+.leftSection__BeneficiosTitulo {
+  color: #757CA3; }
+
+.leftSection__InsideIndex {
+  background-color: #D7CCDF; }
+
+.header__NoSelectedNav {
+  color: #14161F; }
+
+header {
+  background-color: #A6A2A2; }
+
+.rightSectionTwo__parrafo {
+  color: red; }
+
+/* INICIO NAV */
+/* Tamaño y posicion del logo */
+.header__LogoNav {
+  height: 10vw;
+  width: 10vw;
+  position: relative;
+  left: 0.2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .header__LogoNav {
+      width: 18vw;
+      height: 18vw; } }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .header__LogoNav {
+      width: 15vw;
+      height: 15vw; } }
+
+/* Quitar subrayado de enlace, colores, tamaño y grosor del nav seleccionado */
+.header__NoSelectedNav {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .header__NoSelectedNav {
+      font-size: 3vw; } }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .header__NoSelectedNav {
+      font-size: 2vw; } }
+
+.header__SelectedNav {
+  color: #62088C;
+  font-weight: 700;
+  font-size: 1.2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .header__SelectedNav {
+      font-size: 3vw; } }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .header__SelectedNav {
+      font-size: 2vw; } }
+
+/* FIN NAV */
+/* Grid area, quitar subrayado, background-color, display flex, direction, espacios entre ellos y centrado header */
+header {
+  grid-area: header;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8vw; }
+
+/*------ INICIO FOOTER ------*/
+/* Tamaño logos redes sociales */
+.faLogos {
+  font-size: 10vw; }
+
+.imageInside {
+  text-align: center; }
+
+.footer__Flex__CoderLogoSize {
+  width: 10vw;
+  height: 10vw; }
+
+/* Establecer padding y position de los logos redes sociales*/
+.footer__Flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+/*------ FIN FOOTER ------*/
+/*------ INICIO INDEX ------*/
+/* Color de background, margin y borde circular secciones index inside */
+.leftSection__InsideIndex {
+  margin: 0.3vw;
+  border-radius: 0.8vw; }
+
+/* Color titulo, tamaño y grosor beneficios index */
+.leftSection__BeneficiosTitulo {
+  font-weight: 800; }
+
+/* Color, tamaño y grosor de contenido de lista beneficios y servicios index */
+.leftSection__Lista {
+  color: #99999c;
+  font-weight: 700;
+  list-style-type: none; }
+
+/* Tamaños alto, ancho, display flex, transition y justify centrado */
+.leftSection___YoutubeIndex {
+  width: 45vw;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  transition: height 2s, width 1s;
+  margin-left: 2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .leftSection___YoutubeIndex {
+      width: 85vw;
+      height: 65vw; } }
+
+/* Al pasar el cursor aumenta tamaño */
+.leftSection___YoutubeIndex:hover {
+  height: 35vw;
+  width: 55vw; }
+
+.rightSection__ImageSizeIndex {
+  height: 20vw;
+  width: 30vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .rightSection__ImageSizeIndex {
+      height: 35vw;
+      width: 55vw; } }
+
+/* Borde circular, backgroun-color*/
+.border {
+  border: 0.12vw solid black;
+  border-radius: 0.5vw; }
+
+.rightSection__ImageInside {
+  text-align: center; }
+
+.centerSection__ImageInside {
+  text-align: center; }
+
+.rightSectionTwo__ImageInside {
+  text-align: center; }
+
+.centerSection__ImageSizeIndex {
+  height: 30vw;
+  width: 40vw; }
+
+/*------ INICIO SECCIÓN MULTIMEDIA ------*/
+/* Background-color, borde y margen seccion base*/
+.seccionMultimediaBase {
+  border-radius: 0.8vw;
+  margin: 0.25%; }
+
+/* Imagen multimedia */
+.imgMultimedia {
+  width: 30vw;
+  height: 30vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .imgMultimedia {
+      width: 40vw;
+      height: 40vw; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .imgMultimedia {
+      width: 50vw;
+      height: 50vw; } }
+
+.youtubeMultimedia {
+  width: 30vw;
+  height: 30vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .youtubeMultimedia {
+      width: 40vw;
+      height: 40vw; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .youtubeMultimedia {
+      width: 50vw;
+      height: 50vw; } }
+
+/* Display flex, contenido dividido con wrap y contenido centrado secciones multimedia inside*/
+.multimediaInside, .multimediaInsideContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/* Background, border, flex, texto centrado, contenido eje Y centrado, contenido eje x centrado, contenido wrap
+alto, ancho y margen multimedia inside contenido */
+.multimediaInsideContent {
+  border-radius: 1vw;
+  text-align: center;
+  align-content: center;
+  height: 40vw;
+  width: 40vw;
+  margin: 2vw 2vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .multimediaInsideContent {
+      height: 60vw;
+      width: 50vw;
+      flex-direction: column;
+      align-items: center; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .multimediaInsideContent {
+      height: 60vw;
+      width: 70vw;
+      flex-direction: column;
+      align-items: center; } }
+
+/*------ FIN SECCIÓN MULTIMEDIA ------*/
+/*------ INICIO SECCIÓN REFERENCIAS ------*/
+/* Posicion, alto, background, border y margin seccion base referencias*/
+.seccionBaseReferencias {
+  height: auto; }
+
+/* Borde, background y borde circular referencias*/
+.borderReferencias {
+  border: 0.2vw solid black;
+  border-radius: 1vw;
+  margin: 1vw; }
+
+/* Display flex y justify con espacio alrededor*/
+.flexReferencias {
+  display: flex;
+  justify-content: space-around; }
+
+/* background color, marge y borde circular*/
+.seccionInsideReferencias, .seccionBaseReferencias {
+  margin: 1vw;
+  border-radius: 1vw; }
+
+/* Quitar puntos de lista dentro de la tabla de referencias */
+.listaTabla {
+  list-style-type: none; }
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .flexReferencias {
+    display: flex;
+    flex-direction: column; } }
+
+/*------ INICIO SECCIÓN CONTACTO ------*/
+/* Display flex, column, Color, tamaño y grosor cuadro login */
+.seccionContactoInside {
+  color: #32394F;
+  font-weight: 700;
+  background-color: #D7CCDF;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .seccionContactoInside {
+      padding-left: 3vw; } }
+
+/* alto y posicion seccion contacto base*/
+.seccionContactoBase {
+  height: 20vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .seccionContactoBase {
+      height: 35vw;
+      margin: 5vw; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .seccionContactoBase {
+      margin: 5vw;
+      height: 60vw; } }
+
+/* Colores, tamaños, padding, alineaciones, margin y displays*/
+.formContacto {
+  color: #32394F;
+  font-weight: 700;
+  width: 40vw;
+  padding-top: 3vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .formContacto {
+      width: 65vw; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formContacto {
+      width: 50vw; } }
+
+.formContactoInfo {
+  width: 60%;
+  height: 10vw;
+  display: inline-block;
+  text-align: center; }
+
+.formContactoInfo div {
+  margin-top: 3vw;
+  display: inline-block; }
+
+.formPropositoDiv {
+  padding-top: 4.15vw;
+  display: inline-block;
+  width: 39%;
+  height: 5.85vw;
+  text-align: center; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formPropositoDiv {
+      display: block; } }
+
+.formCheckbox {
+  width: 100%;
+  display: block;
+  text-align: center; }
+
+.tituloContacto {
+  margin-left: 0.7vw; }
+
+/*------ FIN SECCIÓN CONTACTO ------*/
+/*------ INICIO SECCIÓN SOPORTE ------*/
+/* Color y grosor titulo soporte ayuda */
+.tituloHelp {
+  font-weight: 800; }
+
+/* Color, tamaño y grosor enlace continuar ayuda */
+.continueHelp {
+  color: #62088C;
+  font-weight: 600; }
+
+/* Tamaño de iconos en soporte */
+.faSoporte {
+  font-size: 7vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .faSoporte {
+      font-size: 10vw; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .faSoporte {
+      font-size: 15vw; } }
+
+/* Background, position, margin y border seccion base soporte*/
+.soporteSeccionBase {
+  position: relative;
+  margin: 1vw;
+  border-radius: 1vw; }
+
+/* Display flex, distribuir con espacios*/
+.soporteSquare {
+  display: flex;
+  justify-content: space-around; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .soporteSquare {
+      flex-direction: column;
+      align-items: center; } }
+
+/* Background, Borde circular, display flex, texto centrado, contenido alineado al centro, contenido centrado (jc), texto acorde al cuadro
+, alto y ancho */
+.soporteSquareInside {
+  border-radius: 1vw;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 20vw;
+  width: 30vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .soporteSquareInside {
+      width: 26vw;
+      height: 34vw; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .soporteSquareInside {
+      width: 70vw;
+      margin: 2vw;
+      height: 30vw; } }
+
+/*------ FIN SECCIÓN SOPORTE ------*/
+/*------ INICIO SECCIÓN LOGIN ------*/
+/* Posicion y altura seccion login base */
+.seccionLoginBase {
+  position: relative;
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  margin: 2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .seccionLoginBase {
+      height: 70vw; } }
+
+/* Posicion, background, border, alto y ancho seccion login inside*/
+.seccionLoginInside {
+  border-radius: 1vw;
+  width: 50vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .seccionLoginInside {
+      width: 70vw;
+      height: 70vw; } }
+
+/* Color, grosor y position de login */
+.tituloLogin {
+  font-weight: 800;
+  margin-left: 2vw; }
+
+/* Color, tamaño y grosor cuadro login */
+.cuadroLogin {
+  font-weight: 700; }
+
+/* Margin, Color azul y subrayado quitado login*/
+.helpLogin {
+  text-decoration: none;
+  margin-left: 10vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .helpLogin {
+      font-size: 4vw; } }
+
+/* Display inline-block, texto centrado y tamaño del contenedor*/
+.formContactoInfo {
+  width: 60%;
+  height: 10vw;
+  display: inline-block;
+  text-align: center; }
+
+/* padding y margin  */
+.formLoginAccount {
+  padding-left: 12vw;
+  margin-top: 7vw; }
+  @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .formLoginAccount {
+      padding-left: 8vw;
+      font-size: 2.5vw; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formLoginAccount {
+      padding-left: 2vw;
+      font-size: 5.5vw; } }
+
+/* Display flex, contenido al final y margen */
+.formLoginSend {
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 10vw;
+  margin-top: 3vw; }
+
+/*------ FIN SECCIÓN LOGIN ------*/
+/* Display Desktop */
+@media only screen and (min-width: 1240px) {
+  #gridHome {
+    display: grid;
+    grid-template-areas: "header header" "leftSection rightTopSection" "leftSection rightBottomSection" "centerSection centerSection" "leftSection_Two rightSection_Two" "footer footer";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-column-gap: 1.2vw;
+    grid-row-gap: 0.8vw;
+    margin: 0.2vw; }
+  /* Grid areas */
+  section#leftSection {
+    grid-area: leftSection; }
+  section#rightTopSection {
+    grid-area: rightTopSection; }
+  section#rightBottomSection {
+    grid-area: rightBottomSection; }
+  section#centerSection {
+    grid-area: centerSection; }
+  section#leftSection_Two {
+    grid-area: leftSection_Two; }
+  section#rightSection_Two {
+    grid-area: rightSection_Two; }
+  footer {
+    grid-area: footer; } }
+
+/* vista entre desktop y mobile */
+@media only screen and (min-width: 768px) and (max-width: 1239px) {
+  #gridHome {
+    display: grid;
+    grid-template-areas: "header header" "leftSection rightTopSection" "leftSection rightBottomSection" "centerSection centerSection" "leftSection_Two rightSection_Two" "footer footer"; }
+  section#leftSection {
+    grid-area: leftSection; }
+  section#rightTopSection {
+    grid-area: rightTopSection; }
+  section#rightBottomSection {
+    grid-area: rightBottomSection; }
+  section#centerSection {
+    grid-area: centerSection; }
+  section#leftSection_Two {
+    grid-area: leftSection_Two; }
+  section#rightSection_Two {
+    grid-area: rightSection_Two; }
+  footer {
+    grid-area: footer; } }
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #gridHome {
+    display: grid;
+    grid-template-areas: "header" "leftSection" "rightTopSection" "rightBottomSection" "centerSection" "rightSection_Two" "leftSection_Two" "footer";
+    grid-auto-columns: 100%;
+    grid-template-rows: auto;
+    grid-row-gap: 2vw;
+    margin: 10vw; }
+  header {
+    grid-area: header; }
+  /* Grid areas */
+  section#leftSection {
+    grid-area: leftSection; }
+  section#rightTopSection {
+    grid-area: rightTopSection; }
+  section#rightBottomSection {
+    grid-area: rightBottomSection; }
+  section#centerSection {
+    grid-area: centerSection; }
+  section#leftSection_Two {
+    grid-area: leftSection_Two; }
+  section#rightSection_Two {
+    grid-area: rightSection_Two; }
+  footer {
+    grid-area: footer; } }
+
+/* Grid Multimedia*/
+#gridMultimedia {
+  display: grid;
+  grid-template-areas: "header" "sectionMultimediaGeneral" "footer";
+  grid-template-columns: 100%; }
+
+section#sectionMultimediaGeneral {
+  grid-area: sectionMultimediaGeneral; }
+
+/* Grid Referencias */
+#gridReferencias {
+  grid-template-areas: "header" "seccionReferencias" "footer";
+  grid-template-areas: 100%; }
+
+section#seccionReferencias {
+  grid-area: seccionReferencias; }
+
+/* Grid Contacto */
+#gridContacto {
+  grid-template-areas: "header" "sectionContactoBase" "footer"; }
+
+#sectionContactoBase {
+  grid-area: sectionContactoBase; }
+
+.soyuntitulo {
+  font-size: 8vw;
+  color: white; }
+
+#error404bg {
+  background-color: #000000;
+  font-family: 'Press Start 2P', cursive; }
+
+.flexBaseError404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.flexInsideError404 {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 24vw; }
+
+.flexInside2Error404 {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 2vw; }
+
+.imageNotFound404 {
+  width: 8vw;
+  height: 8vw; }
+
+.nosoyuntitulo {
+  font-size: 4vw;
+  color: white; }
+
+.nosoyuntitulo2 {
+  font-size: 2vw;
+  color: white; }
