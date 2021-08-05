@@ -447,18 +447,25 @@ alto, ancho y margen multimedia inside contenido */
   display: flex;
   justify-content: center;
   margin: 2vw; }
+  @media screen and (min-width: 768px) and (max-width: 1239px) {
+    .seccionLoginBase {
+      height: 50vw; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .seccionLoginBase {
-      height: 70vw; } }
+      height: 80vw; } }
 
 /* Posicion, background, border, alto y ancho seccion login inside*/
 .seccionLoginInside {
   border-radius: 1vw;
   width: 50vw; }
+  @media screen and (min-width: 768px) and (max-width: 1239px) {
+    .seccionLoginInside {
+      width: 50vw;
+      height: 50vw; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .seccionLoginInside {
-      width: 70vw;
-      height: 70vw; } }
+      width: 80vw;
+      height: 80vw; } }
 
 /* Color, grosor y position de login */
 .tituloLogin {
@@ -487,7 +494,8 @@ alto, ancho y margen multimedia inside contenido */
 /* padding y margin  */
 .formLoginAccount {
   padding-left: 12vw;
-  margin-top: 7vw; }
+  margin-top: 7vw;
+  font-size: 2vw; }
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
     .formLoginAccount {
       padding-left: 8vw;
@@ -496,6 +504,27 @@ alto, ancho y margen multimedia inside contenido */
     .formLoginAccount {
       padding-left: 2vw;
       font-size: 5.5vw; } }
+
+.squarewhite {
+  height: 2vw;
+  width: 15vw; }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    .squarewhite {
+      height: 4vw;
+      width: 60vw;
+      display: block; } }
+
+.sendButton {
+  height: 2vw;
+  width: 3vw; }
+  @media screen and (min-width: 768px) and (max-width: 1239px) {
+    .sendButton {
+      height: 4vw;
+      width: 6vw; } }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    .sendButton {
+      height: 6vw;
+      width: 10vw; } }
 
 /* Display flex, contenido al final y margen */
 .formLoginSend {
