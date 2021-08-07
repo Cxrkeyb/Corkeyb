@@ -6,6 +6,8 @@ $gray: #757CA3;
 $black: #14161F;
 $blue: #0000FF;
 $green: #008f39;
+$purple: #62088C;
+$red: #E2170A;
 p{
     color: $parrafoColor
 }
@@ -19,7 +21,7 @@ h3{
     color: $tituloColor;
 }
 footer{
-    background-color:$insideColor;;
+    background-color:$insideColor;
 }
 .seccionMultimediaBase{
     background-color: $insideColor;
@@ -73,5 +75,30 @@ header{
 	background-color: $insideColor;
 }
 .rightSectionTwo__parrafo{
-	color: red;
+	color: $red;
+}
+.seccionContactoInside{
+	color: $parrafoColor;
+	background-color: $inside2Color;
+}
+.formContacto{
+	color: $parrafoColor;
+}
+.soyuntitulo{
+	color: $inside2Color;
+}
+#error404bg{
+	background-color: $black;
+}
+.nosoyuntitulo{
+	color: $inside2Color;
+}
+.nosoyuntitulo2{
+	color: $inside2Color;
+}
+.header__SelectedNav{
+	color: $purple;
+}
+.continueHelp{
+	color: $purple;
 }

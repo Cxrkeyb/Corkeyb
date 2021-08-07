@@ -88,7 +88,32 @@ header {
   background-color: #A6A2A2; }
 
 .rightSectionTwo__parrafo {
-  color: red; }
+  color: #E2170A; }
+
+.seccionContactoInside {
+  color: #32394F;
+  background-color: #D7CCDF; }
+
+.formContacto {
+  color: #32394F; }
+
+.soyuntitulo {
+  color: #D7CCDF; }
+
+#error404bg {
+  background-color: #14161F; }
+
+.nosoyuntitulo {
+  color: #D7CCDF; }
+
+.nosoyuntitulo2 {
+  color: #D7CCDF; }
+
+.header__SelectedNav {
+  color: #62088C; }
+
+.continueHelp {
+  color: #62088C; }
 
 /* INICIO NAV */
 /* Tamaño y posicion del logo */
@@ -119,7 +144,6 @@ header {
       font-size: 2vw; } }
 
 .header__SelectedNav {
-  color: #62088C;
   font-weight: 700;
   font-size: 1.2vw; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -313,9 +337,7 @@ alto, ancho y margen multimedia inside contenido */
 /*------ INICIO SECCIÓN CONTACTO ------*/
 /* Display flex, column, Color, tamaño y grosor cuadro login */
 .seccionContactoInside {
-  color: #32394F;
   font-weight: 700;
-  background-color: #D7CCDF;
   border-radius: 1vw;
   display: flex;
   flex-direction: column; }
@@ -342,7 +364,6 @@ alto, ancho y margen multimedia inside contenido */
 
 /* Colores, tamaños, padding, alineaciones, margin y displays*/
 .formContacto {
-  color: #32394F;
   font-weight: 700;
   width: 40vw;
   padding-top: 3vw; }
@@ -389,7 +410,6 @@ alto, ancho y margen multimedia inside contenido */
 
 /* Color, tamaño y grosor enlace continuar ayuda */
 .continueHelp {
-  color: #62088C;
   font-weight: 600; }
 
 /* Tamaño de iconos en soporte */
@@ -632,11 +652,9 @@ section#seccionReferencias {
   grid-area: sectionContactoBase; }
 
 .soyuntitulo {
-  font-size: 8vw;
-  color: white; }
+  font-size: 8vw; }
 
 #error404bg {
-  background-color: #000000;
   font-family: 'Press Start 2P', cursive; }
 
 .flexBaseError404 {
@@ -666,9 +684,7 @@ section#seccionReferencias {
   height: 8vw; }
 
 .nosoyuntitulo {
-  font-size: 4vw;
-  color: white; }
+  font-size: 4vw; }
 
 .nosoyuntitulo2 {
-  font-size: 2vw;
-  color: white; }
+  font-size: 2vw; }
