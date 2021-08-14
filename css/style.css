@@ -22,92 +22,93 @@ body#bodyGeneral {
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23615672' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
 
 p {
-  color: #32394F; }
+  color: #14161F;
+  font-weight: 600; }
 
 h1 {
-  color: #14161F; }
+  color: #560075; }
 
 h2 {
-  color: #14161F; }
+  color: #560075; }
 
 h3 {
-  color: #14161F; }
+  color: #560075; }
 
 footer {
-  background-color: #A6A2A2; }
+  background-color: #cbacf1; }
 
 .seccionMultimediaBase {
-  background-color: #A6A2A2; }
+  background-color: #cbacf1; }
 
 .soporteSeccionBase {
-  background-color: #A6A2A2; }
+  background-color: #cbacf1; }
 
 .seccionInsideReferencias, .seccionBaseReferencias {
-  background-color: #D7CCDF; }
+  background-color: #e6e6e6; }
 
 .seccionBaseReferencias {
-  background-color: #D7CCDF; }
+  background-color: #e6e6e6; }
 
 .borderReferencias {
-  background-color: #A6A2A2; }
+  background-color: #cbacf1; }
 
 .soporteSquareInside {
-  background-color: #D7CCDF; }
+  background-color: #e6e6e6; }
 
 .tituloHelp {
   color: #757CA3; }
 
 .multimediaInsideContent {
-  background-color: #D7CCDF; }
+  background-color: #e6e6e6; }
 
 .seccionLoginInside {
-  background-color: #D7CCDF; }
+  background-color: #e6e6e6; }
 
 .tituloLogin {
   color: #14161F; }
 
 .cuadroLogin {
-  color: #32394F; }
+  color: #14161F; }
 
 .helpLogin {
   color: #0000FF; }
 
 .border {
-  background-color: #A6A2A2; }
+  background-color: #cbacf1; }
 
 .leftSection__BeneficiosTitulo {
   color: #757CA3; }
 
 .leftSection__InsideIndex {
-  background-color: #D7CCDF; }
+  background-color: #e6e6e6; }
 
 .header__NoSelectedNav {
   color: #14161F; }
 
 header {
-  background-color: #A6A2A2; }
+  background-color: #cbacf1; }
 
 .rightSectionTwo__parrafo {
   color: #E2170A; }
 
 .seccionContactoInside {
-  color: #32394F;
-  background-color: #D7CCDF; }
+  color: #14161F;
+  background-color: #e6e6e6; }
 
 .formContacto {
-  color: #32394F; }
+  color: #14161F; }
 
 .soyuntitulo {
-  color: #D7CCDF; }
+  color: #e6e6e6; }
 
 #error404bg {
   background-color: #14161F; }
 
 .nosoyuntitulo {
-  color: #D7CCDF; }
+  color: #e6e6e6; }
 
 .nosoyuntitulo2 {
-  color: #D7CCDF; }
+  color: #e6e6e6; }
 
 .header__SelectedNav {
   color: #62088C; }
@@ -115,11 +116,14 @@ header {
 .continueHelp {
   color: #62088C; }
 
+.leftSection__Lista {
+  color: #14161F; }
+
 /* INICIO NAV */
 /* Tamaño y posicion del logo */
 .header__LogoNav {
-  height: 10vw;
-  width: 10vw;
+  height: 8vw;
+  width: 8vw;
   position: relative;
   left: 0.2vw; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -167,14 +171,14 @@ header {
 /*------ INICIO FOOTER ------*/
 /* Tamaño logos redes sociales */
 .faLogos {
-  font-size: 10vw; }
+  font-size: 6vw; }
 
 .imageInside {
   text-align: center; }
 
 .footer__Flex__CoderLogoSize {
-  width: 10vw;
-  height: 10vw; }
+  width: 6vw;
+  height: 6vw; }
 
 /* Establecer padding y position de los logos redes sociales*/
 .footer__Flex {
@@ -187,7 +191,8 @@ header {
 /* Color de background, margin y borde circular secciones index inside */
 .leftSection__InsideIndex {
   margin: 0.3vw;
-  border-radius: 0.8vw; }
+  border-radius: 0.8vw;
+  padding: 1vw; }
 
 /* Color titulo, tamaño y grosor beneficios index */
 .leftSection__BeneficiosTitulo {
@@ -195,27 +200,27 @@ header {
 
 /* Color, tamaño y grosor de contenido de lista beneficios y servicios index */
 .leftSection__Lista {
-  color: #99999c;
-  font-weight: 700;
+  font-weight: 900;
   list-style-type: none; }
 
 /* Tamaños alto, ancho, display flex, transition y justify centrado */
 .leftSection___YoutubeIndex {
-  width: 45vw;
+  width: 50vw;
   height: 25vw;
-  display: flex;
-  justify-content: center;
-  transition: height 2s, width 1s;
-  margin-left: 2vw; }
+  transition: height 2s, width 1s; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .leftSection___YoutubeIndex {
-      width: 85vw;
-      height: 65vw; } }
+      width: 70vw;
+      height: 50vw; } }
 
 /* Al pasar el cursor aumenta tamaño */
 .leftSection___YoutubeIndex:hover {
   height: 35vw;
   width: 55vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .leftSection___YoutubeIndex:hover {
+      width: 110vw;
+      height: 80vw; } }
 
 .rightSection__ImageSizeIndex {
   height: 20vw;
@@ -228,7 +233,8 @@ header {
 /* Borde circular, backgroun-color*/
 .border {
   border: 0.12vw solid black;
-  border-radius: 0.5vw; }
+  border-radius: 0.5vw;
+  padding: 1vw; }
 
 .rightSection__ImageInside {
   text-align: center; }
@@ -240,8 +246,76 @@ header {
   text-align: center; }
 
 .centerSection__ImageSizeIndex {
-  height: 30vw;
-  width: 40vw; }
+  height: 20vw;
+  width: 30vw; }
+
+.youtubeIndexFlex {
+  text-align: end; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .youtubeIndexFlex {
+      text-align: center; } }
+
+.flexSection {
+  display: flex; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .flexSection {
+      display: block; } }
+
+.flexSectionInside {
+  display: flex;
+  align-content: flex-start; }
+
+.flexPruebaxd {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  padding: 1vw; }
+
+.sliderFlex {
+  width: 95vw;
+  margin: auto;
+  text-align: center;
+  overflow-x: hidden;
+  border-radius: 1vw;
+  border: 0.12vw solid black; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .sliderFlex {
+      width: 90vw; } }
+
+.sliderFlex img {
+  padding: 0;
+  width: 95vw;
+  height: 30vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .sliderFlex img {
+      width: 90vw; } }
+
+.sliderFlex ul {
+  display: flex;
+  width: 200vw;
+  padding: 0;
+  animation: slider 20s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in; }
+
+.sliderFlex li {
+  list-style: none;
+  width: 95vw; }
+
+@keyframes slider {
+  0% {
+    margin-left: 0; }
+  30% {
+    margin-left: 0; }
+  35% {
+    margin-left: -100%; }
+  65% {
+    margin-left: -100%; }
+  70% {
+    margin-left: -200%; }
+  100% {
+    margin-left: -200%; } }
 
 /*------ INICIO SECCIÓN MULTIMEDIA ------*/
 /* Background-color, borde y margen seccion base*/
@@ -252,7 +326,8 @@ header {
 /* Imagen multimedia */
 .imgMultimedia {
   width: 30vw;
-  height: 30vw; }
+  height: 30vw;
+  border-radius: 1vw; }
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
     .imgMultimedia {
       width: 40vw;
@@ -264,7 +339,8 @@ header {
 
 .youtubeMultimedia {
   width: 30vw;
-  height: 30vw; }
+  height: 30vw;
+  border-radius: 1vw; }
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
     .youtubeMultimedia {
       width: 40vw;
@@ -286,8 +362,8 @@ alto, ancho y margen multimedia inside contenido */
   border-radius: 1vw;
   text-align: center;
   align-content: center;
-  height: 40vw;
-  width: 40vw;
+  height: 42vw;
+  width: 42vw;
   margin: 2vw 2vw; }
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
     .multimediaInsideContent {
@@ -558,12 +634,12 @@ alto, ancho y margen multimedia inside contenido */
 @media only screen and (min-width: 1240px) {
   #gridHome {
     display: grid;
-    grid-template-areas: "header header" "leftSection rightTopSection" "leftSection rightBottomSection" "centerSection centerSection" "leftSection_Two rightSection_Two" "footer footer";
-    grid-template-columns: 60% 40%;
+    grid-template-areas: "header" "questionSection" "antiBootstrap" "javascriptSection" "scssSection" "metodobenSection" "serverWeb" "footer";
+    grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-column-gap: 1.2vw;
-    grid-row-gap: 0.8vw;
-    margin: 0.2vw; }
+    grid-column-gap: 0.2vw;
+    grid-row-gap: 0.2vw;
+    margin: 0vw 0.2vw 0.2vw 0.2vw; }
   /* Grid areas */
   section#leftSection {
     grid-area: leftSection; }
@@ -584,19 +660,19 @@ alto, ancho y margen multimedia inside contenido */
 @media only screen and (min-width: 768px) and (max-width: 1239px) {
   #gridHome {
     display: grid;
-    grid-template-areas: "header header" "leftSection rightTopSection" "leftSection rightBottomSection" "centerSection centerSection" "leftSection_Two rightSection_Two" "footer footer"; }
-  section#leftSection {
-    grid-area: leftSection; }
-  section#rightTopSection {
-    grid-area: rightTopSection; }
-  section#rightBottomSection {
-    grid-area: rightBottomSection; }
-  section#centerSection {
-    grid-area: centerSection; }
-  section#leftSection_Two {
-    grid-area: leftSection_Two; }
-  section#rightSection_Two {
-    grid-area: rightSection_Two; }
+    grid-template-areas: "header" "questionSection" "antiBootstrap" "javascriptSection" "scssSection" "metodobenSection" "serverWeb" "footer"; }
+  section#questionSection {
+    grid-area: questionSection; }
+  section#antiBootstrap {
+    grid-area: antiBootstrap; }
+  section#javascriptSection {
+    grid-area: javascriptSection; }
+  section#scssSection {
+    grid-area: scssSection; }
+  section#metodobenSection {
+    grid-area: metodobenSection; }
+  section#serverWeb {
+    grid-area: serverWeb; }
   footer {
     grid-area: footer; } }
 
@@ -604,7 +680,7 @@ alto, ancho y margen multimedia inside contenido */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   #gridHome {
     display: grid;
-    grid-template-areas: "header" "leftSection" "rightTopSection" "rightBottomSection" "centerSection" "rightSection_Two" "leftSection_Two" "footer";
+    grid-template-areas: "header" "questionSection" "antiBootstrap" "javascriptSection" "scssSection" "metodobenSection" "serverWeb" "footer";
     grid-auto-columns: 100%;
     grid-template-rows: auto;
     grid-row-gap: 2vw;
@@ -612,18 +688,18 @@ alto, ancho y margen multimedia inside contenido */
   header {
     grid-area: header; }
   /* Grid areas */
-  section#leftSection {
-    grid-area: leftSection; }
-  section#rightTopSection {
-    grid-area: rightTopSection; }
-  section#rightBottomSection {
-    grid-area: rightBottomSection; }
-  section#centerSection {
-    grid-area: centerSection; }
-  section#leftSection_Two {
-    grid-area: leftSection_Two; }
-  section#rightSection_Two {
-    grid-area: rightSection_Two; }
+  section#questionSection {
+    grid-area: questionSection; }
+  section#antiBootstrap {
+    grid-area: antiBootstrap; }
+  section#javascriptSection {
+    grid-area: javascriptSection; }
+  section#scssSection {
+    grid-area: scssSection; }
+  section#metodobenSection {
+    grid-area: metodobenSection; }
+  section#serverWeb {
+    grid-area: serverWeb; }
   footer {
     grid-area: footer; } }
 

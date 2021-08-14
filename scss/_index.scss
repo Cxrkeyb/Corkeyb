@@ -4,6 +4,7 @@ $centrado: center;
 .leftSection__InsideIndex{
 	margin: 0.3vw;
 	border-radius: 0.8vw;
+	padding: 1vw;
 }
 /* Color titulo, tamaño y grosor beneficios index */
 .leftSection__BeneficiosTitulo{
@@ -11,26 +12,26 @@ $centrado: center;
 }
 /* Color, tamaño y grosor de contenido de lista beneficios y servicios index */
 .leftSection__Lista{
-	color: #99999c;
-	font-weight: 700;
+	font-weight: 900;
 	list-style-type: none;
 }
 /* Tamaños alto, ancho, display flex, transition y justify centrado */
 .leftSection___YoutubeIndex{
-	width: 45vw;
+	width: 50vw;
 	height: 25vw;
     @media only screen and (min-width:0px) and (max-width:767px){
-		width: 85vw;
-        height: 65vw;
+		width: 70vw;
+        height: 50vw;
 	}
-	display: flex;
-	justify-content: $centrado;
 	transition: height 2s, width 1s;
-    margin-left: 2vw;
 }
 /* Al pasar el cursor aumenta tamaño */
 .leftSection___YoutubeIndex:hover {
    height: 35vw; width: 55vw;
+   @media only screen and (min-width:0px) and (max-width:767px){
+	width: 110vw;
+    height: 80vw;
+}
 }
 .rightSection__ImageSizeIndex{
     height: 20vw; width: 30vw;
@@ -42,6 +43,7 @@ $centrado: center;
 .border {
    border: 0.12vw solid black;
    border-radius: 0.5vw;
+   padding: 1vw;
 }
 @each $position in right, center {
 	.#{$position}Section__ImageInside { 
@@ -52,5 +54,70 @@ $centrado: center;
 	text-align: $centrado;
 }
 .centerSection__ImageSizeIndex{
-	height: 30vw; width: 40vw;
+	height: 20vw; width: 30vw;
+}
+.youtubeIndexFlex{
+	text-align: end;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		text-align: center;
+	}
+}
+.flexSection{
+	display: flex;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		display: block;
+	}
+}
+.flexSectionInside{
+	display: flex;
+	align-content: flex-start;
+}
+.flexPruebaxd{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	text-align: center;
+	padding: 1vw;
+}
+.sliderFlex{
+	width: 95vw;
+	margin: auto;
+	text-align: center;
+	overflow-x: hidden;
+	border-radius: 1vw;
+	border: 0.12vw solid black;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 90vw;
+	}
+}
+.sliderFlex img{
+	padding: 0;
+	width: 95vw;
+	height: 30vw;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 90vw;
+	}
+}
+.sliderFlex ul{
+	display: flex;
+	width: 200vw;
+	padding: 0;
+
+	 animation: slider 20s infinite;
+	 animation-direction: alternate;
+	 animation-timing-function: ease-in;
+}
+.sliderFlex li{
+	list-style: none;
+	width: 95vw;
+}
+@keyframes slider {
+	0% {margin-left: 0; }
+	30%{margin-left: 0; }
+
+	35%{margin-left: -100%;}
+	65%{margin-left: -100%;}
+
+	70%{margin-left: -200%;}
+	100%{margin-left: -200%;}
 }

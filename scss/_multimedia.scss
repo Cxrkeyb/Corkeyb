@@ -13,6 +13,7 @@ $centradoMultimedia: center;
 	.#{$multimedia}Multimedia { 
 		width: $tamanioMultimediaDesktop;
 		height: $tamanioMultimediaDesktop;
+		border-radius: 1vw;
 		@media only screen and (min-width:768px) and (max-width:1239px){
 			width: $tamanioMultimediaTablet;
 			height: $tamanioMultimediaTablet;
@@ -36,8 +37,8 @@ alto, ancho y margen multimedia inside contenido */
 	border-radius: 1vw;
 	text-align: $centradoMultimedia;
 	align-content: $centradoMultimedia;
-	height: 40vw;
-	width: 40vw;
+	height: 42vw;
+	width: 42vw;
 	margin: 2vw 2vw;
 	@media only screen and (min-width:768px) and (max-width:1239px){
 		height: 60vw;

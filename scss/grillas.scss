@@ -3,17 +3,19 @@
 	#gridHome{
 	display: grid;
 	grid-template-areas: 
-	"header header"
-	"leftSection rightTopSection"
-	"leftSection rightBottomSection"
-	"centerSection centerSection"
-	"leftSection_Two rightSection_Two"
-	"footer footer";
-	grid-template-columns:60% 40% ;
+	"header"
+	"questionSection"
+	"antiBootstrap"
+	"javascriptSection"
+	"scssSection"
+	"metodobenSection"
+	"serverWeb"
+	"footer";
+	grid-template-columns:100%;
 	grid-template-rows: auto ;
-	grid-column-gap: 1.2vw;
-   	grid-row-gap: 0.8vw;
-   	margin: 0.2vw;
+	grid-column-gap: 0.2vw;
+   	grid-row-gap: 0.2vw;
+   	margin: 0vw 0.2vw 0.2vw 0.2vw;
 }
 /* Grid areas */
 section#leftSection{
@@ -41,32 +43,34 @@ footer{
 /* vista entre desktop y mobile */
 @media only screen and (min-width:768px) and (max-width:1239px){
 	#gridHome{
-	display: grid;
-	grid-template-areas: 
-	"header header"
-	"leftSection rightTopSection"
-	"leftSection rightBottomSection"
-	"centerSection centerSection"
-	"leftSection_Two rightSection_Two"
-	"footer footer";
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"questionSection"
+		"antiBootstrap"
+		"javascriptSection"
+		"scssSection"
+		"metodobenSection"
+		"serverWeb"
+		"footer";
 	}
-	section#leftSection{
-	grid-area: leftSection;
+	section#questionSection{
+		grid-area: questionSection;
 	}
-	section#rightTopSection{
-		grid-area: rightTopSection;
+	section#antiBootstrap{
+		grid-area: antiBootstrap;
 	}
-	section#rightBottomSection{
-		grid-area: rightBottomSection;
+	section#javascriptSection{
+		grid-area: javascriptSection;
 	}
-	section#centerSection{
-		grid-area: centerSection;
+	section#scssSection{
+		grid-area: scssSection;
 	}
-	section#leftSection_Two{
-		grid-area: leftSection_Two;
+	section#metodobenSection{
+		grid-area: metodobenSection;
 	}
-	section#rightSection_Two{
-		grid-area: rightSection_Two;
+	section#serverWeb{
+		grid-area: serverWeb;
 	}
 	footer{
 		grid-area: footer;
@@ -75,42 +79,42 @@ footer{
 /*vista mobile*/
 @media only screen and (min-width:0px) and (max-width:767px){
 	#gridHome{
-	display: grid;
-	grid-template-areas: 
-	"header"
-	"leftSection"
-	"rightTopSection"
-	"rightBottomSection"
-	"centerSection"
-	"rightSection_Two"
-	"leftSection_Two"
-	"footer";
-	grid-auto-columns: 100%;
-	grid-template-rows: auto;
-   	grid-row-gap: 2vw;
-   	margin: 2vw;
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"questionSection"
+		"antiBootstrap"
+		"javascriptSection"
+		"scssSection"
+		"metodobenSection"
+		"serverWeb"
+		"footer";
+		grid-auto-columns: 100%;
+		grid-template-rows: auto;
+   		grid-row-gap: 2vw;
+   		margin: 2vw;
 	}
 	header{
 		grid-area: header;
 	}
 	/* Grid areas */
-	section#leftSection{
-	grid-area: leftSection;
+	section#questionSection{
+	grid-area: questionSection;
 	}
-	section#rightTopSection{
-		grid-area: rightTopSection;
+	section#antiBootstrap{
+		grid-area: antiBootstrap;
 	}
-	section#rightBottomSection{
-		grid-area: rightBottomSection;
+	section#javascriptSection{
+		grid-area: javascriptSection;
 	}
-	section#centerSection{
-		grid-area: centerSection;
+	section#scssSection{
+		grid-area: scssSection;
 	}
-	section#leftSection_Two{
-		grid-area: leftSection_Two;
+	section#metodobenSection{
+		grid-area: metodobenSection;
 	}
-	section#rightSection_Two{
-		grid-area: rightSection_Two;
+	section#serverWeb{
+		grid-area: serverWeb;
 	}
 	footer{
 		grid-area: footer;

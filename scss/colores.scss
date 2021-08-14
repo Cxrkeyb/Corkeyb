@@ -1,7 +1,7 @@
-$parrafoColor: #32394F;
-$tituloColor: #14161F;
-$insideColor: #A6A2A2;
-$inside2Color: #D7CCDF;
+$parrafoColor: #14161F;
+$tituloColor: #560075;
+$insideColor: #cbacf1;
+$inside2Color: #e6e6e6;
 $gray: #757CA3;
 $black: #14161F;
 $blue: #0000FF;
@@ -9,7 +9,8 @@ $green: #008f39;
 $purple: #62088C;
 $red: #E2170A;
 p{
-    color: $parrafoColor
+    color: $parrafoColor;
+	font-weight: 600;
 }
 h1{
     color: $tituloColor;
@@ -101,4 +102,7 @@ header{
 }
 .continueHelp{
 	color: $purple;
+}
+.leftSection__Lista{
+	color: $parrafoColor;
 }
