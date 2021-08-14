@@ -168,6 +168,15 @@ header {
   align-items: center;
   font-size: 0.8vw; }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+
+.borderHeader {
+  border: 0.1vw solid black;
+  margin: 0; }
+
 /*------ INICIO FOOTER ------*/
 /* Tamaño logos redes sociales */
 .faLogos {
@@ -192,7 +201,7 @@ header {
 .leftSection__InsideIndex {
   margin: 0.3vw;
   border-radius: 0.8vw;
-  padding: 1vw; }
+  padding: 3vw; }
 
 /* Color titulo, tamaño y grosor beneficios index */
 .leftSection__BeneficiosTitulo {
@@ -213,15 +222,6 @@ header {
       width: 70vw;
       height: 50vw; } }
 
-/* Al pasar el cursor aumenta tamaño */
-.leftSection___YoutubeIndex:hover {
-  height: 35vw;
-  width: 55vw; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .leftSection___YoutubeIndex:hover {
-      width: 110vw;
-      height: 80vw; } }
-
 .rightSection__ImageSizeIndex {
   height: 20vw;
   width: 30vw; }
@@ -234,7 +234,7 @@ header {
 .border {
   border: 0.12vw solid black;
   border-radius: 0.5vw;
-  padding: 1vw; }
+  padding: 3vw; }
 
 .rightSection__ImageInside {
   text-align: center; }
@@ -273,7 +273,7 @@ header {
   padding: 1vw; }
 
 .sliderFlex {
-  width: 95vw;
+  width: 90vw;
   margin: auto;
   text-align: center;
   overflow-x: hidden;
@@ -285,7 +285,7 @@ header {
 
 .sliderFlex img {
   padding: 0;
-  width: 95vw;
+  width: 90vw;
   height: 30vw; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .sliderFlex img {
@@ -293,15 +293,15 @@ header {
 
 .sliderFlex ul {
   display: flex;
-  width: 200vw;
+  width: 90vw;
   padding: 0;
-  animation: slider 20s infinite;
+  animation: slider 15s infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in; }
 
 .sliderFlex li {
   list-style: none;
-  width: 95vw; }
+  width: 90vw; }
 
 @keyframes slider {
   0% {

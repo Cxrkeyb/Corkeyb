@@ -55,3 +55,12 @@ header{
 	align-items: center;
 	font-size: 0.8vw;
 	}
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	}
+.borderHeader{
+	border: 0.1vw solid black;
+	margin: 0;
+}
