@@ -1,120 +1,144 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Palabras clave -->
-	<meta name="keywords" content="HTML, CSS, JAVASCRIPT, DESARROLLO WEB, SCSS, diseñador web, crea tú pagina web, programador web">
+	<meta name="keywords"
+		content="HTML, CSS, JAVASCRIPT, DESARROLLO WEB, SCSS, diseñador web, crea tú pagina web, programador web">
 	<!-- Descripción página web -->
-	<meta name="description" content="Elige el modelo que te gusta y te ayudaremos a desarrollar tú página web en base a la información que nos proporciones. Crea sitios llamativos y interesantes para tú público.">
+	<meta name="description"
+		content="Elige el modelo que te gusta y te ayudaremos a desarrollar tú página web en base a la información que nos proporciones. Crea sitios llamativos y interesantes para tú público.">
 	<!-- linkear css -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- linkear aos -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- linkear iconos fontawesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<!-- linkear google fonts  -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 	<title>Corkeyb - Diseña tú página web</title>
 </head>
+
 <body id="bodyGeneral">
-<div id="gridHome">
-	<!-- INICIO HEADER -->
-	<header class="borderHeader">
-		<!-- Inicio NAV-->	
-		<!-- INICIO LOGO -->		
-		<img src="assets/img/logo.png" alt="Logo" class="header__LogoNav">
-		<!-- FIN LOGO -->					
-		<a href="index.html" class="header__NoSelectedNav"><h3 class="header__SelectedNav">Home</h3></a>
-		<a href="pages/multimedia.html" class="header__NoSelectedNav"><h3>Multimedia</h3></a>
-		<a href="pages/referencias.html" class="header__NoSelectedNav"><h3>Referencias</h3></a>
-		<a href="pages/soporte.html" class="header__NoSelectedNav"><h3>Soporte</h3></a>
-		<a href="pages/login.html" class="header__NoSelectedNav"><h3>Log in</h3></a>
+	<div id="gridHome">
+		<!-- INICIO HEADER -->
+		<header class="borderHeader">
+			<!-- Inicio NAV-->
+			<!-- INICIO LOGO -->
+			<img src="assets/img/logo.png" alt="Logo" class="header__LogoNav">
+			<!-- FIN LOGO -->
+			<a href="index.html" class="header__NoSelectedNav">
+				<h3 class="header__SelectedNav">Home</h3>
+			</a>
+			<a href="pages/multimedia.html" class="header__NoSelectedNav">
+				<h3>Multimedia</h3>
+			</a>
+			<a href="pages/referencias.html" class="header__NoSelectedNav">
+				<h3>Referencias</h3>
+			</a>
+			<a href="pages/soporte.html" class="header__NoSelectedNav">
+				<h3>Soporte</h3>
+			</a>
+			<a href="pages/login.html" class="header__NoSelectedNav">
+				<h3>Log in</h3>
+			</a>
+			</section>
+			<!-- Fin NAV-->
+		</header>
+		<!-- FIN HEADER -->
+		<!-- INICIO SECCIÓN IZQUIERDA-->
+		<section id="questionSection" class="border">
+			<h1>¿Buscas personas que desarrollen tu página web?</h1>
+			<p>Aquí podras ir aprendiendo y observando como trabajamos nosotros y los beneficios que te damos.</p>
+			<!-- INICIO PRIMERA SECCIÓN-->
+			<section class="leftSection__InsideIndex">
+				<h2>Nuestros servicios</h2>
+				<p>Realizamos todo tipo de páginas webs especializandonos en los siguientes puntos:</p>
+				<!-- INICIO LISTA SERVICIOS -->
+				<div class="cardFlex">
+					<div class="cardContentFlex">
+						<a href="#disenoWeb" class="hyperlink">
+							<i class="fas fa-file cardIndex"></i>
+							<p>Diseño web</p>
+						</a>
+					</div>
+					<div class="cardContentFlex">
+						<i class="fab fa-php cardIndex"></i>
+						<p>Programación Back-end</p>
+					</div>
+					<div class="cardContentFlex">
+						<i class="fas fa-user-secret cardIndex"></i>
+						<p>Mejora de privacidad</p>
+					</div>
+					<div class="cardContentFlex">
+						<i class="fas fa-mouse-pointer cardIndex"></i>
+						<p>Mejorar la interacción con el usuario</p>
+					</div>
+				</div>
+				<!-- FIN LISTA SERVICIOS -->
+				<p>Contactanos para mayor información</p>
+			</section>
+			<!-- FIN PRIMERA SECCIÓN-->
+			<!-- INICIO SEGUNDA SECCIÓN-->
+			<section class="leftSection__InsideIndex">
+				<div class="flexRightSection">
+					<div class="flexContent">
+						<h2>Desarrollo de nuestro conocimiento</h2>
+						<div class="parrafoCenter">
+							<p>Iniciamos viendo videos acerca de desarrollo web de diferentes canales de youtube, fueron
+								demasiados tutoriales de diferentes personas que tomamos y en este momento estamos
+								haciendo un curso para certificarnos con coderhouse profesionalmente.</p>
+						</div>
+					</div>
+					<div class="youtubeIndexFlex">
+						<iframe class="leftSection___YoutubeIndex" src="https://www.youtube.com/embed/OWKXEJN67FE"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+			<!-- FIN SEGUNDA SECCIÓN-->
+			<!-- INICIO TERCERA 2SECCIÓN-->
+			<section class="leftSection__InsideIndex" data-aos="fade-right" data-aos-offset="200"
+				data-aos-duration="200">
+				<h2 class="leftSection__BeneficiosTitulo">Beneficios al crear tú página web</h2>
+				<p>Nuestros beneficios son los siguientes</p>
+				<!-- INICIO LISTA BENEFICIOS -->
+				<div class="cardFlex">
+					<div class="cardContentFlex">
+						<i class="fas fa-user-tag cardIndex"></i>
+						<p>Tener descuento de host</p>
+					</div>
+					<div class="cardContentFlex">
+						<i class="fas fa-pen-nib cardIndex"></i>
+						<p>Un diseño optimo</p>
+					</div>
+					<div class="cardContentFlex">
+						<i class="fab fa-dev cardIndex"></i>
+						<p>Optimizacion en el back-end</p>
+					</div>
+					<div class="cardContentFlex">
+						<i class="fas fa-envelope-open-text cardIndex"></i>
+						<p>Tener descuento de host</p>
+					</div>
+				</div>
+				<!-- FIN LISTA BENEFICIOS -->
+			</section>
+			<!-- FIN TERCERA SECCIÓN-->
 		</section>
-		<!-- Fin NAV-->
-	</header>
-	<!-- FIN HEADER -->
-	<!-- INICIO SECCIÓN IZQUIERDA-->
-	<section id= "questionSection" class="border">
-		<h1>¿Buscas personas que desarrollen tu página web?</h1>
-		<p>Aquí podras ir aprendiendo y observando como trabajamos nosotros y los beneficios que te damos.</p>
-		<!-- INICIO PRIMERA SECCIÓN-->
-		<section class="leftSection__InsideIndex">
-			<h2>Nuestros servicios</h2>
-			<p>Realizamos todo tipo de páginas webs especializandonos en los siguientes puntos:</p>
-			<!-- INICIO LISTA SERVICIOS -->
-			<div class="cardFlex">
-				<div class="cardContentFlex">
-					<a href="#javascriptSection" class="hyperlink">
-						<i class="fas fa-file cardIndex"></i>
-						<p>Diseño web</p>
-					</a>	
-				</div>
-				<div class="cardContentFlex">
-					<i class="fab fa-php cardIndex"></i>
-					<p>Programación Back-end</p>
-				</div>
-				<div class="cardContentFlex">
-					<i class="fas fa-user-secret cardIndex"></i>
-					<p>Mejora de privacidad</p>
-				</div>
-				<div class="cardContentFlex">
-					<i class="fas fa-mouse-pointer cardIndex"></i>
-					<p>Mejorar la interacción con el usuario</p>
-				</div>
-			</div>
-			<!-- FIN LISTA SERVICIOS -->
-			<p>Contactanos para mayor información</p>
-		</section>
-		<!-- FIN PRIMERA SECCIÓN-->
-		<!-- INICIO SEGUNDA SECCIÓN-->
-		<section class="leftSection__InsideIndex">
-		<div class="flexRightSection">
-			<div class="flexContent">
-				<h2>Desarrollo de nuestro conocimiento</h2>
-				<div class="parrafoCenter">
-					<p>Iniciamos viendo videos acerca de desarrollo web de diferentes canales de youtube, fueron demasiados tutoriales de diferentes personas que tomamos y en este momento estamos haciendo un curso para certificarnos con coderhouse profesionalmente.</p>
-				</div>
-			</div>
-			<div class="youtubeIndexFlex">
-				<iframe class="leftSection___YoutubeIndex" src="https://www.youtube.com/embed/OWKXEJN67FE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</div>
-		</section>
-		<!-- FIN SEGUNDA SECCIÓN-->
-		<!-- INICIO TERCERA 2SECCIÓN-->
-		<section class="leftSection__InsideIndex" data-aos="fade-right" data-aos-offset="200" data-aos-duration="200">
-			<h2 class="leftSection__BeneficiosTitulo">Beneficios al crear tú página web</h2>
-			<p>Nuestros beneficios son los siguientes</p>
-			<!-- INICIO LISTA BENEFICIOS -->
-			<div class="cardFlex">
-				<div class="cardContentFlex">
-					<i class="fas fa-user-tag cardIndex"></i>
-					<p>Tener descuento de host</p>
-				</div>
-				<div class="cardContentFlex">
-					<i class="fas fa-pen-nib cardIndex"></i>
-					<p>Un diseño optimo</p>
-				</div>
-				<div class="cardContentFlex">
-					<i class="fab fa-dev cardIndex"></i>
-					<p>Optimizacion en el back-end</p>
-				</div>
-				<div class="cardContentFlex">
-					<i class="fas fa-envelope-open-text cardIndex"></i>
-					<p>Tener descuento de host</p>
-				</div>
-			</div>
-			<!-- FIN LISTA BENEFICIOS -->
-		</section>
-		<!-- FIN TERCERA SECCIÓN-->
-	</section>
-	<!-- FIN SECCIÓN IZQUIERDA -->
-	<!-- INICIO SECCIÓN DERECHA SUPERIOR-->
-	<section id="antiBootstrap" class="border" data-aos="fade-right" data-aos-offset="400" data-aos-duration="500">
+		<!-- FIN SECCIÓN IZQUIERDA -->
+		<!-- INICIO SECCIÓN DERECHA SUPERIOR-->
+		<section id="antiBootstrap" class="border" data-aos="fade-right" data-aos-offset="400" data-aos-duration="500">
 			<h2>Nada de bootstrap</h2>
-			<p>En realidad no nos gusta trabajar con bootstrap ya que el diseño queda muy similar a la mayoría de páginas que lo trabajan, preferimos darle el estilo que el cliente esté buscando para obtener algo más propio.</p>
+			<p>En realidad no nos gusta trabajar con bootstrap ya que el diseño queda muy similar a la mayoría de
+				páginas que lo trabajan, preferimos darle el estilo que el cliente esté buscando para obtener algo más
+				propio.</p>
 			<!-- INICIO IMAGÉN -->
 			<div class="sliderFlex">
 				<ul>
@@ -123,74 +147,152 @@
 					<li><img src="assets/img/bootstrap_slider300.png" alt=""></li>
 				</ul>
 			</div>
-		<!-- FIN IMAGÉN -->
-	</section>
-	<!-- FIN SECCIÓN DERECHA SUPERIOR-->
-	<!-- INICIO SECCIÓN DERECHA INFERIOR -->
-	<div id="javascriptSection" class="border" data-aos="fade-right" data-aos-offset="350" data-aos-duration="500">
+			<!-- FIN IMAGÉN -->
+		</section>
+		<!-- FIN SECCIÓN DERECHA SUPERIOR-->
+		<!-- INICIO SECCIÓN DERECHA INFERIOR -->
+		<div id="javascriptSection" class="border" data-aos="fade-right" data-aos-offset="350" data-aos-duration="500">
 			<!-- INICIO IMAGÉN -->
 			<div class="rightSection__ImageInside">
 				<img src="assets/img/javascript.png" class="rightSection__ImageSizeIndex" alt="html inicio">
 			</div>
-		<!-- FIN IMAGÉN -->
-		<p>Siempre buscamos ir mejorando y aprendiendo cada vez más para poder dar mejores servicios a nuestros clientes, poco a poco vamos perfeccionando nuestras habilidades y buscamos ampliar nuestro espacio laboral a más personas.</p>
+			<!-- FIN IMAGÉN -->
+			<p>Siempre buscamos ir mejorando y aprendiendo cada vez más para poder dar mejores servicios a nuestros
+				clientes, poco a poco vamos perfeccionando nuestras habilidades y buscamos ampliar nuestro espacio
+				laboral a más personas.</p>
 		</div>
-	<!-- FIN SECCIÓN DERECHA INFERIOR -->
-	<section id="disenoWeb" class="border" data-aos="fade-right" data-aos-offset="250" data-aos-duration="500">
-		<div class="flexLeftSection">
-			<div class="flexContent">
-				<h2>Diseño Web</h2>
-				<div class="parrafoCenter">
-					<p>El diseño web implica trabajo relacionado con el layout y diseño de páginas online, así como la producción de contenido, aunque generalmente se aplica a la creación de sitios web.</p>
+		<!-- FIN SECCIÓN DERECHA INFERIOR -->
+		<section id="disenoWeb" class="border" data-aos="fade-right" data-aos-offset="250" data-aos-duration="500">
+			<div class="flexLeftSection">
+				<div class="flexContent">
+					<h2>Diseño Web</h2>
+					<div class="parrafoCenter">
+						<p>El diseño web implica trabajo relacionado con el layout y diseño de páginas online, así como
+							la producción de contenido, aunque generalmente se aplica a la creación de sitios web.</p>
+					</div>
+				</div>
+				<div class="multimediaContent">
+					<img src="assets/img/disenoWeb.png">
 				</div>
 			</div>
-			<div class="youtubeIndexFlex">
-				<iframe class="leftSection___YoutubeIndex" src="https://www.youtube.com/embed/OWKXEJN67FE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</div>
-	</section>
-	<section id="metodobenSection" class="border" data-aos="fade-right" data-aos-offset="200" data-aos-duration="500">
-		<div class="flexRightSection">
-			<div class="flexContent">
-				<h2>Trabajamos con el método BEN</h2>
-				<div class="parrafoCenter">
-					<p>BEM (Block, Element, Modifier o Bloque, Elemento, Modificador) es una metodología ágil de desarrollo basada en componentes. ... El objetivo final de BEM es dividir la interfaz de usuario en bloques independientes para crear componentes escalables y reutilizables.</p>
+			<div class="leftSection__InsideIndex">
+				<h3>¿Cuáles son los elementos clave del diseño web?</h3>
+				<div class="cardFlex">
+					<div class="cardContentFlexMini">
+						<a href="#" class="ctaR">Responsividad</a>
+					</div>
+					<div class="cardContentFlexMini">
+						<a href="#" class="ctaS">Escaneabilidad</a>
+					</div>
+					<div class="cardContentFlexMini">
+						<a href="#" class="ctaT">Tipografía</a>
+					</div>
+					<div class="cardContentFlexMini">
+						<a href="#" class="ctaLS">Velocidad de carga</a>
+					</div>
 				</div>
 			</div>
-			<div class="youtubeIndexFlex">
-				<iframe class="leftSection___YoutubeIndex" src="https://www.youtube.com/embed/bvnzyXGkNY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+		<div class="modalContainerResponsive">
+			<div class="modalResponsive modalCloseResponsive">
+				<p class="closeResponsive">X</p>
+				<img src="assets/svg/undraw_responsive_6c8s.svg" class="modalSVGSize">
+				<div class="modalTexts">
+					<h2>Responsividad</h2>
+					<p>Como cada vez más las personas acceden a internet solo por teléfono celular, es muy importante
+						que tu sitio sea adecuado para dispositivos móviles, es decir, que sea responsivo.</p>
+				</div>
 			</div>
 		</div>
-	</section>
-	<section id="serverWeb" class="border" data-aos="fade-right" data-aos-offset="200" data-aos-duration="500">
-		<h2>Acerca de tú servidor web</h2>
-		<p>Te daremos un asesoramiento detallado de diferentes servidores para establecer tu página adaptandose a tus necesidades</p>
-		<div class="rightSectionTwo__ImageInside">
-			<img src="assets/img/dominio_web.png" class="rightSection__ImageSizeIndex">
+		<div class="modalContainerScannability">
+			<div class="modalScannability modalCloseScannability">
+				<p class="closeScannability">X</p>
+				<img src="assets/svg/undraw_Mind_map_re_nlb6.svg" class="modalSVGSize">
+				<div class="modalTexts">
+					<h2>Escaneabilidad</h2>
+					<p>¿Conoces esos correos electrónicos que tienen un «bloque de texto» porque todo el mensaje está escrito en un solo párrafo? Leerlos es demasiado agotador, ¿no es así? Bueno, lo mismo ocurre con los visitantes de tu sitio si el no considerar la escaneabilidad textual.</p>
+				</div>
+			</div>
 		</div>
-		<p class="rightSectionTwo__parrafo">Podrías recibir algún tipo de beneficio dependiendo del plan que elijas con los servidores</p>
-	</section>
-	<!-- PIE DE PÁGINA INICIO -->
-	<footer>
-	<section>
-		<h2>Puedes contactarnos por los siguientes enlaces</h2>
-		<a href="pages/contacto.html" class="header__NoSelectedNav"><h3>Contacto</h3></a>
-		<!-- BOTÓN REDES SOCIALES-->
-		<div class="footer__Flex">
-			<a href="https://www.facebook.com/Fckedl/" target="_blank"><i class="fab fa-facebook faLogos"></i></a>
-			<a href="https://plataforma.coderhouse.com/perfil/609569bcc52b35000fb8f7cd" target="_blank"><img src="assets/img/coderhouse_logo.png" class="footer__Flex__CoderLogoSize" alt="coderhouse-logo">
-			<a href="https://www.instagram.com/cxrkeyb/" target="_blank"><h3><i class="fab fa-instagram faLogos"></i></h3></a>
+		<div class="modalContainerTypography">
+			<div class="modalTypography modalCloseTypography">
+				<p class="closeTypography">X</p>
+				<img src="assets/svg/undraw_font_kwpk.svg" class="modalSVGSize">
+				<div class="modalTexts">
+					<h2>Tipografía</h2>
+					<p>Si desde este punto comenzamos a escribir esta publicación con un tipo de letra completamente diferente, tu experiencia de lectura no sería muy agradable, ¿verdad? Después de todo, es una tipografía que no encajaría con el resto del contenido. Lo mismo debería aplicarse a tu sitio.</p>
+				</div>
+			</div>
 		</div>
-		<!-- FIN BOTÓN REDES SOCIALES-->
-	</section>
-</footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
+		<div class="modalContainerLoadingSpeed">
+			<div class="modalLoadingSpeed modalCloseLoadingSpeed">
+				<p class="closeLoadingSpeed">X</p>
+				<img src="assets/svg/undraw_speed_test_wxl0.svg" class="modalSVGSize">
+				<div class="modalTexts">
+					<h2>Velocidad de carga</h2>
+					<p>En un mundo donde todos parecen estar siempre apurados, tener un sitio web de carga rápida es esencial. Según Google, los sitios que tardan más de 2 segundos en cargarse dañan tanto la experiencia del usuario como la indexación del sitio.</p>
+				</div>
+			</div>
+		</div>
+		<section id="metodobenSection" class="border" data-aos="fade-right" data-aos-offset="200"
+			data-aos-duration="500">
+			<div class="flexRightSection">
+				<div class="flexContent">
+					<h2>Trabajamos con el método BEN</h2>
+					<div class="parrafoCenter">
+						<p>BEM (Block, Element, Modifier o Bloque, Elemento, Modificador) es una metodología ágil de
+							desarrollo basada en componentes. ... El objetivo final de BEM es dividir la interfaz de
+							usuario en bloques independientes para crear componentes escalables y reutilizables.</p>
+					</div>
+				</div>
+				<div class="youtubeIndexFlex">
+					<iframe class="leftSection___YoutubeIndex" src="https://www.youtube.com/embed/bvnzyXGkNY4"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<section id="serverWeb" class="border" data-aos="fade-right" data-aos-offset="200" data-aos-duration="500">
+			<h2>Acerca de tú servidor web</h2>
+			<p>Te daremos un asesoramiento detallado de diferentes servidores para establecer tu página adaptandose a
+				tus necesidades</p>
+			<div class="rightSectionTwo__ImageInside">
+				<img src="assets/img/dominio_web.png" class="rightSection__ImageSizeIndex">
+			</div>
+			<p class="rightSectionTwo__parrafo">Podrías recibir algún tipo de beneficio dependiendo del plan que elijas
+				con los servidores</p>
+		</section>
+		<!-- PIE DE PÁGINA INICIO -->
+		<footer>
+			<section>
+				<h2>Puedes contactarnos por los siguientes enlaces</h2>
+				<a href="pages/contacto.html" class="header__NoSelectedNav">
+					<h3>Contacto</h3>
+				</a>
+				<!-- BOTÓN REDES SOCIALES-->
+				<div class="footer__Flex">
+					<a href="https://www.facebook.com/Fckedl/" target="_blank"><i
+							class="fab fa-facebook faLogos"></i></a>
+					<a href="https://plataforma.coderhouse.com/perfil/609569bcc52b35000fb8f7cd" target="_blank"><img
+							src="assets/img/coderhouse_logo.png" class="footer__Flex__CoderLogoSize"
+							alt="coderhouse-logo">
+					<a href="https://www.instagram.com/cxrkeyb/" target="_blank">
+							<h3><i class="fab fa-instagram faLogos"></i></h3>
+						</a>
+				</div>
+				<!-- FIN BOTÓN REDES SOCIALES-->
+			</section>
+		</footer>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
 				easing: 'ease-out-back',
 				duration: 1500
 			});
-    </script>
-</div>
+		</script>
+	</div>
+	<script src="main.js"></script>
 </body>
+
 </html>

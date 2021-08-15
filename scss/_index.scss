@@ -1,131 +1,180 @@
 $centrado: center;
+
 /*------ INICIO INDEX ------*/
 /* Color de background, margin y borde circular secciones index inside */
-.leftSection__InsideIndex{
+.leftSection__InsideIndex {
 	margin: 0.3vw;
 	border-radius: 0.8vw;
 	padding: 3vw;
 }
+
 /* Color titulo, tamaño y grosor beneficios index */
-.leftSection__BeneficiosTitulo{
+.leftSection__BeneficiosTitulo {
 	font-weight: 800;
 }
+
 /* Color, tamaño y grosor de contenido de lista beneficios y servicios index */
-.leftSection__Lista{
+.leftSection__Lista {
 	font-weight: 900;
 	list-style-type: none;
 }
+
 /* Tamaños alto, ancho, display flex, transition y justify centrado */
-.leftSection___YoutubeIndex{
+.leftSection___YoutubeIndex {
 	width: 50vw;
 	height: 25vw;
-    @media only screen and (min-width:0px) and (max-width:767px){
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		width: 70vw;
-        height: 50vw;
+		height: 50vw;
 	}
-	transition: height 2s, width 1s;
+
+	transition: height 2s,
+	width 1s;
 }
-.rightSection__ImageSizeIndex{
-    height: 20vw; width: 30vw;
-    @media only screen and (min-width:0px) and (max-width:767px){
-		height: 35vw; width: 55vw;
+
+.rightSection__ImageSizeIndex {
+	height: 20vw;
+	width: 30vw;
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
+		height: 35vw;
+		width: 55vw;
 	}
 }
+
 /* Borde circular, backgroun-color*/
 .border {
-   border: 0.12vw solid black;
-   border-radius: 0.5vw;
-   padding: 3vw;
+	border: 0.12vw solid black;
+	border-radius: 0.5vw;
+	padding: 3vw;
 }
-@each $position in right, center {
-	.#{$position}Section__ImageInside { 
+
+@each $position in right,
+center {
+	.#{$position}Section__ImageInside {
 		text-align: $centrado;
-	 }
+	}
 }
-.rightSectionTwo__ImageInside{
+
+.rightSectionTwo__ImageInside {
 	text-align: $centrado;
 }
-.centerSection__ImageSizeIndex{
-	height: 20vw; width: 30vw;
+
+.centerSection__ImageSizeIndex {
+	height: 20vw;
+	width: 30vw;
 }
-.youtubeIndexFlex{
+
+.youtubeIndexFlex {
 	text-align: end;
-	@media only screen and (min-width:0px) and (max-width:767px){
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		text-align: center;
 	}
 }
-.flexRightSection{
+
+.flexRightSection {
 	display: flex;
-	@media only screen and (min-width:0px) and (max-width:767px){
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		display: block;
 	}
 }
-.flexLeftSection{
+
+.flexLeftSection {
 	display: flex;
 	flex-direction: row-reverse;
-	@media only screen and (min-width:0px) and (max-width:767px){
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		display: block;
 	}
 }
+
 // Flex section derecha video
-.flexContent{
+.flexContent {
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
 	text-align: center;
 	padding: 1vw;
 }
-.sliderFlex{
+
+.sliderFlex {
 	width: 90vw;
 	margin: auto;
 	text-align: center;
 	overflow-x: hidden;
 	border-radius: 1vw;
 	border: 0.12vw solid black;
-	@media only screen and (min-width:0px) and (max-width:767px){
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		width: 90vw;
 	}
 }
-.sliderFlex img{
+
+.sliderFlex img {
 	padding: 0;
 	width: 90vw;
 	height: 30vw;
-	@media only screen and (min-width:0px) and (max-width:767px){
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		width: 90vw;
 	}
 }
-.sliderFlex ul{
+
+.sliderFlex ul {
 	display: flex;
 	width: 90vw;
 	padding: 0;
 
-	 animation: slider 15s infinite;
-	 animation-direction: alternate;
-	 animation-timing-function: ease-in;
+	animation: slider 15s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
 }
-.sliderFlex li{
+
+.sliderFlex li {
 	list-style: none;
 	width: 90vw;
 }
+
 @keyframes slider {
-	0% {margin-left: 0; }
-	30%{margin-left: 0; }
+	0% {
+		margin-left: 0;
+	}
 
-	35%{margin-left: -100%;}
-	65%{margin-left: -100%;}
+	30% {
+		margin-left: 0;
+	}
 
-	70%{margin-left: -200%;}
-	100%{margin-left: -200%;}
+	35% {
+		margin-left: -100%;
+	}
+
+	65% {
+		margin-left: -100%;
+	}
+
+	70% {
+		margin-left: -200%;
+	}
+
+	100% {
+		margin-left: -200%;
+	}
 }
-.cardIndex{
+
+.cardIndex {
 	font-size: 7vw;
 }
-.cardFlex{
+
+.cardFlex {
 	display: flex;
 	justify-content: space-around;
 	margin: 1vw;
 }
-.cardContentFlex{
+
+.cardContentFlex {
 	text-align: center;
 	border-radius: 1vw;
 	height: 8vw;
@@ -133,11 +182,94 @@ $centrado: center;
 	padding: 3vw;
 	box-shadow: 0vw 0vw 0.5vw 0vw black;
 }
-.hyperlink{
+
+.cardContentFlexMini {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 1vw;
+	height: 5vw;
+	width: 10vw;
+	box-shadow: 0vw 0vw 0.5vw 0vw black;
+	background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+	border: 0.05vw solid black;
+}
+
+@each $card in Flex, FlexMini {
+	.cardContent#{$card}:hover {
+		box-shadow: 0vw 0vw 1vw 0vw black;
+	}
+}
+
+.hyperlink {
 	text-decoration: none;
 	height: 8vw;
 	width: 12vw;
 }
-.cardContentFlex:hover{
-	box-shadow: 0vw 0vw 1vw 0vw black;
+
+.parrafoCenter {
+	text-align: center;
+}
+
+.subTitleContent {
+	text-align: center;
+}
+@each $modalC in Responsive, Scannability, Typography, LoadingSpeed {
+	.modalContainer#{$modalC} {
+		position: fixed;
+		z-index: 100;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+@each $modal in Responsive, Scannability, Typography, LoadingSpeed {
+	.modal#{$modal} {
+		width: 40vw;
+		height: 30vw;
+		background: white;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		position: relative;
+		transition: transform 0.7s;
+		transform: translateY(0%);
+		border-radius: 0.2vw;
+	}
+}
+@each $close in Responsive, Scannability, Typography, LoadingSpeed {
+	.close#{$close} {
+		position: absolute;
+		top: 0.5vw;
+		right: 0.5vw;
+		display: inline-block;
+		width: 2vw;
+		height: 2vw;
+		background: #c44a4a;
+		color: #fff;
+		line-height: 2vw;
+		cursor: pointer;
+		border-radius: 50%;
+	}
+}
+@each $mClose in Responsive, Scannability, Typography, LoadingSpeed {
+	.modalClose#{$mClose} {
+		transform: translateY(-200%);
+	}
+}
+
+.modal>img {
+	height: 50%;
+}
+.modalSVGSize{
+	height: 10vw;
 }
