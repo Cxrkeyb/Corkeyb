@@ -7,7 +7,7 @@
 	"questionSection"
 	"antiBootstrap"
 	"javascriptSection"
-	"scssSection"
+	"disenoWeb"
 	"metodobenSection"
 	"serverWeb"
 	"footer";
@@ -18,23 +18,20 @@
    	margin: 0vw 0.2vw 0.2vw 0.2vw;
 }
 /* Grid areas */
-section#leftSection{
-	grid-area: leftSection;
+section#questionSection{
+	grid-area: questionSection;
 }
-section#rightTopSection{
-	grid-area: rightTopSection;
+section#antiBootstrap{
+	grid-area: antiBootstrap;
 }
-section#rightBottomSection{
-	grid-area: rightBottomSection;
+section#javascriptSection{
+	grid-area: javascriptSection;
 }
-section#centerSection{
-	grid-area: centerSection;
+section#metodobenSection{
+	grid-area: metodobenSection;
 }
-section#leftSection_Two{
-	grid-area: leftSection_Two;
-}
-section#rightSection_Two{
-	grid-area: rightSection_Two;
+section#serverWeb{
+	grid-area: serverWeb;
 }
 footer{
 	grid-area: footer;
@@ -62,9 +59,6 @@ footer{
 	}
 	section#javascriptSection{
 		grid-area: javascriptSection;
-	}
-	section#scssSection{
-		grid-area: scssSection;
 	}
 	section#metodobenSection{
 		grid-area: metodobenSection;
@@ -99,16 +93,13 @@ footer{
 	}
 	/* Grid areas */
 	section#questionSection{
-	grid-area: questionSection;
+		grid-area: questionSection;
 	}
 	section#antiBootstrap{
 		grid-area: antiBootstrap;
 	}
 	section#javascriptSection{
 		grid-area: javascriptSection;
-	}
-	section#scssSection{
-		grid-area: scssSection;
 	}
 	section#metodobenSection{
 		grid-area: metodobenSection;

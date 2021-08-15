@@ -64,7 +64,7 @@ footer{
     background-color: $insideColor;
 }
 .leftSection__BeneficiosTitulo{
-	color: $gray;
+	color: $tituloColor;
 }
 .leftSection__InsideIndex{
 	background-color: $inside2Color;
@@ -105,4 +105,10 @@ header{
 }
 .leftSection__Lista{
 	color: $parrafoColor;
+}
+.cardContentFlex{
+	background-color: $insideColor;
+}
+.hyperlink{
+	color: $black;
 }
