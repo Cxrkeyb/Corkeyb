@@ -163,7 +163,7 @@ center {
 		margin-left: -200%;
 	}
 }
-
+// Cards 
 .cardIndex {
 	font-size: 7vw;
 }
@@ -215,6 +215,7 @@ center {
 .subTitleContent {
 	text-align: center;
 }
+// Modals diseño web
 @each $modalC in Responsive, Scannability, Typography, LoadingSpeed {
 	.modalContainer#{$modalC} {
 		position: fixed;
@@ -266,7 +267,6 @@ center {
 		transform: translateY(-200%);
 	}
 }
-
 .modal>img {
 	height: 50%;
 }
