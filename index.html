@@ -30,7 +30,7 @@
 		<header class="borderHeader">
 			<!-- Inicio NAV-->
 			<!-- INICIO LOGO -->
-			<img src="assets/img/logo.png" alt="Logo" class="header__LogoNav">
+			<a href="index.html">><img src="assets/img/logo.png" alt="Logo" class="header__LogoNav"></a>
 			<!-- FIN LOGO -->
 			<a href="index.html" class="header__NoSelectedNav">
 				<h3 class="header__SelectedNav">Home</h3>
@@ -56,7 +56,7 @@
 			<h1>¿Buscas personas que desarrollen tu página web?</h1>
 			<p>Aquí podras ir aprendiendo y observando como trabajamos nosotros y los beneficios que te damos.</p>
 			<!-- INICIO PRIMERA SECCIÓN-->
-			<section class="leftSection__InsideIndex">
+			<section class="section__InsideIndex">
 				<h2>Nuestros servicios</h2>
 				<p>Realizamos todo tipo de páginas webs especializandonos en los siguientes puntos:</p>
 				<!-- INICIO LISTA SERVICIOS -->
@@ -68,16 +68,22 @@
 						</a>
 					</div>
 					<div class="cardContentFlex">
-						<i class="fab fa-php cardIndex"></i>
-						<p>Programación Back-end</p>
+						<a href="#desarrolloBackend" class="hyperlink">
+							<i class="fab fa-php cardIndex"></i>
+							<p>Programación Backend</p>
+						</a>
 					</div>
 					<div class="cardContentFlex">
-						<i class="fas fa-user-secret cardIndex"></i>
-						<p>Mejora de privacidad</p>
+						<a href="#securityWeb" class="hyperlink">
+							<i class="fas fa-user-secret cardIndex"></i>
+							<p>Mejora de privacidad</p>
+						</a>
 					</div>
 					<div class="cardContentFlex">
-						<i class="fas fa-mouse-pointer cardIndex"></i>
-						<p>Mejorar la interacción con el usuario</p>
+						<a href="#clientInteraction" class="hyperlink">
+							<i class="fas fa-mouse-pointer cardIndex"></i>
+							<p>Mejorar la interacción con el usuario</p>
+						</a>
 					</div>
 				</div>
 				<!-- FIN LISTA SERVICIOS -->
@@ -85,7 +91,7 @@
 			</section>
 			<!-- FIN PRIMERA SECCIÓN-->
 			<!-- INICIO SEGUNDA SECCIÓN-->
-			<section class="leftSection__InsideIndex">
+			<section class="section__InsideIndex">
 				<div class="flexRightSection">
 					<div class="flexContent">
 						<h2>Desarrollo de nuestro conocimiento</h2>
@@ -105,7 +111,7 @@
 			</section>
 			<!-- FIN SEGUNDA SECCIÓN-->
 			<!-- INICIO TERCERA 2SECCIÓN-->
-			<section class="leftSection__InsideIndex" data-aos="fade-right" data-aos-offset="200"
+			<section class="section__InsideIndex" data-aos="fade-right" data-aos-offset="200"
 				data-aos-duration="200">
 				<h2 class="leftSection__BeneficiosTitulo">Beneficios al crear tú página web</h2>
 				<p>Nuestros beneficios son los siguientes</p>
@@ -121,7 +127,7 @@
 					</div>
 					<div class="cardContentFlex">
 						<i class="fab fa-dev cardIndex"></i>
-						<p>Optimizacion en el back-end</p>
+						<p>Optimizacion en el backend</p>
 					</div>
 					<div class="cardContentFlex">
 						<i class="fas fa-envelope-open-text cardIndex"></i>
@@ -150,18 +156,6 @@
 			<!-- FIN IMAGÉN -->
 		</section>
 		<!-- FIN SECCIÓN DERECHA SUPERIOR-->
-		<!-- INICIO SECCIÓN DERECHA INFERIOR -->
-		<div id="javascriptSection" class="border" data-aos="fade-right" data-aos-offset="350" data-aos-duration="500">
-			<!-- INICIO IMAGÉN -->
-			<div class="rightSection__ImageInside">
-				<img src="assets/img/javascript.png" class="rightSection__ImageSizeIndex" alt="html inicio">
-			</div>
-			<!-- FIN IMAGÉN -->
-			<p>Siempre buscamos ir mejorando y aprendiendo cada vez más para poder dar mejores servicios a nuestros
-				clientes, poco a poco vamos perfeccionando nuestras habilidades y buscamos ampliar nuestro espacio
-				laboral a más personas.</p>
-		</div>
-		<!-- FIN SECCIÓN DERECHA INFERIOR -->
 		<section id="disenoWeb" class="border" data-aos="fade-right" data-aos-offset="250" data-aos-duration="500">
 			<div class="flexLeftSection">
 				<div class="flexContent">
@@ -175,7 +169,7 @@
 					<img src="assets/img/disenoWeb.png">
 				</div>
 			</div>
-			<div class="leftSection__InsideIndex">
+			<div class="section__InsideIndex">
 				<h3>¿Cuáles son los elementos clave del diseño web?</h3>
 				<div class="cardFlex">
 					<div class="cardContentFlexMini">
@@ -234,13 +228,71 @@
 				</div>
 			</div>
 		</div>
+		<section id="desarrolloBackend" class="border" data-aos="fade-right" data-aos-offset="100" data-aos-duration="500">
+			<div class="flexRightSection">
+				<div class="flexContent">
+					<h2>Programación Backend</h2>
+					<div class="parrafoCenter">
+						<p>El backend es la parte del desarrollo web que se encarga de que toda la lógica de una página web  funcione. Se trata del conjunto de acciones que pasan en una web pero que no vemos como, por ejemplo, la comunicación con el servidor.</p>
+					</div>
+				</div>
+				<div class="multimediaContent">
+					<img src="assets/img/desarrolladorbackend.png">
+				</div>
+			</div>
+		</section>
+		<section id="securityWeb" class="border" data-aos="fade-right" data-aos-offset="200"
+		data-aos-duration="500">
+		<div class="flexRightSection">
+			<div class="flexContent">
+				<h2>Mejora de privacidad</h2>
+				<div class="parrafoCenter">
+					<p>La seguridad es uno de los factores más importantes para cualquier usuario a la hora de desarrollar un portal web, ya que no es plato de buen gusto darse cuenta de que nuestro sitio ha sido hackeado por un atacante. Esta situación suele producir muy mala imagen, ya que se pone en peligro la información del sitio y también a los visitantes que acceden a ella.</p>
+				</div>
+			</div>
+			<div class="multimediaContent">
+				<img src="assets/svg/undraw_security_o890.svg" class="multimediaSVGContent">
+			</div>
+		</div>
+		</section>
+		<section id="clientInteraction" class="border" data-aos="fade-right" data-aos-offset="100"
+		data-aos-duration="500">
+		<div class="flexRightSection">
+			<div class="flexContent">
+				<h2>Mejorar la interacción con el usuario</h2>
+				<div class="parrafoCenter">
+					<p>Algunos de las mejoras de las interacciones de usuarios son los siguientes</p>
+				</div>
+			</div>
+			<div class="multimediaContent">
+				<img src="assets/svg/undraw_interaction_design_odgc.svg" class="multimediaSVGContent">
+			</div>
+		</div>
+		<div class="flexRightSection">
+			<div class="cardSection__InsideIndex">
+				<h2>Estructura clara</h2>
+				<p>El menú y toda la estructura de nuestra página web deben estar muy claros y ser muy visuales para que el usuario cuando busque lo que necesite, no se pierda por la web.
+					Por ello, los usuarios deben encontrar todo de forma rápida y con simples vistazos.</p>
+			</div>
+			<div class="cardSection__InsideIndex"><h2>Prácticas de UX para imágenes</h2>
+				<p>¿Cuántas veces habremos visto una página web con una imagen que no es nada acorde a lo que estamos leyendo? Recuerda siempre utilizar fotos o imágenes que sean acordes a lo que explicas.</p>
+			</div>
+			<div class="cardSection__InsideIndex">
+				<h2>Menos es más</h2>
+				<p>No pretendas hacer un diseño muy ostentoso y llamativo sin pensar en el usuario que llega ahí. Sí, la web es chulísima, pero si nuestro lector o cliente acaba perdiéndose, no convertirá, y esto no es lo que queremos, ¿verdad? Por ello, la simplicidad a veces es la clara ganadora y es que seguro que has escuchado que menos es más y con razón</p>
+			</div>
+			<div class="cardSection__InsideIndex"><h2>Lectura fácil y recalca los elementos clave</h2>
+				<p>En la gran mayoría de casos, la gente no lee al pie de la letra lo que escribimos, sino que ojean por encima del texto fijándose en los elementos principales.</p>
+			</div>
+		</div>
+		</section>
 		<section id="metodobenSection" class="border" data-aos="fade-right" data-aos-offset="200"
 			data-aos-duration="500">
 			<div class="flexRightSection">
 				<div class="flexContent">
 					<h2>Trabajamos con el método BEN</h2>
 					<div class="parrafoCenter">
-						<p>BEM (Block, Element, Modifier o Bloque, Elemento, Modificador) es una metodología ágil de
+						<p>BEM (Block, Element, Modifier) es una metodología ágil de
 							desarrollo basada en componentes. ... El objetivo final de BEM es dividir la interfaz de
 							usuario en bloques independientes para crear componentes escalables y reutilizables.</p>
 					</div>
@@ -254,14 +306,17 @@
 			</div>
 		</section>
 		<section id="serverWeb" class="border" data-aos="fade-right" data-aos-offset="200" data-aos-duration="500">
-			<h2>Acerca de tú servidor web</h2>
-			<p>Te daremos un asesoramiento detallado de diferentes servidores para establecer tu página adaptandose a
-				tus necesidades</p>
-			<div class="rightSectionTwo__ImageInside">
-				<img src="assets/img/dominio_web.png" class="rightSection__ImageSizeIndex">
+			<div class="flexRightSection">
+				<div class="flexContent">
+					<h2>Acerca de tú servidor web</h2>
+					<div class="parrafoCenter">
+						<p>Te daremos un asesoramiento detallado de diferentes servidores para establecer tu página adaptandose a tus necesidades</p>
+					</div>
+				</div>
+				<div class="multimediaContent">
+					<img src="assets/svg/undraw_Web_search_re_efla.svg" class="multimediaSVGContent">
+				</div>
 			</div>
-			<p class="rightSectionTwo__parrafo">Podrías recibir algún tipo de beneficio dependiendo del plan que elijas
-				con los servidores</p>
 		</section>
 		<!-- PIE DE PÁGINA INICIO -->
 		<footer>

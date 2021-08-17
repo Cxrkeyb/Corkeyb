@@ -2,12 +2,15 @@ $centrado: center;
 
 /*------ INICIO INDEX ------*/
 /* Color de background, margin y borde circular secciones index inside */
-.leftSection__InsideIndex {
+.section__InsideIndex {
 	margin: 0.3vw;
 	border-radius: 0.8vw;
 	padding: 3vw;
 }
-
+.cardSection__InsideIndex{
+	@extend .section__InsideIndex;
+	width: 50%;
+}
 /* Color titulo, tamaño y grosor beneficios index */
 .leftSection__BeneficiosTitulo {
 	font-weight: 800;
@@ -272,4 +275,12 @@ center {
 }
 .modalSVGSize{
 	height: 10vw;
+}
+.multimediaContent{
+	border-radius: 1vw;
+	border: 0.3vw solid $tituloColor;
+}
+.multimediaSVGContent{
+	border-radius: 1vw;
+	height: 18vw;
 }

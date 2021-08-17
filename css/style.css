@@ -79,7 +79,7 @@ footer {
 .leftSection__BeneficiosTitulo {
   color: #560075; }
 
-.leftSection__InsideIndex {
+.section__InsideIndex, .cardSection__InsideIndex {
   background-color: #e6e6e6; }
 
 .header__NoSelectedNav {
@@ -204,10 +204,13 @@ header {
 /*------ FIN FOOTER ------*/
 /*------ INICIO INDEX ------*/
 /* Color de background, margin y borde circular secciones index inside */
-.leftSection__InsideIndex {
+.section__InsideIndex, .cardSection__InsideIndex {
   margin: 0.3vw;
   border-radius: 0.8vw;
   padding: 3vw; }
+
+.cardSection__InsideIndex {
+  width: 50%; }
 
 /* Color titulo, tamaño y grosor beneficios index */
 .leftSection__BeneficiosTitulo {
@@ -549,6 +552,14 @@ header {
 .modalSVGSize {
   height: 10vw; }
 
+.multimediaContent {
+  border-radius: 1vw;
+  border: 0.3vw solid #560075; }
+
+.multimediaSVGContent {
+  border-radius: 1vw;
+  height: 18vw; }
+
 /*------ INICIO SECCIÓN MULTIMEDIA ------*/
 /* Background-color, borde y margen seccion base*/
 .seccionMultimediaBase {
@@ -866,7 +877,7 @@ alto, ancho y margen multimedia inside contenido */
 @media only screen and (min-width: 1240px) {
   #gridHome {
     display: grid;
-    grid-template-areas: "header" "questionSection" "antiBootstrap" "javascriptSection" "disenoWeb" "metodobenSection" "serverWeb" "footer";
+    grid-template-areas: "header" "questionSection" "antiBootstrap" "disenoWeb" "desarrolloBackend" "securityWeb" "clientInteraction" "metodobenSection" "serverWeb" "footer";
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-column-gap: 0.2vw;
@@ -877,12 +888,16 @@ alto, ancho y margen multimedia inside contenido */
     grid-area: questionSection; }
   section#antiBootstrap {
     grid-area: antiBootstrap; }
-  section#javascriptSection {
-    grid-area: javascriptSection; }
+  section#securityWeb {
+    grid-area: securityWeb; }
+  section#disenoWeb {
+    grid-area: disenoWeb; }
   section#metodobenSection {
     grid-area: metodobenSection; }
   section#serverWeb {
     grid-area: serverWeb; }
+  section#clientInteraction {
+    grid-area: clientInteraction; }
   footer {
     grid-area: footer; } }
 

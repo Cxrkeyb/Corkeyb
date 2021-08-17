@@ -6,8 +6,10 @@
 	"header"
 	"questionSection"
 	"antiBootstrap"
-	"javascriptSection"
 	"disenoWeb"
+	"desarrolloBackend"
+	"securityWeb"
+	"clientInteraction"
 	"metodobenSection"
 	"serverWeb"
 	"footer";
@@ -24,14 +26,20 @@ section#questionSection{
 section#antiBootstrap{
 	grid-area: antiBootstrap;
 }
-section#javascriptSection{
-	grid-area: javascriptSection;
+section#securityWeb{
+	grid-area: securityWeb;
+}
+section#disenoWeb{
+	grid-area: disenoWeb;
 }
 section#metodobenSection{
 	grid-area: metodobenSection;
 }
 section#serverWeb{
 	grid-area: serverWeb;
+}
+section#clientInteraction{
+	grid-area: clientInteraction;
 }
 footer{
 	grid-area: footer;
