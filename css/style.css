@@ -18,8 +18,8 @@ body#bodyGeneral {
 body#bodyGeneral {
   overflow-x: hidden;
   position: relative;
-  background-color: #fbfbfb;
-  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23615672' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  background: white;
+  background: radial-gradient(circle, white 5%, #e6e6e6 49%, #cbacf1 100%); }
 
 p {
   color: #14161F;
@@ -62,10 +62,10 @@ footer {
   background-color: #e6e6e6; }
 
 .seccionLoginInside {
-  background-color: #e6e6e6; }
+  background-color: #fff; }
 
 .tituloLogin {
-  color: #14161F; }
+  color: #560075; }
 
 .cuadroLogin {
   color: #14161F; }
@@ -125,6 +125,13 @@ header {
 .hyperlink {
   color: #14161F; }
 
+.sendButton {
+  color: #e6e6e6;
+  background-color: #62088C; }
+
+.squarewhite {
+  background-color: #cbacf1; }
+
 /* INICIO NAV */
 /* Tamaño y posicion del logo */
 .header__LogoNav {
@@ -155,7 +162,11 @@ header {
 
 .header__SelectedNav {
   font-weight: 700;
-  font-size: 1.2vw; }
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  border-radius: 2vw;
+  background-color: #e6e6e6;
+  border: 0.2vw solid #560075; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .header__SelectedNav {
       font-size: 3vw; } }
@@ -186,20 +197,26 @@ header {
 /*------ INICIO FOOTER ------*/
 /* Tamaño logos redes sociales */
 .faLogos {
-  font-size: 6vw; }
+  font-size: 4vw; }
 
 .imageInside {
   text-align: center; }
 
-.footer__Flex__CoderLogoSize {
-  width: 6vw;
-  height: 6vw; }
+.footerFlex__Inside__CoderLogoSize {
+  width: 4vw;
+  height: 4vw; }
 
 /* Establecer padding y position de los logos redes sociales*/
-.footer__Flex {
+.footerFlex__Inside {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 50%; }
+
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 0vw 1vw 2vw; }
 
 /*------ FIN FOOTER ------*/
 /*------ INICIO INDEX ------*/
@@ -641,7 +658,8 @@ alto, ancho y margen multimedia inside contenido */
 /* background color, marge y borde circular*/
 .seccionInsideReferencias, .seccionBaseReferencias {
   margin: 1vw;
-  border-radius: 1vw; }
+  border-radius: 1vw;
+  padding: 2vw; }
 
 /* Quitar puntos de lista dentro de la tabla de referencias */
 .listaTabla {
@@ -652,6 +670,9 @@ alto, ancho y margen multimedia inside contenido */
   .flexReferencias {
     display: flex;
     flex-direction: column; } }
+
+.logosReferencias {
+  height: 10vw; }
 
 /*------ INICIO SECCIÓN CONTACTO ------*/
 /* Display flex, column, Color, tamaño y grosor cuadro login */
@@ -796,7 +817,9 @@ alto, ancho y margen multimedia inside contenido */
 /* Posicion, background, border, alto y ancho seccion login inside*/
 .seccionLoginInside {
   border-radius: 1vw;
-  width: 50vw; }
+  width: 50vw;
+  padding: 2vw;
+  border: 0.2vw solid #560075; }
   @media screen and (min-width: 768px) and (max-width: 1239px) {
     .seccionLoginInside {
       width: 50vw;
@@ -808,8 +831,7 @@ alto, ancho y margen multimedia inside contenido */
 
 /* Color, grosor y position de login */
 .tituloLogin {
-  font-weight: 800;
-  margin-left: 2vw; }
+  font-weight: 800; }
 
 /* Color, tamaño y grosor cuadro login */
 .cuadroLogin {
@@ -846,7 +868,8 @@ alto, ancho y margen multimedia inside contenido */
 
 .squarewhite {
   height: 2vw;
-  width: 15vw; }
+  width: 15vw;
+  border-radius: 1vw; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .squarewhite {
       height: 4vw;
@@ -854,8 +877,10 @@ alto, ancho y margen multimedia inside contenido */
       display: block; } }
 
 .sendButton {
-  height: 2vw;
-  width: 3vw; }
+  height: 3vw;
+  width: 4vw;
+  border-radius: 1vw;
+  cursor: pointer; }
   @media screen and (min-width: 768px) and (max-width: 1239px) {
     .sendButton {
       height: 4vw;

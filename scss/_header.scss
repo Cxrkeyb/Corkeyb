@@ -37,6 +37,10 @@ $navSizeTablet: 2vw;
 .header__SelectedNav{
 	font-weight: $base-font-weight;
 	font-size: $navSizeDesktop;
+	padding: 0.5vw;
+	border-radius: 2vw;
+	background-color: $inside2Color;
+	border: 0.2vw solid $tituloColor;
 	@media only screen and (min-width:0px) and (max-width:767px){
 		font-size: $navSizeMobile;
 	}

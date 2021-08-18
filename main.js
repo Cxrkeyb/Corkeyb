@@ -73,8 +73,8 @@ window.addEventListener("click", function (e) {
     if (e.target == modalCR) {
         modal.classList.toggle("modalCloseResponsive");
         setTimeout(function () {
-            modalC.style.opacity = "0";
-            modalC.style.visibility = "hidden";
+            modalCR.style.opacity = "0";
+            modalCR.style.visibility = "hidden";
         }, 400)
     }
 })

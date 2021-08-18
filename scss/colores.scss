@@ -2,6 +2,7 @@ $parrafoColor: #14161F;
 $tituloColor: #560075;
 $insideColor: #cbacf1;
 $inside2Color: #e6e6e6;
+$white: #fff;
 $gray: #757CA3;
 $black: #14161F;
 $blue: #0000FF;
@@ -49,10 +50,10 @@ footer{
 	background-color: $inside2Color;
 }
 .seccionLoginInside{
-	background-color: $inside2Color;
+	background-color: $white;
 }
 .tituloLogin{
-	color: $black;
+	color: $tituloColor;
 }
 .cuadroLogin{
 	color: $parrafoColor;
@@ -111,4 +112,11 @@ header{
 }
 .hyperlink{
 	color: $black;
+}
+.sendButton{
+	color: $inside2Color;
+	background-color: $purple;
+}
+.squarewhite{
+	background-color: $insideColor;
 }
