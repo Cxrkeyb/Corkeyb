@@ -1,23 +1,31 @@
 $tamanioGeneral: 1.2vw;
-body#bodyGeneral{
+
+body#bodyGeneral {
     font-size: $tamanioGeneral;
-    @media only screen and (min-width:0px) and (max-width:767px){
+
+    @media only screen and (min-width:0px) and (max-width:767px) {
         font-size: 3vw;
     }
-    @media only screen and (min-width:768px) and (max-width:1239px){
+
+    @media only screen and (min-width:768px) and (max-width:1239px) {
         font-size: 2.5vw;
     }
-    font-family: 'Piazzolla', serif;
+
+    font-family: 'Piazzolla',
+    serif;
 }
- /* Ajustar margenes a valor 0*/
- *{
-    padding: 0; 
+
+/* Ajustar margenes a valor 0*/
+* {
+    padding: 0;
     margin: 0;
 }
+
 /* Color background */
-body#bodyGeneral{
-  overflow-x: hidden;
-  position: relative;
-  background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(230,230,230,1) 49%, rgba(203,172,241,1) 100%);
+body#bodyGeneral {
+    overflow-x: hidden;
+    position: relative;
+    background-color: #DFDFDF;
+    //   background: rgb(255,255,255);
+    // background: radial-gradient(circle, rgba(255,255,255,1) 5%, rgba(230,230,230,1) 49%, rgba(203,172,241,1) 100%);
 }

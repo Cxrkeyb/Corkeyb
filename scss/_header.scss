@@ -5,66 +5,84 @@ $size-logo-tablet: 15vw;
 $padding-Logo: 0.2vw;
 $navSizeDesktop: 1.2vw;
 $navSizeMobile: 3vw;
-$navSizeTablet: 2vw; 
+$navSizeTablet: 2vw;
+
 /* INICIO NAV */
 /* Tamaño y posicion del logo */
-.header__LogoNav{
+.header__LogoNav {
 	height: $size-logo-desktop;
 	width: $size-logo-desktop;
-	@media only screen and (min-width:0px) and (max-width:767px){
+	padding-right: 2vw;
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		width: $size-logo-mobile;
 		height: $size-logo-mobile;
 	}
-	@media only screen and (min-width:768px) and (max-width:1239px){
+
+	@media only screen and (min-width:768px) and (max-width:1239px) {
 		width: $size-logo-tablet;
 		height: $size-logo-tablet;
 	}
+
 	position: relative;
-	left: $padding-Logo;
 }
+
 /* Quitar subrayado de enlace, colores, tamaño y grosor del nav seleccionado */
-.header__NoSelectedNav{
+.header__NoSelectedNav {
 	font-weight: $base-font-weight;
 	text-decoration: none;
 	font-size: $navSizeDesktop;
-	@media only screen and (min-width:0px) and (max-width:767px){
+	padding: 2vw 2vw 2vw 3vw;
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		font-size: $navSizeMobile;
 	}
-	@media only screen and (min-width:768px) and (max-width:1239px){
+
+	@media only screen and (min-width:768px) and (max-width:1239px) {
 		font-size: $navSizeTablet;
-		}
 	}
-.header__SelectedNav{
+}
+
+.header__SelectedNav {
 	font-weight: $base-font-weight;
 	font-size: $navSizeDesktop;
-	padding: 0.5vw;
 	border-radius: 2vw;
-	background-color: $inside2Color;
-	border: 0.2vw solid $tituloColor;
-	@media only screen and (min-width:0px) and (max-width:767px){
+	background-color: $insideColor;
+	padding: 0.75vw 2vw;
+	box-shadow: 0vw 0vw 0.5vw 0vw rgb(85, 84, 84);
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		font-size: $navSizeMobile;
 	}
-	@media only screen and (min-width:768px) and (max-width:1239px){
+
+	@media only screen and (min-width:768px) and (max-width:1239px) {
 		font-size: $navSizeTablet;
-		}
 	}
+}
+
 /* FIN NAV */
 /* Grid area, quitar subrayado, background-color, display flex, direction, espacios entre ellos y centrado header */
-header{
+header {
 	grid-area: header;
 	text-decoration: none;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 	align-items: center;
 	font-size: 0.8vw;
-	}
+	padding: 0.2vw 0.5vw 0.2vw 2vw;
+}
+
 header {
 	position: sticky;
 	top: 0;
 	z-index: 1;
-	}
-.borderHeader{
+}
+
+.borderHeader {
 	border: 0.1vw solid black;
 	margin: 0;
+}
+
+.header__NoSelectedNavText {
+	color: $black;
 }

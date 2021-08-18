@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body#bodyGeneral {
   font-size: 1.2vw;
-  font-family: 'Piazzolla', serif; }
+  font-family: 'Piazzolla', serif; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     body#bodyGeneral {
       font-size: 3vw; } }
@@ -18,8 +18,7 @@ body#bodyGeneral {
 body#bodyGeneral {
   overflow-x: hidden;
   position: relative;
-  background: white;
-  background: radial-gradient(circle, white 5%, #e6e6e6 49%, #cbacf1 100%); }
+  background-color: #DFDFDF; }
 
 p {
   color: #14161F;
@@ -86,7 +85,7 @@ footer {
   color: #14161F; }
 
 header {
-  background-color: #cbacf1; }
+  background-color: #fff; }
 
 .rightSectionTwo__parrafo {
   color: #E2170A; }
@@ -111,7 +110,7 @@ header {
   color: #e6e6e6; }
 
 .header__SelectedNav {
-  color: #62088C; }
+  color: #fff; }
 
 .continueHelp {
   color: #62088C; }
@@ -137,8 +136,8 @@ header {
 .header__LogoNav {
   height: 6vw;
   width: 6vw;
-  position: relative;
-  left: 0.2vw; }
+  padding-right: 2vw;
+  position: relative; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .header__LogoNav {
       width: 18vw;
@@ -152,7 +151,8 @@ header {
 .header__NoSelectedNav {
   font-weight: 700;
   text-decoration: none;
-  font-size: 1.2vw; }
+  font-size: 1.2vw;
+  padding: 2vw 2vw 2vw 3vw; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .header__NoSelectedNav {
       font-size: 3vw; } }
@@ -163,10 +163,10 @@ header {
 .header__SelectedNav {
   font-weight: 700;
   font-size: 1.2vw;
-  padding: 0.5vw;
   border-radius: 2vw;
-  background-color: #e6e6e6;
-  border: 0.2vw solid #560075; }
+  background-color: #cbacf1;
+  padding: 0.75vw 2vw;
+  box-shadow: 0vw 0vw 0.5vw 0vw #555454; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .header__SelectedNav {
       font-size: 3vw; } }
@@ -181,9 +181,9 @@ header {
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  font-size: 0.8vw; }
+  font-size: 0.8vw;
+  padding: 0.2vw 0.5vw 0.2vw 2vw; }
 
 header {
   position: sticky;
@@ -193,6 +193,9 @@ header {
 .borderHeader {
   border: 0.1vw solid black;
   margin: 0; }
+
+.header__NoSelectedNavText {
+  color: #14161F; }
 
 /*------ INICIO FOOTER ------*/
 /* Tamaño logos redes sociales */

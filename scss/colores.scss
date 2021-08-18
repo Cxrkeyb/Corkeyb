@@ -9,114 +9,149 @@ $blue: #0000FF;
 $green: #008f39;
 $purple: #62088C;
 $red: #E2170A;
-p{
-    color: $parrafoColor;
+
+p {
+	color: $parrafoColor;
 	font-weight: 600;
 }
-h1{
-    color: $tituloColor;
+
+h1 {
+	color: $tituloColor;
 }
-h2{
-    color: $tituloColor;
+
+h2 {
+	color: $tituloColor;
 }
-h3{
-    color: $tituloColor;
+
+h3 {
+	color: $tituloColor;
 }
-footer{
-    background-color:$insideColor;
-}
-.seccionMultimediaBase{
-    background-color: $insideColor;
-}
-.soporteSeccionBase{
+
+footer {
 	background-color: $insideColor;
 }
-.seccionInsideReferencias{
+
+.seccionMultimediaBase {
+	background-color: $insideColor;
+}
+
+.soporteSeccionBase {
+	background-color: $insideColor;
+}
+
+.seccionInsideReferencias {
 	background-color: $inside2Color;
 }
-.seccionBaseReferencias{
+
+.seccionBaseReferencias {
 	background-color: $inside2Color;
 }
+
 .borderReferencias {
-    background-color: $insideColor;
+	background-color: $insideColor;
 }
-.soporteSquareInside{
+
+.soporteSquareInside {
 	background-color: $inside2Color;
 }
-.tituloHelp{
+
+.tituloHelp {
 	color: $gray;
 }
-.multimediaInsideContent{
+
+.multimediaInsideContent {
 	background-color: $inside2Color;
 }
-.seccionLoginInside{
+
+.seccionLoginInside {
 	background-color: $white;
 }
-.tituloLogin{
+
+.tituloLogin {
 	color: $tituloColor;
 }
-.cuadroLogin{
+
+.cuadroLogin {
 	color: $parrafoColor;
 }
-.helpLogin{
+
+.helpLogin {
 	color: $blue;
 }
+
 .border {
-    background-color: $insideColor;
+	background-color: $insideColor;
 }
-.leftSection__BeneficiosTitulo{
+
+.leftSection__BeneficiosTitulo {
 	color: $tituloColor;
 }
-.section__InsideIndex{
+
+.section__InsideIndex {
 	background-color: $inside2Color;
 }
-.header__NoSelectedNav{
+
+.header__NoSelectedNav {
 	color: $black;
 }
+
 header{
-	background-color: $insideColor;
+	background-color: $white;
 }
-.rightSectionTwo__parrafo{
+.rightSectionTwo__parrafo {
 	color: $red;
 }
-.seccionContactoInside{
+
+.seccionContactoInside {
 	color: $parrafoColor;
 	background-color: $inside2Color;
 }
-.formContacto{
+
+.formContacto {
 	color: $parrafoColor;
 }
-.soyuntitulo{
+
+.soyuntitulo {
 	color: $inside2Color;
 }
-#error404bg{
+
+#error404bg {
 	background-color: $black;
 }
-.nosoyuntitulo{
+
+.nosoyuntitulo {
 	color: $inside2Color;
 }
-.nosoyuntitulo2{
+
+.nosoyuntitulo2 {
 	color: $inside2Color;
 }
-.header__SelectedNav{
+
+.header__SelectedNav {
+	color: $white;
+}
+
+.continueHelp {
 	color: $purple;
 }
-.continueHelp{
-	color: $purple;
-}
-.leftSection__Lista{
+
+.leftSection__Lista {
 	color: $parrafoColor;
 }
-.cardContentFlex{
+
+.cardContentFlex {
 	background-color: $insideColor;
 }
-.hyperlink{
+
+.hyperlink {
 	color: $black;
 }
-.sendButton{
+
+.sendButton {
 	color: $inside2Color;
 	background-color: $purple;
 }
-.squarewhite{
+
+.squarewhite {
 	background-color: $insideColor;
 }
