@@ -211,3 +211,17 @@ section#seccionReferencias {
 #sectionContactoBase {
 	grid-area: sectionContactoBase;
 }
+#gridLogIn{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"sectionLeftLogin sectionRightLogin"
+	"footer footer";
+	grid-template-columns: 50% 50%;
+}
+section#sectionLeftLogin{
+	grid-area: sectionLeftLogin;
+}
+section#sectionRightLogin{
+	grid-area: sectionRightLogin;
+}

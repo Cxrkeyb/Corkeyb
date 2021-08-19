@@ -880,9 +880,9 @@ alto, ancho y margen multimedia inside contenido */
 /* Posicion, background, border, alto y ancho seccion login inside*/
 .seccionLoginInside {
   border-radius: 1vw;
-  width: 50vw;
   padding: 2vw;
-  border: 0.2vw solid #560075; }
+  border: 0.2vw solid #560075;
+  margin: 2vw; }
   @media screen and (min-width: 768px) and (max-width: 1239px) {
     .seccionLoginInside {
       width: 50vw;
@@ -903,7 +903,7 @@ alto, ancho y margen multimedia inside contenido */
 /* Margin, Color azul y subrayado quitado login*/
 .helpLogin {
   text-decoration: none;
-  margin-left: 10vw; }
+  font-size: 1.4vw; }
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
     .helpLogin {
       font-size: 4vw; } }
@@ -917,9 +917,9 @@ alto, ancho y margen multimedia inside contenido */
 
 /* padding y margin  */
 .formLoginAccount {
-  padding-left: 12vw;
-  margin-top: 7vw;
-  font-size: 2vw; }
+  font-size: 2vw;
+  align-items: center;
+  padding: 2vw; }
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
     .formLoginAccount {
       padding-left: 8vw;
@@ -930,9 +930,11 @@ alto, ancho y margen multimedia inside contenido */
       font-size: 5.5vw; } }
 
 .squarewhite {
-  height: 2vw;
-  width: 15vw;
-  border-radius: 1vw; }
+  height: 3.4vw;
+  width: 25vw;
+  border-radius: 1vw;
+  margin: 0.2vw;
+  font-size: 1.2vw; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .squarewhite {
       height: 4vw;
@@ -941,9 +943,11 @@ alto, ancho y margen multimedia inside contenido */
 
 .sendButton {
   height: 3vw;
-  width: 4vw;
+  width: 20vw;
   border-radius: 1vw;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 0.72vw;
+  font-size: 1.2vw; }
   @media screen and (min-width: 768px) and (max-width: 1239px) {
     .sendButton {
       height: 4vw;
@@ -956,9 +960,26 @@ alto, ancho y margen multimedia inside contenido */
 /* Display flex, contenido al final y margen */
 .formLoginSend {
   justify-content: flex-end;
+  display: flex; }
+
+.formLoginAccount {
   display: flex;
-  margin-right: 10vw;
-  margin-top: 3vw; }
+  flex-direction: column;
+  align-content: center; }
+
+.logoLogin {
+  height: 14vw;
+  width: 14vw; }
+
+.sectionLeftLoginFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.parrafoLogin {
+  font-size: 2vw;
+  text-align: center; }
 
 /*------ FIN SECCIÓN LOGIN ------*/
 /* Display Desktop */
@@ -1075,6 +1096,17 @@ section#seccionReferencias {
 
 #sectionContactoBase {
   grid-area: sectionContactoBase; }
+
+#gridLogIn {
+  display: grid;
+  grid-template-areas: "header header" "sectionLeftLogin sectionRightLogin" "footer footer";
+  grid-template-columns: 50% 50%; }
+
+section#sectionLeftLogin {
+  grid-area: sectionLeftLogin; }
+
+section#sectionRightLogin {
+  grid-area: sectionRightLogin; }
 
 .soyuntitulo {
   font-size: 8vw; }

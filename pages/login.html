@@ -18,11 +18,9 @@
 	<title>Logueate</title>
 </head>
 <body id="bodyGeneral">
+	<div id="gridLogIn">
 	<header>
 		<!-- Inicio NAV-->
-		<!-- INICIO LOGO -->
-		<a href="../index.html"><img src="../assets/img/logo.png" alt="Logo" class="header__LogoNav"></a>
-		<!-- FIN LOGO -->
 		<a href="../index.html" class="header__NoSelectedNav">
 			<h3 class="header__NoSelectedNavText">Home</h3>
 		</a>
@@ -41,31 +39,31 @@
 		<!-- Fin NAV-->
 	</header>
 	<!-- FIN HEADER -->
-	<section class="seccionLoginBase">
-		<section class="seccionLoginInside">
-		<h2 class="tituloLogin">Logueate</h2>
-		<!-- INICIO LOG IN -->
-		<section class="cuadroLogin">
+		<section id="sectionLeftLogin" class="sectionLeftLoginFlex">
+			<a href="../index.html"><img src="../assets/img/logo.png" class="logoLogin"></a>
+			<p class="parrafoLogin">Te ayudaremos a hacer cambios a tú página con prioridad, no dudes en hablarnos.</p>
+		</section>
+		<section id="sectionRightLogin" class="seccionLoginInside">
 			<form action="">
 			<div class="formLoginAccount">
-					<label for="usuario" class="formSizeLogin">Usuario:</label>
-					<input type="text" name="usuario" class="squarewhite"><br>
-					<label for="password">Contraseña:</label>
-					<input type="password" name="password" class="squarewhite">
-			</div>
-			<div class="formLoginSend">
-				<input type="submit" name="enviar" class="sendButton">
+				<div class="formUserFlex">					
+					<input type="text" name="usuario" class="squarewhite" placeholder="Usuario">
+				</div>
+				<div class="formPasswordFlex">
+					<input type="password" name="password" class="squarewhite" placeholder="Contraseña">
+				</div>
+				<div class="formLoginSend">
+					<input type="submit" name="enviar" class="sendButton">
+				</div>
+				<a href="soporte.html" class="helpLogin"><p class="helpLogin">¿Olvidaste tu contraseña?</p></a>
 			</div>
 			</form>
-			<a href="soporte.html" class="helpLogin"><p class="helpLogin">Olvidaste tu contraseña?</p></a>
 		</section>
-		</section>
-	</section>
 	<!-- FIN LOG IN -->
 		<footer>
 			<section>
 				<a href="contacto.html">
-					<h2 class="header__SelectedNav">Contacto</h2>
+					<h2>Contacto</h2>
 				</a>
 				<div class="footerFlex">
 					<div>
@@ -92,5 +90,6 @@
 			</section>
 		</footer>
 		<script src="../js/navbar.js"></script>
+	</div>
 </body>
 </html>
