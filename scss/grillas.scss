@@ -1,154 +1,213 @@
 /* Display Desktop */
-@media only screen and (min-width:1240px){
-	#gridHome{
-	display: grid;
-	grid-template-areas: 
-	"header"
-	"questionSection"
-	"antiBootstrap"
-	"disenoWeb"
-	"desarrolloBackend"
-	"securityWeb"
-	"clientInteraction"
-	"metodobenSection"
-	"serverWeb"
-	"footer";
-	grid-template-columns:100%;
-	grid-template-rows: auto ;
-	grid-column-gap: 0.2vw;
-   	grid-row-gap: 0.2vw;
-   	margin: 0vw 0.2vw 0.2vw 0.2vw;
-}
-/* Grid areas */
-section#questionSection{
-	grid-area: questionSection;
-}
-section#antiBootstrap{
-	grid-area: antiBootstrap;
-}
-section#securityWeb{
-	grid-area: securityWeb;
-}
-section#disenoWeb{
-	grid-area: disenoWeb;
-}
-section#metodobenSection{
-	grid-area: metodobenSection;
-}
-section#serverWeb{
-	grid-area: serverWeb;
-}
-section#clientInteraction{
-	grid-area: clientInteraction;
-}
-footer{
-	grid-area: footer;
-}
-}
-/* vista entre desktop y mobile */
-@media only screen and (min-width:768px) and (max-width:1239px){
-	#gridHome{
+@media only screen and (min-width:1240px) {
+	#gridHome {
 		display: grid;
-		grid-template-areas: 
-		"header"
-		"questionSection"
-		"antiBootstrap"
-		"javascriptSection"
-		"scssSection"
-		"metodobenSection"
-		"serverWeb"
-		"footer";
+		grid-template-areas:
+			"header"
+			"questionSection"
+			"antiBootstrap"
+			"disenoWeb"
+			"desarrolloBackend"
+			"securityWeb"
+			"clientInteraction"
+			"metodobenSection"
+			"serverWeb"
+			"footer";
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-column-gap: 0.2vw;
+		grid-row-gap: 0.2vw;
+		margin: 0vw 0.2vw 0.2vw 0.2vw;
 	}
-	section#questionSection{
+
+	/* Grid areas */
+	section#questionSection {
 		grid-area: questionSection;
 	}
-	section#antiBootstrap{
+
+	section#antiBootstrap {
 		grid-area: antiBootstrap;
 	}
-	section#javascriptSection{
-		grid-area: javascriptSection;
+
+	section#securityWeb {
+		grid-area: securityWeb;
 	}
-	section#metodobenSection{
+
+	section#disenoWeb {
+		grid-area: disenoWeb;
+	}
+
+	section#metodobenSection {
 		grid-area: metodobenSection;
 	}
-	section#serverWeb{
+
+	section#serverWeb {
 		grid-area: serverWeb;
 	}
-	footer{
+
+	section#clientInteraction {
+		grid-area: clientInteraction;
+	}
+
+	footer {
 		grid-area: footer;
 	}
 }
-/*vista mobile*/
-@media only screen and (min-width:0px) and (max-width:767px){
-	#gridHome{
+
+/* vista entre desktop y mobile */
+@media only screen and (min-width:768px) and (max-width:1239px) {
+	#gridHome {
 		display: grid;
-		grid-template-areas: 
-		"header"
-		"questionSection"
-		"antiBootstrap"
-		"javascriptSection"
-		"scssSection"
-		"metodobenSection"
-		"serverWeb"
-		"footer";
+		grid-template-areas:
+			"header"
+			"questionSection"
+			"antiBootstrap"
+			"disenoWeb"
+			"desarrolloBackend"
+			"securityWeb"
+			"clientInteraction"
+			"metodobenSection"
+			"serverWeb"
+			"footer";
+	}
+
+	/* Grid areas */
+	section#questionSection {
+		grid-area: questionSection;
+	}
+
+	section#antiBootstrap {
+		grid-area: antiBootstrap;
+	}
+
+	section#securityWeb {
+		grid-area: securityWeb;
+	}
+
+	section#disenoWeb {
+		grid-area: disenoWeb;
+	}
+
+	section#metodobenSection {
+		grid-area: metodobenSection;
+	}
+
+	section#serverWeb {
+		grid-area: serverWeb;
+	}
+
+	section#clientInteraction {
+		grid-area: clientInteraction;
+	}
+
+	footer {
+		grid-area: footer;
+	}
+}
+
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:767px) {
+	#gridHome {
+		display: grid;
+		grid-template-areas:
+			"header"
+			"questionSection"
+			"antiBootstrap"
+			"javascriptSection"
+			"scssSection"
+			"metodobenSection"
+			"serverWeb"
+			"footer";
 		grid-auto-columns: 100%;
 		grid-template-rows: auto;
-   		grid-row-gap: 2vw;
-   		margin: 2vw;
+		grid-row-gap: 2vw;
+		margin: 2vw;
 	}
-	header{
-		grid-area: header;
-	}
+
 	/* Grid areas */
-	section#questionSection{
+	section#questionSection {
 		grid-area: questionSection;
 	}
-	section#antiBootstrap{
+
+	section#antiBootstrap {
 		grid-area: antiBootstrap;
 	}
-	section#javascriptSection{
-		grid-area: javascriptSection;
+
+	section#securityWeb {
+		grid-area: securityWeb;
 	}
-	section#metodobenSection{
+
+	section#disenoWeb {
+		grid-area: disenoWeb;
+	}
+
+	section#metodobenSection {
 		grid-area: metodobenSection;
 	}
-	section#serverWeb{
+
+	section#serverWeb {
 		grid-area: serverWeb;
 	}
-	footer{
+
+	section#clientInteraction {
+		grid-area: clientInteraction;
+	}
+
+	footer {
 		grid-area: footer;
 	}
+
+	header {
+		grid-area: header;
+	}
 }
+
 /* Grid Multimedia*/
-#gridMultimedia{
+#gridMultimedia {
 	display: grid;
-	grid-template-areas: 
-	"header"
-	"sectionMultimediaGeneral"
-	"footer";
-	grid-template-columns:100%;
-   	}
-section#sectionMultimediaGeneral{
+	grid-template-areas:
+		"header"
+		"sectionMultimediaGeneral"
+		"footer";
+	grid-template-columns: 100%;
+}
+
+section#sectionMultimediaGeneral {
 	grid-area: sectionMultimediaGeneral;
 }
+
 /* Grid Referencias */
-#gridReferencias{
-	grid-template-areas: 
-	"header"
-	"seccionReferencias"
-	"footer";
-	grid-template-areas: 100%;
+#gridReferencias {
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"flexSectionReferenciasTop flexSectionReferenciasRight"
+		"flexSectionReferenciasBottom flexSectionReferenciasRight"
+		"footer footer";
+		grid-template-columns: 60% 40%;
+		grid-template-rows: auto;
 }
-section#seccionReferencias{
+section#flexSectionReferenciasTop{
+	grid-area: flexSectionReferenciasTop;
+}
+section#flexSectionReferenciasBottom{
+	grid-area: flexSectionReferenciasBottom;
+}
+section#flexSectionReferenciasRight{
+	grid-area: flexSectionReferenciasRight;
+}
+section#seccionReferencias {
 	grid-area: seccionReferencias;
 }
+
 /* Grid Contacto */
-#gridContacto{
-	grid-template-areas: 
-	"header"
-	"sectionContactoBase"
-	"footer";
+#gridContacto {
+	grid-template-areas:
+		"header"
+		"sectionContactoBase"
+		"footer";
 }
-#sectionContactoBase{
+
+#sectionContactoBase {
 	grid-area: sectionContactoBase;
 }

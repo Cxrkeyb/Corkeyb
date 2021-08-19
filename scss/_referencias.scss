@@ -32,6 +32,57 @@
 		flex-direction: column;
 	}
 }
-.logosReferencias{
-	height: 10vw;
+.logosReferenciasR{
+	width: 20vw;
+}
+.logosReferenciasCh{
+	width: 20vw;
+}
+.logosReferenciasMS{
+	width: 15vw;
+}
+.flexContentLeft{
+	padding: 2vw;
+	width: 66%;
+}
+.flexContentLeftPad{
+	padding: 1vw 0vw 0.7vw 0vw;
+}
+.flexLeftSectionReferencias{
+	@extend .flexLeftSection;
+	border-radius: 1vw;
+	margin: 1.5vw;
+	justify-content: space-around;
+}
+.flexCenterSectionReferencias{
+	@extend .flexRightSection;
+	border-radius: 1vw;
+	margin: 1.5vw;
+	flex-direction: column-reverse;
+	align-items: center;
+    justify-content: center;
+}
+.multimediaContentRef{
+	border-radius: 1vw;
+	width: 40%;
+	display: flex;
+    justify-content: center;
+}
+.flexContentCenter{
+	@extend.flexContentLeft;
+	text-align: center;
+	width: 100%;
+}
+.flexContentLeftPad{
+	padding: 1vw 0vw 0.7vw 0vw;
+}
+.flexContentLeftPadC{
+	@extend .flexContentLeftPad;
+	text-align: center;
+}
+.multimediaContentRefC{
+	@extend .multimediaContentRef;
+	text-align: center;
+	width: 100%;
+	padding-left: 2vw;
 }
