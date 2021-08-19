@@ -84,9 +84,6 @@ footer {
 .header__NoSelectedNav {
   color: #14161F; }
 
-header {
-  background-color: #fff; }
-
 .rightSectionTwo__parrafo {
   color: #E2170A; }
 
@@ -188,7 +185,8 @@ header {
 header {
   position: sticky;
   top: 0;
-  z-index: 1; }
+  z-index: 1;
+  transition: 0.6s; }
 
 .borderHeader {
   border: 0.1vw solid black;
@@ -196,6 +194,19 @@ header {
 
 .header__NoSelectedNavText {
   color: #14161F; }
+
+.sticky {
+  background-color: #fff;
+  padding: 0vw 0.5vw 0vw 2vw;
+  transition: 0.6s; }
+
+.sticky .header__LogoNav {
+  height: 5vw;
+  width: 5vw; }
+
+.sticky .header__NoSelectedNav {
+  padding: 0.5vw 2vw 0.5vw 3vw;
+  font-size: 1vw; }
 
 /*------ INICIO FOOTER ------*/
 /* Tamaño logos redes sociales */

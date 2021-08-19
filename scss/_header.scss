@@ -1,9 +1,11 @@
 $base-font-weight: 700;
 $size-logo-desktop: 6vw;
+$size-logo-desktop-sticky: 5vw;
 $size-logo-mobile: 18vw;
 $size-logo-tablet: 15vw;
 $padding-Logo: 0.2vw;
 $navSizeDesktop: 1.2vw;
+$navSizeDesktopSticky: 1vw;
 $navSizeMobile: 3vw;
 $navSizeTablet: 2vw;
 
@@ -76,6 +78,7 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 1;
+	transition: 0.6s;
 }
 
 .borderHeader {
@@ -85,4 +88,17 @@ header {
 
 .header__NoSelectedNavText {
 	color: $black;
+}
+.sticky{
+	background-color: $white;
+	padding: 0vw 0.5vw 0vw 2vw;
+	transition: 0.6s;
+}
+.sticky .header__LogoNav{
+	height: $size-logo-desktop-sticky;
+	width: $size-logo-desktop-sticky;
+}
+.sticky .header__NoSelectedNav{
+	padding: 0.5vw 2vw 0.5vw 3vw;
+	font-size: $navSizeDesktopSticky;
 }

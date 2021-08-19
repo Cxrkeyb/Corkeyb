@@ -1,89 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Palabras clave -->
-	<meta name="keywords" content="HTML, CSS, JAVASCRIPT, DESARROLLO WEB, SCSS, diseñador web, crea tú pagina web, programador web, ayuda problema web, problema web, mi pagina no funciona, el servidor se cayó">
+	<meta name="keywords"
+		content="HTML, CSS, JAVASCRIPT, DESARROLLO WEB, SCSS, diseñador web, crea tú pagina web, programador web, ayuda problema web, problema web, mi pagina no funciona, el servidor se cayó">
 	<!-- Descripción página web -->
-	<meta name="description" content="Opciones de soporte y contacto. Si necesitas ayuda, ofrecemos diversas opciones de atención al cliente.">
+	<meta name="description"
+		content="Opciones de soporte y contacto. Si necesitas ayuda, ofrecemos diversas opciones de atención al cliente.">
 	<!-- linkear css -->
 	<link rel="stylesheet" href="../css/style.css">
 	<!-- linkear iconos fontawesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<!-- linkear google fonts  -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 	<title>Contactanos y cuentanos tú problema</title>
 </head>
+
 <body id="bodyGeneral">
-<div id="gridContacto">
-	<!-- INICIO HEADER -->
-	<header>
-		<!-- Inicio NAV-->	
-			<!-- INICIO LOGO -->		
-			<img src="../assets/img/logo.png" alt="Logo" class="header__LogoNav">
-			<!-- FIN LOGO -->					
-			<a href="../index.html" class="header__NoSelectedNav"><h3>Home</h3></a>
-			<a href="multimedia.html" class="header__NoSelectedNav"><h3>Multimedia</h3></a>
-			<a href="referencias.html" class="header__NoSelectedNav"><h3>Referencias</h3></a>
-			<a href="soporte.html" class="header__NoSelectedNav"><h3>Soporte</h3></a>
-			<a href="login.html" class="header__NoSelectedNav"><h3>Log in</h3></a>
-		<!-- Fin NAV-->
-	</header>
-	<!-- FIN HEADER -->
-	<!-- INICIO FORMULARIO -->
-	<section class="seccionContactoBase" id="sectionContactoBase" >
-		<section class="seccionContactoInside">
-			<h2 class="tituloContacto">Contacto</h2>
-			<form action="" class="formContacto">
-				<div class="formContactoInfo">
+	<div id="gridContacto">
+		<!-- INICIO HEADER -->
+		<header>
+			<!-- Inicio NAV-->
+			<!-- INICIO LOGO -->
+			<a href="../index.html"><img src="../assets/img/logo.png" alt="Logo" class="header__LogoNav"></a>
+			<!-- FIN LOGO -->
+			<a href="../index.html" class="header__NoSelectedNav">
+				<h3 class="header__NoSelectedNavText">Home</h3>
+			</a>
+			<a href="multimedia.html" class="header__NoSelectedNav">
+				<h3 class="header__NoSelectedNavText">Multimedia</h3>
+			</a>
+			<a href="referencias.html" class="header__NoSelectedNav">
+				<h3 class="header__NoSelectedNavText">Referencias</h3>
+			</a>
+			<a href="soporte.html" class="header__NoSelectedNav">
+				<h3 class="header__NoSelectedNavText">Soporte</h3>
+			</a>
+			<a href="login.html" class="header__NoSelectedNav">
+				<h3 class="header__NoSelectedNavText">Log in</h3>
+			</a>
+			<!-- Fin NAV-->
+		</header>
+		<!-- FIN HEADER -->
+		<!-- INICIO FORMULARIO -->
+		<section class="seccionContactoBase" id="sectionContactoBase">
+			<section class="seccionContactoInside">
+				<h2 class="tituloContacto">Contacto</h2>
+				<form action="" class="formContacto">
+					<div class="formContactoInfo">
+						<div>
+							<label for="name">Nombre Completo:</label>
+							<input type="name" name=""><br>
+							<label for="email">Correo Electronico:</label>
+							<input type="email" name="email" />
+						</div>
+					</div>
+					<!-- INICIO MENU DESPLEGABLE -->
+					<div class="formPropositoDiv">
+						<select name="proposito">
+							<option value="" selected disabled="">Seleccione</option>
+							<option value="pagina_web">Página web</option>
+							<option value="dudas">Dudas</option>
+							<option value="corregir">Corregir páginas webs</option>
+							<option value="asesor">Contactarse con un asesor</option>
+						</select>
+					</div>
+					<!-- FIN MENU DESPLEGABLE-->
+					<!-- INICIO CHECKBOX -->
+					<div class="formCheckbox">
+						<input type="checkbox" name="checkbox1" /><label for="checkbox1">Deseas subscribirte a nuestras
+							noticias</label>
+						<!-- FIN CHECKBOX -->
+						<input type="reset" value="Reset" />
+						<input type="submit" value="Enviar">
+					</div>
+				</form>
+			</section>
+		</section>
+		<!-- FIN FORMULARIO -->
+		<footer>
+			<section>
+				<a href="contacto.html">
+					<h2>Contacto</h2>
+				</a>
+				<div class="footerFlex">
 					<div>
-						<label for="name">Nombre Completo:</label>
-						<input type="name" name=""><br>
-						<label for="email">Correo Electronico:</label>
-						<input type="email" name="email"/>
+						<p>cxrkeybwp2004@gmail.com</p>
+						<p>+57 3103079380</p>
+						<p>Colombia, Norte de Santander</p>
+					</div>
+					<!-- BOTÓN REDES SOCIALES-->
+					<div class="footerFlex__Inside">
+						<a href="https://www.facebook.com/Fckedl/" target="_blank"><i
+								class="fab fa-facebook faLogos"></i></a>
+						<a href="https://plataforma.coderhouse.com/perfil/609569bcc52b35000fb8f7cd" target="_blank"><img
+								src="../assets/img/coderhouse_logo.png" class="footerFlex__Inside__CoderLogoSize"
+								alt="coderhouse-logo">
+							<a href="https://www.instagram.com/cxrkeyb/" target="_blank">
+								<h3><i class="fab fa-instagram faLogos"></i></h3>
+							</a>
 					</div>
 				</div>
-				<!-- INICIO MENU DESPLEGABLE -->
-				<div class="formPropositoDiv">
-					<select name="proposito">
-						<option value="" selected disabled="">Seleccione</option>
-						<option value="pagina_web">Página web</option>
-						<option value="dudas">Dudas</option>
-						<option value="corregir">Corregir páginas webs</option>
-						<option value="asesor">Contactarse con un asesor</option>
-					</select>
+				<!-- FIN BOTÓN REDES SOCIALES-->
+				<div class="parrafoCenter">
+					<p>Designed by Wilson Parada</p>
 				</div>
-				<!-- FIN MENU DESPLEGABLE-->
-				<!-- INICIO CHECKBOX -->
-				<div class="formCheckbox">
-					<input type="checkbox" name="checkbox1"/><label for="checkbox1">Deseas subscribirte a nuestras noticias</label>
-					<!-- FIN CHECKBOX -->
-					<input type="reset" value="Reset"/>
-					<input type="submit" value="Enviar">
-				</div>
-			</form>
-		</section>
-	</section>
-	<!-- FIN FORMULARIO -->
+			</section>
+		</footer>
+		<script src="../js/navbar.js"></script>
 </body>
-<!-- PIE DE PÁGINA INICIO -->
-<footer>
-	<section>
-		<h2>Pie de página</h2>
-		<p>Puedes contactarnos por los siguientes enlaces</p>
-		<a href="contacto.html" class="header__NoSelectedNav"><h2 class="header__SelectedNav">Contacto</h2></a>
-		<!-- BOTÓN REDES SOCIALES-->
-		<div class="footer__Flex">
-			<a href="https://www.facebook.com/Fckedl/" target="_blank"><i class="fab fa-facebook faLogos"></i></a>
-			<a href="https://plataforma.coderhouse.com/perfil/609569bcc52b35000fb8f7cd" target="_blank"><img src="../assets/img/coderhouse_logo.png" class="footer__Flex__CoderLogoSize" alt="coderhouse-logo">
-			<a href="https://www.instagram.com/cxrkeyb/" target="_blank"><h3><i class="fab fa-instagram faLogos"></i></h3></a>
-		</div>
-		<!-- FIN BOTÓN REDES SOCIALES-->
-	</section>
-</footer>
 </div>
-<!-- PIE DE PÁGINA FIN -->
+
 </html>
