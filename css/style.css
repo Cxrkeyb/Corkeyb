@@ -131,6 +131,9 @@ footer {
 .flexLeftSectionReferencias, .flexCenterSectionReferencias {
   background-color: #fff; }
 
+.squarewhite::placeholder {
+  color: #fff; }
+
 /* INICIO NAV */
 /* Tamaño y posicion del logo */
 .header__LogoNav {
@@ -828,7 +831,7 @@ alto, ancho y margen multimedia inside contenido */
 /* Background, position, margin y border seccion base soporte*/
 .soporteSeccionBase {
   position: relative;
-  margin: 1vw;
+  margin: 2vw 1vw 2vw 1vw;
   border-radius: 1vw; }
 
 /* Display flex, distribuir con espacios*/
@@ -934,7 +937,8 @@ alto, ancho y margen multimedia inside contenido */
   width: 25vw;
   border-radius: 1vw;
   margin: 0.2vw;
-  font-size: 1.2vw; }
+  font-size: 1.2vw;
+  color: #fff; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .squarewhite {
       height: 4vw;
