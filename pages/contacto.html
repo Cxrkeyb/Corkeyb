@@ -53,28 +53,25 @@
 		<section class="seccionContactoBase" id="sectionContactoBase">
 			<section class="seccionContactoInside">
 				<h2 class="tituloContacto">Contacto</h2>
-				<form action="" class="formContacto">
-					<div class="formContactoInfo">
-						<div>
+				<form action="">
+					<div class="formTop">
+						<div class="formTopLeft">
 							<label for="name">Nombre Completo:</label>
-							<input type="name" name=""><br>
+							<input type="name" name="" class="formSquareWhite">
 							<label for="email">Correo Electronico:</label>
-							<input type="email" name="email" />
+							<input type="email" name="email" class="formSquareWhite">
+						</div>
+						<div class="formTopRight">
+							<select name="proposito" class="formSelection">
+								<option value="" selected disabled="">Seleccione</option>
+								<option value="pagina_web">Página web</option>
+								<option value="dudas">Dudas</option>
+								<option value="corregir">Corregir páginas webs</option>
+								<option value="asesor">Contactarse con un asesor</option>
+							</select>
 						</div>
 					</div>
-					<!-- INICIO MENU DESPLEGABLE -->
-					<div class="formPropositoDiv">
-						<select name="proposito">
-							<option value="" selected disabled="">Seleccione</option>
-							<option value="pagina_web">Página web</option>
-							<option value="dudas">Dudas</option>
-							<option value="corregir">Corregir páginas webs</option>
-							<option value="asesor">Contactarse con un asesor</option>
-						</select>
-					</div>
-					<!-- FIN MENU DESPLEGABLE-->
-					<!-- INICIO CHECKBOX -->
-					<div class="formCheckbox">
+					<div>
 						<input type="checkbox" name="checkbox1" /><label for="checkbox1">Deseas subscribirte a nuestras
 							noticias</label>
 						<!-- FIN CHECKBOX -->
