@@ -1,6 +1,7 @@
 $base-font-weight: 700;
 $size-logo-desktop: 6vw;
 $size-logo-desktop-sticky: 5vw;
+$size-logo-mobile-sticky: 8vw;
 $size-logo-mobile: 18vw;
 $size-logo-tablet: 15vw;
 $padding-Logo: 0.2vw;
@@ -97,6 +98,10 @@ header {
 .sticky .header__LogoNav{
 	height: $size-logo-desktop-sticky;
 	width: $size-logo-desktop-sticky;
+	@media only screen and (min-width:0px) and (max-width:767px) {
+		height: $size-logo-mobile-sticky;
+		width: $size-logo-mobile-sticky;
+	}
 }
 .sticky .header__NoSelectedNav{
 	padding: 0.5vw 2vw 0.5vw 3vw;
