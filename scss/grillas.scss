@@ -198,6 +198,19 @@ section#seccionReferencias {
 	grid-area: seccionReferencias;
 }
 
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:767px) {
+	#gridReferencias {
+		display: grid;
+		grid-template-areas:
+			"header"
+			"flexSectionReferenciasTop"
+			"flexSectionReferenciasRight"
+			"flexSectionReferenciasBottom"
+			"footer";
+			grid-template-columns: 100%;
+	}
+}
 /* Grid Contacto */
 #gridContacto {
 	grid-template-areas:
@@ -222,4 +235,16 @@ section#sectionLeftLogin{
 }
 section#sectionRightLogin{
 	grid-area: sectionRightLogin;
+}
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:767px) {
+	#gridLogIn{
+		display: grid;
+		grid-template-areas:
+		"header"
+		"sectionLeftLogin"
+		"sectionRightLogin"
+		"footer";
+		grid-template-columns: 100%;
+	}
 }

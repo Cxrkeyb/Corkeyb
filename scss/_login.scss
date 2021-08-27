@@ -1,4 +1,4 @@
-$tamanioLoginContainerMobile: 80vw;
+$tamanioLoginContainerMobile: 92vw;
 $tamanioLoginContainerTablet: 50vw;
 /*------ INICIO SECCIÓN LOGIN ------*/
 /* Posicion y altura seccion login base */
@@ -20,14 +20,14 @@ $tamanioLoginContainerTablet: 50vw;
 	border-radius: 1vw;
 	padding: 2vw;
 	border: 0.2vw solid $tituloColor;
-	margin: 2vw 2vw 1.9vw 2vw;
+	margin: 2vw 2vw 2.3vw 2vw;
 	@media screen and (min-width:768px) and (max-width:1239px) {
 		width: $tamanioLoginContainerTablet;
 		height: $tamanioLoginContainerTablet;
 	}
     @media only screen and (min-width:0px) and (max-width:767px){
         width: $tamanioLoginContainerMobile;
-        height: $tamanioLoginContainerMobile;
+		margin: 2vw 2vw 6vw 2vw;
     }
 }
 /* Color, grosor y position de login */
@@ -43,6 +43,9 @@ $tamanioLoginContainerTablet: 50vw;
 	text-decoration: none;
 	font-size: 1.4vw;
     @media only screen and (min-width:768px) and (max-width:1239px){
+         font-size: 4vw;
+    }
+	@media only screen and (min-width:0px) and (max-width:767px){
          font-size: 4vw;
     }
 }
@@ -76,9 +79,11 @@ $tamanioLoginContainerTablet: 50vw;
 	color: $white;
 	text-align: center;
 	@media screen and (min-width:0px) and (max-width:767px) {
-		height: 4vw;
+		height: 7vw;
 		width: 60vw;
 		display: block;
+		font-size: 4vw;
+		margin: 0.4vw;
 	}
 }
 .sendButton{
@@ -93,8 +98,9 @@ $tamanioLoginContainerTablet: 50vw;
 		width: 6vw;
 	}
 	@media screen and (min-width:0px) and (max-width:767px) {
-		height: 6vw;
-		width: 10vw;
+		height: 8vw;
+		width: 15vw;
+		font-size: 3vw;
 	}
 }
 /* Display flex, contenido al final y margen */
@@ -110,6 +116,10 @@ $tamanioLoginContainerTablet: 50vw;
 .logoLogin{
 	height: 14vw;
 	width: 14vw;
+	@media screen and (min-width:0px) and (max-width:767px) {
+		height: 20vw;
+		width: 20vw;
+	}
 }
 .sectionLeftLoginFlex{
 	display: flex;
@@ -120,5 +130,8 @@ $tamanioLoginContainerTablet: 50vw;
 .parrafoLogin{
 	font-size: 2vw;
 	text-align: center;
+	@media screen and (min-width:0px) and (max-width:767px) {
+		font-size: 3vw;
+	}
 }
 /*------ FIN SECCIÓN LOGIN ------*/

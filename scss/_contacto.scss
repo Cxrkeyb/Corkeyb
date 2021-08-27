@@ -10,6 +10,8 @@
 	padding: 2vw;
     @media only screen and (min-width:0px) and (max-width:767px){
         padding-left: 3vw;
+		width: 80vw;
+		height: 45vw;
      }
 }
 /* alto y posicion seccion contacto base*/
@@ -25,7 +27,7 @@
     }
     @media only screen and (min-width:0px) and (max-width:767px){
         margin: 5vw;
-        height: 60vw;
+        height: 50vw;
     }
 }
 /* Colores, tamaños, padding, alineaciones, margin y displays*/
@@ -69,6 +71,9 @@
 .tituloContacto{
 	font-size: 1.5vw;
 	margin-bottom: 1vw;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		font-size: 4vw;
+	}
 }
 .formTop{
 	display: flex;
@@ -84,6 +89,10 @@
 	height: 2vw;
 	border-radius: 1vw;
 	background-color: $insideColor;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 35vw;
+		height: 4vw;
+	}
 }
 .formSelection{
 	width: 12vw;
@@ -91,6 +100,11 @@
 	border-radius: 1vw;
 	background-color: $insideColor;
 	font-size: 1.2vw;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 25vw;
+		height: 4vw;
+		font-size: 3vw;
+	}
 }
 .formTopRight{
 	display: flex;
@@ -108,6 +122,10 @@
 	width: 1.5vw;
 	height: 1.5vw;
 	margin: 0.2vw;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 4vw;
+		height: 4vw;
+	}
 }
 .formBtn{
 	width: 4vw;
@@ -116,9 +134,17 @@
 	background-color: $insideColor;
 	font-size: 1.2vw;
 	margin: 0.2vw;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 10vw;
+		height: 6vw;
+		font-size: 3vw;
+	}
 }
 .checkboxText{
 	font-size: 1.4vw;
 	margin: 0.2vw;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		font-size: 3vw;
+	}
 }
 /*------ FIN SECCIÓN CONTACTO ------*/

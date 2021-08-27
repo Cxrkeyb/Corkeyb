@@ -31,6 +31,13 @@
 		display: flex;
 		flex-direction: column;
 	}
+	.multimediaContentRefC{
+		width: 98%;
+	}
+	.multimediaContentRefC{
+		width: 0%;
+		right: 31vw;
+	}
 }
 .logosReferenciasR{
 	width: 20vw;
@@ -44,6 +51,11 @@
 .flexContentLeft{
 	padding: 2vw;
 	width: 66%;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 98%;
+		text-align: center;
+		padding: 0vw;
+	}
 }
 .flexContentLeftPad{
 	padding: 1vw 0vw 0.7vw 0vw;
@@ -67,11 +79,16 @@
 	width: 40%;
 	display: flex;
     justify-content: center;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 100%;
+	}
 }
 .flexContentCenter{
-	@extend.flexContentLeft;
+	width: 66%;
 	text-align: center;
-	width: 100%;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width: 100%;
+	}
 }
 .flexContentLeftPad{
 	padding: 1vw 0vw 0.7vw 0vw;
@@ -85,4 +102,7 @@
 	text-align: center;
 	width: 100%;
 	padding-left: 2vw;
+	@media only screen and (min-width:0px) and (max-width:767px){
+		width:98%;
+	}
 }

@@ -218,8 +218,8 @@ header {
   width: 5vw; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .sticky nav .header__LogoNav {
-      height: 20vw;
-      width: 20vw; } }
+      height: 16vw;
+      width: 16vw; } }
 
 .sticky .enlaces-menu .header__NoSelectedNav {
   padding: 0.5vw 2vw 0.5vw 3vw;
@@ -279,7 +279,7 @@ header {
   .sticky .enlaces-menu .header__NoSelectedNav {
     padding: 0.5vw 2vw 0.5vw 3vw;
     font-size: 3vw; }
-  .sticky nav a .header__LogoNav {
+  .header__LogoNav {
     left: 37.5vw; } }
 
 .enlaces-menu.activado {
@@ -318,6 +318,9 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1vw 0vw 1vw 2vw; }
+
+footer {
+  padding: 1vw; }
 
 /*------ FIN FOOTER ------*/
 /*------ INICIO INDEX ------*/
@@ -787,9 +790,10 @@ alto, ancho y margen multimedia inside contenido */
   border-radius: 1vw;
   text-align: center;
   align-content: center;
-  height: 42vw;
-  width: 42vw;
-  margin: 2vw 2vw; }
+  height: 40vw;
+  width: 40vw;
+  margin: 2vw 2vw;
+  padding: 2vw; }
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
     .multimediaInsideContent {
       height: 60vw;
@@ -834,7 +838,12 @@ alto, ancho y margen multimedia inside contenido */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .flexReferencias {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .multimediaContentRefC {
+    width: 98%; }
+  .multimediaContentRefC {
+    width: 0%;
+    right: 31vw; } }
 
 .logosReferenciasR {
   width: 20vw; }
@@ -845,9 +854,14 @@ alto, ancho y margen multimedia inside contenido */
 .logosReferenciasMS {
   width: 15vw; }
 
-.flexContentLeft, .flexContentCenter {
+.flexContentLeft {
   padding: 2vw;
   width: 66%; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .flexContentLeft {
+      width: 98%;
+      text-align: center;
+      padding: 0vw; } }
 
 .flexContentLeftPad, .flexContentLeftPadC {
   padding: 1vw 0vw 0.7vw 0vw; }
@@ -869,10 +883,16 @@ alto, ancho y margen multimedia inside contenido */
   width: 40%;
   display: flex;
   justify-content: center; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .multimediaContentRef, .multimediaContentRefC {
+      width: 100%; } }
 
 .flexContentCenter {
-  text-align: center;
-  width: 100%; }
+  width: 66%;
+  text-align: center; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .flexContentCenter {
+      width: 100%; } }
 
 .flexContentLeftPad, .flexContentLeftPadC {
   padding: 1vw 0vw 0.7vw 0vw; }
@@ -884,6 +904,9 @@ alto, ancho y margen multimedia inside contenido */
   text-align: center;
   width: 100%;
   padding-left: 2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .multimediaContentRefC {
+      width: 98%; } }
 
 /*------ INICIO SECCIÓN CONTACTO ------*/
 /* Display flex, column, Color, tamaño y grosor cuadro login */
@@ -897,7 +920,9 @@ alto, ancho y margen multimedia inside contenido */
   padding: 2vw; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .seccionContactoInside {
-      padding-left: 3vw; } }
+      padding-left: 3vw;
+      width: 80vw;
+      height: 45vw; } }
 
 /* alto y posicion seccion contacto base*/
 .seccionContactoBase {
@@ -913,7 +938,7 @@ alto, ancho y margen multimedia inside contenido */
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .seccionContactoBase {
       margin: 5vw;
-      height: 60vw; } }
+      height: 50vw; } }
 
 /* Colores, tamaños, padding, alineaciones, margin y displays*/
 .formContacto {
@@ -956,6 +981,9 @@ alto, ancho y margen multimedia inside contenido */
 .tituloContacto {
   font-size: 1.5vw;
   margin-bottom: 1vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .tituloContacto {
+      font-size: 4vw; } }
 
 .formTop {
   display: flex;
@@ -971,6 +999,10 @@ alto, ancho y margen multimedia inside contenido */
   height: 2vw;
   border-radius: 1vw;
   background-color: #cbacf1; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formSquareWhite {
+      width: 35vw;
+      height: 4vw; } }
 
 .formSelection {
   width: 12vw;
@@ -978,6 +1010,11 @@ alto, ancho y margen multimedia inside contenido */
   border-radius: 1vw;
   background-color: #cbacf1;
   font-size: 1.2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formSelection {
+      width: 25vw;
+      height: 4vw;
+      font-size: 3vw; } }
 
 .formTopRight {
   display: flex;
@@ -994,6 +1031,10 @@ alto, ancho y margen multimedia inside contenido */
   width: 1.5vw;
   height: 1.5vw;
   margin: 0.2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .checkboxSize {
+      width: 4vw;
+      height: 4vw; } }
 
 .formBtn {
   width: 4vw;
@@ -1002,10 +1043,18 @@ alto, ancho y margen multimedia inside contenido */
   background-color: #cbacf1;
   font-size: 1.2vw;
   margin: 0.2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formBtn {
+      width: 10vw;
+      height: 6vw;
+      font-size: 3vw; } }
 
 .checkboxText {
   font-size: 1.4vw;
   margin: 0.2vw; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .checkboxText {
+      font-size: 3vw; } }
 
 /*------ FIN SECCIÓN CONTACTO ------*/
 /*------ INICIO SECCIÓN SOPORTE ------*/
@@ -1031,7 +1080,8 @@ alto, ancho y margen multimedia inside contenido */
 .soporteSeccionBase {
   position: relative;
   margin: 2vw 1vw 2vw 1vw;
-  border-radius: 1vw; }
+  border-radius: 1vw;
+  padding: 1vw; }
 
 /* Display flex, distribuir con espacios*/
 .soporteSquare {
@@ -1077,22 +1127,22 @@ alto, ancho y margen multimedia inside contenido */
       height: 50vw; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .seccionLoginBase {
-      height: 80vw; } }
+      height: 92vw; } }
 
 /* Posicion, background, border, alto y ancho seccion login inside*/
 .seccionLoginInside {
   border-radius: 1vw;
   padding: 2vw;
   border: 0.2vw solid #560075;
-  margin: 2vw 2vw 1.9vw 2vw; }
+  margin: 2vw 2vw 2.3vw 2vw; }
   @media screen and (min-width: 768px) and (max-width: 1239px) {
     .seccionLoginInside {
       width: 50vw;
       height: 50vw; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .seccionLoginInside {
-      width: 80vw;
-      height: 80vw; } }
+      width: 92vw;
+      margin: 2vw 2vw 6vw 2vw; } }
 
 /* Color, grosor y position de login */
 .tituloLogin {
@@ -1107,6 +1157,9 @@ alto, ancho y margen multimedia inside contenido */
   text-decoration: none;
   font-size: 1.4vw; }
   @media only screen and (min-width: 768px) and (max-width: 1239px) {
+    .helpLogin {
+      font-size: 4vw; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
     .helpLogin {
       font-size: 4vw; } }
 
@@ -1141,9 +1194,11 @@ alto, ancho y margen multimedia inside contenido */
   text-align: center; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .squarewhite {
-      height: 4vw;
+      height: 7vw;
       width: 60vw;
-      display: block; } }
+      display: block;
+      font-size: 4vw;
+      margin: 0.4vw; } }
 
 .sendButton {
   height: 3vw;
@@ -1158,8 +1213,9 @@ alto, ancho y margen multimedia inside contenido */
       width: 6vw; } }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .sendButton {
-      height: 6vw;
-      width: 10vw; } }
+      height: 8vw;
+      width: 15vw;
+      font-size: 3vw; } }
 
 /* Display flex, contenido al final y margen */
 .formLoginSend {
@@ -1174,6 +1230,10 @@ alto, ancho y margen multimedia inside contenido */
 .logoLogin {
   height: 14vw;
   width: 14vw; }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    .logoLogin {
+      height: 20vw;
+      width: 20vw; } }
 
 .sectionLeftLoginFlex {
   display: flex;
@@ -1184,6 +1244,9 @@ alto, ancho y margen multimedia inside contenido */
 .parrafoLogin {
   font-size: 2vw;
   text-align: center; }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    .parrafoLogin {
+      font-size: 3vw; } }
 
 /*------ FIN SECCIÓN LOGIN ------*/
 /* Display Desktop */
@@ -1292,6 +1355,13 @@ section#flexSectionReferenciasRight {
 section#seccionReferencias {
   grid-area: seccionReferencias; }
 
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #gridReferencias {
+    display: grid;
+    grid-template-areas: "header" "flexSectionReferenciasTop" "flexSectionReferenciasRight" "flexSectionReferenciasBottom" "footer";
+    grid-template-columns: 100%; } }
+
 /* Grid Contacto */
 #gridContacto {
   grid-template-areas: "header" "sectionContactoBase" "footer"; }
@@ -1309,6 +1379,13 @@ section#sectionLeftLogin {
 
 section#sectionRightLogin {
   grid-area: sectionRightLogin; }
+
+/*vista mobile*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #gridLogIn {
+    display: grid;
+    grid-template-areas: "header" "sectionLeftLogin" "sectionRightLogin" "footer";
+    grid-template-columns: 100%; } }
 
 .soyuntitulo {
   font-size: 8vw; }

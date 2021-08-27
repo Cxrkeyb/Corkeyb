@@ -8,7 +8,8 @@ $size-footer-logos: 4vw;
 	text-align: center;
 }
 .footerFlex__Inside__CoderLogoSize{
-	width:$size-footer-logos ; height:$size-footer-logos ;
+	width:$size-footer-logos ; 
+	height:$size-footer-logos ;
 }
 /* Establecer padding y position de los logos redes sociales*/
 .footerFlex__Inside{
@@ -21,5 +22,8 @@ $size-footer-logos: 4vw;
 	display: flex;
 	justify-content: space-between;
 	padding: 1vw 0vw 1vw 2vw;
+}
+footer{
+	padding: 1vw;
 }
 /*------ FIN FOOTER ------*/
