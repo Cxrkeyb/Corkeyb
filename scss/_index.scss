@@ -10,7 +10,7 @@ $centrado: center;
 .cardSection__InsideIndex{
 	@extend .section__InsideIndex;
 	width: 50%;
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px){
 		width: 91%;
 		margin: 1vw;
 	}
@@ -76,7 +76,7 @@ center {
 .youtubeIndexFlex {
 	text-align: end;
 
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		text-align: center;
 	}
 }
@@ -84,16 +84,17 @@ center {
 .flexRightSection {
 	display: flex;
 
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		display: block;
 	}
+	
 }
 
 .flexLeftSection {
 	display: flex;
 	flex-direction: row-reverse;
 
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		display: block;
 	}
 }
@@ -189,7 +190,7 @@ center {
 	width: 12vw;
 	padding: 3vw;
 	box-shadow: 0vw 0vw 0.5vw 0vw black;
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px){
 		width: 30vw;
 		height: 12vw;
 		margin: 1vw;
@@ -207,7 +208,7 @@ center {
 	box-shadow: 0vw 0vw 0.5vw 0vw black;
 	background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
 	border: 0.0vw solid black;
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px){
 		flex-wrap: wrap;
 		width: 25vw;
 		height: 8vw;
@@ -264,9 +265,11 @@ center {
 		transition: transform 0.7s;
 		transform: translateY(0%);
 		border-radius: 0.2vw;
-		@media only screen and (min-width:0px) and (max-width:767px) {
+		padding: 2vw;
+		@media only screen and (min-width:0px) and (max-width:1239px){
 			width: 80vw;
 			height: 60vw;
+			padding: 3vw;
 		}
 	}
 }
@@ -283,7 +286,7 @@ center {
 		line-height: 2vw;
 		cursor: pointer;
 		border-radius: 50%;
-		@media only screen and (min-width:0px) and (max-width:767px) {
+		@media only screen and (min-width:0px) and (max-width:1239px){
 			width: 4vw;
 			height: 4vw;
 			line-height: 3.7vw;
@@ -300,8 +303,11 @@ center {
 }
 .modalSVGSize{
 	height: 10vw;
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:767px){
 		height: 20vw;
+	}
+	@media only screen and (min-width:768px) and (max-width:1239px){
+		height: 25vw;
 	}
 }
 .multimediaContent{
@@ -313,7 +319,7 @@ center {
 .multimediaSVGContent{
 	border-radius: 1vw;
 	height: 18vw;
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px){
 		height: 40vw;
 	}
 }

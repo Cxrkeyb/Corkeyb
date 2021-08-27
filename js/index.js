@@ -71,10 +71,40 @@ cerrarLS.addEventListener("click", function () {
 window.addEventListener("click", function (e) {
     console.log(e.target)
     if (e.target == modalCR) {
-        modal.classList.toggle("modalCloseResponsive");
+        modalR.classList.toggle("modalCloseResponsive");
         setTimeout(function () {
             modalCR.style.opacity = "0";
             modalCR.style.visibility = "hidden";
+        }, 400)
+    }
+})
+window.addEventListener("click", function (e) {
+    console.log(e.target)
+    if (e.target == modalCS) {
+        modalS.classList.toggle("modalCloseScannability");
+        setTimeout(function () {
+            modalCS.style.opacity = "0";
+            modalCS.style.visibility = "hidden";
+        }, 400)
+    }
+})
+window.addEventListener("click", function (e) {
+    console.log(e.target)
+    if (e.target == modalCT) {
+        modalT.classList.toggle("modalCloseTypography");
+        setTimeout(function () {
+            modalCT.style.opacity = "0";
+            modalCT.style.visibility = "hidden";
+        }, 400)
+    }
+})
+window.addEventListener("click", function (e) {
+    console.log(e.target)
+    if (e.target == modalCLS) {
+        modalLS.classList.toggle("modalCloseLoadingSpeed");
+        setTimeout(function () {
+            modalCLS.style.opacity = "0";
+            modalCLS.style.visibility = "hidden";
         }, 400)
     }
 })

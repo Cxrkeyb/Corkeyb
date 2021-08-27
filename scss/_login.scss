@@ -8,10 +8,7 @@ $tamanioLoginContainerTablet: 50vw;
 	display: flex;
 	justify-content: center;
 	margin: 2vw;
-	@media screen and (min-width:768px) and (max-width:1239px) {
-		height: $tamanioLoginContainerTablet;
-	}
-    @media only screen and (min-width:0px) and (max-width:767px){
+	@media only screen and (min-width:0px) and (max-width:1239px) {
         height: $tamanioLoginContainerMobile;
     }
 }
@@ -20,12 +17,8 @@ $tamanioLoginContainerTablet: 50vw;
 	border-radius: 1vw;
 	padding: 2vw;
 	border: 0.2vw solid $tituloColor;
-	margin: 2vw 2vw 2.3vw 2vw;
-	@media screen and (min-width:768px) and (max-width:1239px) {
-		width: $tamanioLoginContainerTablet;
-		height: $tamanioLoginContainerTablet;
-	}
-    @media only screen and (min-width:0px) and (max-width:767px){
+	margin: 2vw 2vw 3.5vw 2vw;
+	@media only screen and (min-width:0px) and (max-width:1239px) {
         width: $tamanioLoginContainerMobile;
 		margin: 2vw 2vw 6vw 2vw;
     }
@@ -42,10 +35,7 @@ $tamanioLoginContainerTablet: 50vw;
 .helpLogin{
 	text-decoration: none;
 	font-size: 1.4vw;
-    @media only screen and (min-width:768px) and (max-width:1239px){
-         font-size: 4vw;
-    }
-	@media only screen and (min-width:0px) and (max-width:767px){
+	@media only screen and (min-width:0px) and (max-width:1239px) {
          font-size: 4vw;
     }
 }
@@ -61,11 +51,7 @@ $tamanioLoginContainerTablet: 50vw;
 	font-size: 2vw;
 	align-items: center;
     padding: 2vw;
-    @media only screen and (min-width:768px) and (max-width:1239px){
-        padding-left: 8vw;
-        font-size: 2.5vw;
-    }
-    @media only screen and (min-width:0px) and (max-width:767px){
+	@media only screen and (min-width:0px) and (max-width:1239px) {
         padding-left: 2vw;
         font-size: 5.5vw;
     }
@@ -78,7 +64,7 @@ $tamanioLoginContainerTablet: 50vw;
 	font-size: 1.3vw;
 	color: $white;
 	text-align: center;
-	@media screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: 7vw;
 		width: 60vw;
 		display: block;
@@ -93,11 +79,7 @@ $tamanioLoginContainerTablet: 50vw;
 	cursor: pointer;
 	margin: 0.72vw;
 	font-size: 1.2vw;
-	@media screen and (min-width:768px) and (max-width:1239px){
-		height: 4vw;
-		width: 6vw;
-	}
-	@media screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: 8vw;
 		width: 15vw;
 		font-size: 3vw;
@@ -116,7 +98,7 @@ $tamanioLoginContainerTablet: 50vw;
 .logoLogin{
 	height: 14vw;
 	width: 14vw;
-	@media screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: 20vw;
 		width: 20vw;
 	}
@@ -130,7 +112,7 @@ $tamanioLoginContainerTablet: 50vw;
 .parrafoLogin{
 	font-size: 2vw;
 	text-align: center;
-	@media screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		font-size: 3vw;
 	}
 }

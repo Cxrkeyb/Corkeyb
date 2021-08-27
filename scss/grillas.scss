@@ -69,6 +69,10 @@
 			"metodobenSection"
 			"serverWeb"
 			"footer";
+			grid-auto-columns: 100%;
+			grid-template-rows: auto;
+			grid-row-gap: 2vw;
+			margin: 2vw;
 	}
 
 	/* Grid areas */
@@ -199,7 +203,7 @@ section#seccionReferencias {
 }
 
 /*vista mobile*/
-@media only screen and (min-width:0px) and (max-width:767px) {
+@media only screen and (min-width:0px) and (max-width:1239px) {
 	#gridReferencias {
 		display: grid;
 		grid-template-areas:
@@ -237,7 +241,7 @@ section#sectionRightLogin{
 	grid-area: sectionRightLogin;
 }
 /*vista mobile*/
-@media only screen and (min-width:0px) and (max-width:767px) {
+@media only screen and (min-width:0px) and (max-width:1239px) {
 	#gridLogIn{
 		display: grid;
 		grid-template-areas:

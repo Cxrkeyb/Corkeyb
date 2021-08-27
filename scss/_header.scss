@@ -3,13 +3,11 @@ $size-logo-desktop: 6vw;
 $size-logo-desktop-sticky: 5vw;
 $size-logo-mobile-sticky: 16vw;
 $size-logo-mobile: 18vw;
-$size-logo-tablet: 15vw;
 $padding-Logo: 0.2vw;
 $navSizeDesktop: 1.2vw;
 $navSizeDesktopSticky: 1vw;
 $navSizeMobileSticky: 3vw;
 $navSizeMobile: 3vw;
-$navSizeTablet: 2vw;
 
 /* INICIO NAV */
 /* Tamaño y posicion del logo */
@@ -18,16 +16,10 @@ $navSizeTablet: 2vw;
 	width: $size-logo-desktop;
 	padding-right: 2vw;
 
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		width: $size-logo-mobile;
 		height: $size-logo-mobile;
 	}
-
-	@media only screen and (min-width:768px) and (max-width:1239px) {
-		width: $size-logo-tablet;
-		height: $size-logo-tablet;
-	}
-
 	position: relative;
 }
 
@@ -38,12 +30,8 @@ $navSizeTablet: 2vw;
 	font-size: $navSizeDesktop;
 	padding: 2vw 2vw 2vw 3vw;
 
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		font-size: $navSizeMobile;
-	}
-
-	@media only screen and (min-width:768px) and (max-width:1239px) {
-		font-size: $navSizeTablet;
 	}
 }
 
@@ -55,12 +43,8 @@ $navSizeTablet: 2vw;
 	padding: 0.75vw 2vw;
 	box-shadow: 0vw 0vw 0.5vw 0vw rgb(85, 84, 84);
 
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		font-size: $navSizeMobile;
-	}
-
-	@media only screen and (min-width:768px) and (max-width:1239px) {
-		font-size: $navSizeTablet;
 	}
 }
 
@@ -75,7 +59,7 @@ nav{
 	display: flex;
 	align-items: center;
 	min-height: 8vh;
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		min-height: 5vh;
 	}
 }
@@ -109,7 +93,7 @@ header {
 .sticky nav .header__LogoNav{
 	height: $size-logo-desktop-sticky;
 	width: $size-logo-desktop-sticky;
-	@media only screen and (min-width:0px) and (max-width:767px) {
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: $size-logo-mobile-sticky;
 		width: $size-logo-mobile-sticky;
 	}
@@ -144,16 +128,16 @@ header {
 	to{opacity: 1;}
 }
 // DISPOSITIVOS MOVILES
-@media (max-width:768px){
+@media (max-width:1239px){
 	nav{
 		flex-direction: column;
 		align-items: flex-start;
-		padding: 15px 0;
+		padding: 10px 0;
 	}
 	.ham{
 		display: block;
 		position: absolute;
-		top: 10vw;
+		top: 8vw;
 		right: 2.5vw;
 	}
 	.enlaces-menu{
@@ -172,7 +156,7 @@ header {
 		padding: 20px;
 	}
 	.sticky nav .ham{
-		top: 10vw;
+		top: 8vw;
 	}
 	.sticky .enlaces-menu .header__NoSelectedNav{
 		padding: 0.5vw 2vw 0.5vw 3vw;
