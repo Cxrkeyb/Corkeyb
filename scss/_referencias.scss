@@ -1,108 +1,96 @@
 /*------ INICIO SECCIÓN REFERENCIAS ------*/
-/* Posicion, alto, background, border y margin seccion base referencias*/
-.seccionBaseReferencias{
-	height: auto;
-	@extend .seccionInsideReferencias;
-}
-/* Borde, background y borde circular referencias*/
-.borderReferencias {
-   border: 0.2vw solid black;
-   border-radius: 1vw;
-   margin: 1vw;
-}
-/* Display flex y justify con espacio alrededor*/
-.flexReferencias{
-	display: flex;
-	justify-content: space-around;
-}
-/* background color, marge y borde circular*/
-.seccionInsideReferencias{
-	margin: 1vw;
-	border-radius: 1vw;
-	padding: 2vw;
-}
 /* Quitar puntos de lista dentro de la tabla de referencias */
-.listaTabla{
-	list-style-type: none;
-}
 /*vista mobile y tablet*/
 @media only screen and (min-width:0px) and (max-width:1239px) {
-	.flexReferencias{
-		display: flex;
-		flex-direction: column;
-	}
-	.multimediaContentRefC{
+	.multimediaContentRefC {
 		width: 98%;
 	}
-	.multimediaContentRefC{
+
+	.multimediaContentRefC {
 		width: 0%;
 		right: 31vw;
 	}
 }
-.logosReferenciasR{
+
+.logosReferenciasR {
 	width: 20vw;
 }
-.logosReferenciasCh{
+
+.logosReferenciasCh {
 	width: 20vw;
 }
-.logosReferenciasMS{
+
+.logosReferenciasMS {
 	width: 15vw;
 }
-.flexContentLeft{
+
+.flexContentLeft {
 	padding: 2vw;
 	width: 66%;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		width: 98%;
 		text-align: center;
 		padding: 0vw;
 	}
 }
-.flexContentLeftPad{
+
+.flexContentLeftPad {
 	padding: 1vw 0vw 0.7vw 0vw;
 }
-.flexLeftSectionReferencias{
+
+.flexLeftSectionReferencias {
 	@extend .flexLeftSection;
 	border-radius: 1vw;
 	margin: 1.5vw;
 	justify-content: space-around;
 }
-.flexCenterSectionReferencias{
+
+.flexCenterSectionReferencias {
 	@extend .flexRightSection;
 	border-radius: 1vw;
 	margin: 1.5vw;
 	flex-direction: column-reverse;
 	align-items: center;
-    justify-content: center;
+	justify-content: center;
 }
-.multimediaContentRef{
+
+.multimediaContentRef {
 	border-radius: 1vw;
 	width: 40%;
 	display: flex;
-    justify-content: center;
+	justify-content: center;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		width: 100%;
 	}
 }
-.flexContentCenter{
+
+.flexContentCenter {
 	width: 66%;
 	text-align: center;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		width: 100%;
 	}
 }
-.flexContentLeftPad{
+
+.flexContentLeftPad {
 	padding: 1vw 0vw 0.7vw 0vw;
 }
-.flexContentLeftPadC{
+
+.flexContentLeftPadC {
 	@extend .flexContentLeftPad;
 	text-align: center;
 }
-.multimediaContentRefC{
+
+.multimediaContentRefC {
 	@extend .multimediaContentRef;
 	text-align: center;
 	width: 100%;
 	padding-left: 2vw;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
-		width:98%;
+		width: 98%;
 	}
 }

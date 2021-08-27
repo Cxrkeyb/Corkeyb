@@ -1,29 +1,32 @@
 $size-footer-logos: 4vw;
+
 /*------ INICIO FOOTER ------*/
 /* Tamaño logos redes sociales */
-.faLogos{
+.faLogos {
 	font-size: $size-footer-logos;
 }
-.imageInside{
-	text-align: center;
+
+.footerFlex__Inside__CoderLogoSize {
+	width: $size-footer-logos;
+	height: $size-footer-logos;
 }
-.footerFlex__Inside__CoderLogoSize{
-	width:$size-footer-logos ; 
-	height:$size-footer-logos ;
-}
+
 /* Establecer padding y position de los logos redes sociales*/
-.footerFlex__Inside{
+.footerFlex__Inside {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	width: 50%;
 }
-.footerFlex{
+
+.footerFlex {
 	display: flex;
 	justify-content: space-between;
 	padding: 1vw 0vw 1vw 2vw;
 }
-footer{
+
+footer {
 	padding: 1vw;
 }
+
 /*------ FIN FOOTER ------*/

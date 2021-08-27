@@ -7,23 +7,20 @@ $centrado: center;
 	border-radius: 0.8vw;
 	padding: 3vw;
 }
-.cardSection__InsideIndex{
+
+.cardSection__InsideIndex {
 	@extend .section__InsideIndex;
 	width: 50%;
-	@media only screen and (min-width:0px) and (max-width:1239px){
+
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		width: 91%;
 		margin: 1vw;
 	}
 }
-/* Color titulo, tamaño y grosor beneficios index */
+
+/* Grosor beneficios index */
 .leftSection__BeneficiosTitulo {
 	font-weight: 800;
-}
-
-/* Color, tamaño y grosor de contenido de lista beneficios y servicios index */
-.leftSection__Lista {
-	font-weight: 900;
-	list-style-type: none;
 }
 
 /* Tamaños alto, ancho, display flex, transition y justify centrado */
@@ -40,23 +37,14 @@ $centrado: center;
 	width 1s;
 }
 
-.rightSection__ImageSizeIndex {
-	height: 20vw;
-	width: 30vw;
-
-	@media only screen and (min-width:0px) and (max-width:767px) {
-		height: 35vw;
-		width: 55vw;
-	}
-}
-
-/* Borde circular, backgroun-color*/
+/* Borde circular, background-color*/
 .border {
 	border: 0.12vw solid black;
 	border-radius: 0.5vw;
 	padding: 3vw;
 }
 
+// Texto alineado al centro ya sea en la imagén right o center
 @each $position in right,
 center {
 	.#{$position}Section__ImageInside {
@@ -64,15 +52,7 @@ center {
 	}
 }
 
-.rightSectionTwo__ImageInside {
-	text-align: $centrado;
-}
-
-.centerSection__ImageSizeIndex {
-	height: 20vw;
-	width: 30vw;
-}
-
+//  Youtube alineado al final en mobile y tablet al centro
 .youtubeIndexFlex {
 	text-align: end;
 
@@ -81,13 +61,14 @@ center {
 	}
 }
 
+// Secciones en flex para que esten en linea o en bloque para que se vean en columnas
 .flexRightSection {
 	display: flex;
 
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		display: block;
 	}
-	
+
 }
 
 .flexLeftSection {
@@ -108,6 +89,7 @@ center {
 	padding: 1vw;
 }
 
+//  Inicio Slider
 .sliderFlex {
 	width: 90vw;
 	margin: auto;
@@ -171,6 +153,8 @@ center {
 		margin-left: -200%;
 	}
 }
+
+// Fin Slider
 // Cards 
 .cardIndex {
 	font-size: 7vw;
@@ -190,7 +174,8 @@ center {
 	width: 12vw;
 	padding: 3vw;
 	box-shadow: 0vw 0vw 0.5vw 0vw black;
-	@media only screen and (min-width:0px) and (max-width:1239px){
+
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		width: 30vw;
 		height: 12vw;
 		margin: 1vw;
@@ -208,7 +193,8 @@ center {
 	box-shadow: 0vw 0vw 0.5vw 0vw black;
 	background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
 	border: 0.0vw solid black;
-	@media only screen and (min-width:0px) and (max-width:1239px){
+
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		flex-wrap: wrap;
 		width: 25vw;
 		height: 8vw;
@@ -216,7 +202,8 @@ center {
 	}
 }
 
-@each $card in Flex, FlexMini {
+@each $card in Flex,
+FlexMini {
 	.cardContent#{$card}:hover {
 		box-shadow: 0vw 0vw 1vw 0vw black;
 	}
@@ -232,11 +219,12 @@ center {
 	text-align: center;
 }
 
-.subTitleContent {
-	text-align: center;
-}
+//  Fin Cards
 // Modals diseño web
-@each $modalC in Responsive, Scannability, Typography, LoadingSpeed {
+@each $modalC in Responsive,
+Scannability,
+Typography,
+LoadingSpeed {
 	.modalContainer#{$modalC} {
 		position: fixed;
 		z-index: 100;
@@ -252,7 +240,11 @@ center {
 		visibility: hidden;
 	}
 }
-@each $modal in Responsive, Scannability, Typography, LoadingSpeed {
+
+@each $modal in Responsive,
+Scannability,
+Typography,
+LoadingSpeed {
 	.modal#{$modal} {
 		width: 40vw;
 		height: 30vw;
@@ -266,14 +258,19 @@ center {
 		transform: translateY(0%);
 		border-radius: 0.2vw;
 		padding: 2vw;
-		@media only screen and (min-width:0px) and (max-width:1239px){
+
+		@media only screen and (min-width:0px) and (max-width:1239px) {
 			width: 80vw;
 			height: 60vw;
 			padding: 3vw;
 		}
 	}
 }
-@each $close in Responsive, Scannability, Typography, LoadingSpeed {
+
+@each $close in Responsive,
+Scannability,
+Typography,
+LoadingSpeed {
 	.close#{$close} {
 		position: absolute;
 		top: 0.5vw;
@@ -286,45 +283,62 @@ center {
 		line-height: 2vw;
 		cursor: pointer;
 		border-radius: 50%;
-		@media only screen and (min-width:0px) and (max-width:1239px){
+
+		@media only screen and (min-width:0px) and (max-width:1239px) {
 			width: 4vw;
 			height: 4vw;
 			line-height: 3.7vw;
 		}
 	}
 }
-@each $mClose in Responsive, Scannability, Typography, LoadingSpeed {
+
+@each $mClose in Responsive,
+Scannability,
+Typography,
+LoadingSpeed {
 	.modalClose#{$mClose} {
 		transform: translateY(-200%);
 	}
 }
+
 .modal>img {
 	height: 50%;
 }
-.modalSVGSize{
+
+.modalSVGSize {
 	height: 10vw;
-	@media only screen and (min-width:0px) and (max-width:767px){
+
+	@media only screen and (min-width:0px) and (max-width:767px) {
 		height: 20vw;
 	}
-	@media only screen and (min-width:768px) and (max-width:1239px){
+
+	@media only screen and (min-width:768px) and (max-width:1239px) {
 		height: 25vw;
 	}
 }
-.multimediaContent{
+
+// Fin Modales
+// Multimedia de Index
+.multimediaContent {
 	border-radius: 1vw;
 	border: 0.3vw solid $tituloColor;
 	display: flex;
 	justify-content: center;
 }
-.multimediaSVGContent{
+
+.multimediaSVGContent {
 	border-radius: 1vw;
 	height: 18vw;
-	@media only screen and (min-width:0px) and (max-width:1239px){
+
+	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: 40vw;
 	}
 }
-.sizeImageIndex{
+
+.sizeImageIndex {
 	@media only screen and (min-width:0px) and (max-width:767px) {
 		width: 88vw;
 	}
 }
+
+// Fin Multimedia Index

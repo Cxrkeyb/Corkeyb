@@ -20,6 +20,7 @@ $navSizeMobile: 3vw;
 		width: $size-logo-mobile;
 		height: $size-logo-mobile;
 	}
+
 	position: relative;
 }
 
@@ -48,6 +49,24 @@ $navSizeMobile: 3vw;
 	}
 }
 
+nav {
+	display: flex;
+	align-items: center;
+	min-height: 8vh;
+
+	@media only screen and (min-width:0px) and (max-width:1239px) {
+		min-height: 5vh;
+	}
+}
+
+.enlaces-menu {
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 0.8vw;
+}
+
 /* FIN NAV */
 /* Grid area, quitar subrayado, background-color, display flex, direction, espacios entre ellos y centrado header */
 header {
@@ -55,21 +74,7 @@ header {
 	padding: 0.2vw 0.5vw 0.2vw 2vw;
 }
 
-nav{
-	display: flex;
-	align-items: center;
-	min-height: 8vh;
-	@media only screen and (min-width:0px) and (max-width:1239px) {
-		min-height: 5vh;
-	}
-}
-.enlaces-menu{
-	text-decoration: none;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	font-size: 0.8vw;
-}
+
 header {
 	position: sticky;
 	top: 0;
@@ -77,33 +82,34 @@ header {
 	transition: 0.6s;
 }
 
-.borderHeader {
-	border: 0.1vw solid black;
-	margin: 0;
-}
-
 .header__NoSelectedNavText {
 	color: $black;
 }
-.sticky{
+
+// NAV STICKY
+.sticky {
 	background-color: $white;
 	padding: 0vw 0.5vw 0vw 2vw;
 	transition: 0.6s;
 }
-.sticky nav .header__LogoNav{
+
+.sticky nav .header__LogoNav {
 	height: $size-logo-desktop-sticky;
 	width: $size-logo-desktop-sticky;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: $size-logo-mobile-sticky;
 		width: $size-logo-mobile-sticky;
 	}
 }
-.sticky .enlaces-menu .header__NoSelectedNav{
+
+.sticky .enlaces-menu .header__NoSelectedNav {
 	padding: 0.5vw 2vw 0.5vw 3vw;
 	font-size: $navSizeDesktopSticky;
 }
 
-.ham{
+// MENU HAMBURGUESA
+.ham {
 	display: none;
 	cursor: pointer;
 	border: none;
@@ -112,10 +118,12 @@ header {
 	background-color: transparent;
 	transition: 0.2s 0.1s;
 }
-.ham:hover{
+
+.ham:hover {
 	transform: rotate(360deg);
 }
-.ham span{
+
+.ham span {
 	display: block;
 	background-color: $black;
 	height: 1.2vw;
@@ -123,24 +131,33 @@ header {
 	margin: 1vw auto;
 	border-radius: 0.1vw;
 }
+
 @keyframes muestraMenu {
-	from{opacity: 0;}
-	to{opacity: 1;}
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
-// DISPOSITIVOS MOVILES
-@media (max-width:1239px){
-	nav{
+
+// DISPOSITIVOS MOVILES Y TABLETS
+@media (max-width:1239px) {
+	nav {
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 10px 0;
 	}
-	.ham{
+
+	.ham {
 		display: block;
 		position: absolute;
 		top: 8vw;
 		right: 2.5vw;
 	}
-	.enlaces-menu{
+
+	.enlaces-menu {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
@@ -150,36 +167,41 @@ header {
 		width: 100%;
 		display: none;
 	}
-	.enlaces-menu a{
+
+	.enlaces-menu a {
 		width: 100%;
 		text-align: center;
 		padding: 20px;
 	}
-	.sticky nav .ham{
+
+	.sticky nav .ham {
 		top: 8vw;
 	}
-	.sticky .enlaces-menu .header__NoSelectedNav{
+
+	.sticky .enlaces-menu .header__NoSelectedNav {
 		padding: 0.5vw 2vw 0.5vw 3vw;
 		font-size: $navSizeMobileSticky;
 	}
-	.header__LogoNav{
+
+	.header__LogoNav {
 		left: 37.5vw;
 	}
 }
 
-.enlaces-menu.activado{
+// ANIMACIONES HEADER
+.enlaces-menu.activado {
 	display: flex;
 	animation: muestraMenu 350ms ease-in-out both;
 }
 
-.br-1.animado{
-	transform: rotate(-45deg) translate(-10px,8px);
+.br-1.animado {
+	transform: rotate(-45deg) translate(-10px, 8px);
 }
 
-.br-2.animado{
+.br-2.animado {
 	opacity: 0;
 }
 
-.br-3.animado{
+.br-3.animado {
 	transform: rotate(45deg) translate(-10px, -8px);
 }

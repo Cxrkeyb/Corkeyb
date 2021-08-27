@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Palabras clave -->
-	<meta name="keywords" content="HTML, CSS, JAVASCRIPT, DESARROLLO WEB, SCSS, diseñador web, crea tú pagina web, programador web, ejemplo pagina web, diseño web, logueate web, login web, login corkeyb">
+	<meta name="keywords"
+		content="HTML, CSS, JAVASCRIPT, DESARROLLO WEB, SCSS, diseñador web, crea tú pagina web, programador web, ejemplo pagina web, diseño web, logueate web, login web, login corkeyb">
 	<!-- Descripción página web -->
-	<meta name="description" content="Inicia sesión en Corkeyb para empezar a modificar y hablar con algún asesor acerca de cambios hacia tu página web.">
+	<meta name="description"
+		content="Inicia sesión en Corkeyb para empezar a modificar y hablar con algún asesor acerca de cambios hacia tu página web.">
 	<!-- linkear css -->
 	<link rel="stylesheet" href="../css/style.css">
 	<!-- linkear iconos fontawesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<!-- linkear google fonts  -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 	<title>Logueate</title>
 </head>
+
 <body id="bodyGeneral">
 	<div id="gridLogIn">
-	<!-- INICIO HEADER -->
-	<header>
-		<!-- Inicio NAV-->
-		<nav>
-		<!-- INICIO ENLACES NAV BAR -->
-		<div class="enlaces-menu">
-		<a href="../index.html" class="header__NoSelectedNav">
-			<h3 class="header__NoSelectedNav">Home</h3>
-		</a>
-		<a href="multimedia.html" class="header__NoSelectedNav">
-			<h3 class="header__NoSelectedNavText">Multimedia</h3>
-		</a>
-		<a href="referencias.html" class="header__NoSelectedNav">
-			<h3 class="header__NoSelectedNavText">Referencias</h3>
-		</a>
-		<a href="soporte.html" class="header__NoSelectedNav">
-			<h3 class="header__NoSelectedNavText">Soporte</h3>
-		</a>
-		<a href="login.html" class="header__NoSelectedNav">
-			<h3 class="header__SelectedNav">Log in</h3>
-		</a>
-		</div>
-		<!-- FIN ENLACES NAV BAR -->
-		<!-- INICIO MENÚ HAMBURGUESA -->
-		<button class="ham" type="button">
-			<span class="br-1"></span>
-			<span class="br-2"></span>
-			<span class="br-3"></span>
-		</button>
-		<!-- FIN MENÚ HAMBURGUESA -->
-		</nav>
-		<!-- Fin NAV-->
-	</header>
-	<!-- FIN HEADER -->
+		<!-- INICIO HEADER -->
+		<header>
+			<!-- Inicio NAV-->
+			<nav>
+				<!-- INICIO ENLACES NAV BAR -->
+				<div class="enlaces-menu">
+					<a href="../index.html" class="header__NoSelectedNav">
+						<h3 class="header__NoSelectedNav">Home</h3>
+					</a>
+					<a href="multimedia.html" class="header__NoSelectedNav">
+						<h3 class="header__NoSelectedNavText">Multimedia</h3>
+					</a>
+					<a href="referencias.html" class="header__NoSelectedNav">
+						<h3 class="header__NoSelectedNavText">Referencias</h3>
+					</a>
+					<a href="soporte.html" class="header__NoSelectedNav">
+						<h3 class="header__NoSelectedNavText">Soporte</h3>
+					</a>
+					<a href="login.html" class="header__NoSelectedNav">
+						<h3 class="header__SelectedNav">Log in</h3>
+					</a>
+				</div>
+				<!-- FIN ENLACES NAV BAR -->
+				<!-- INICIO MENÚ HAMBURGUESA -->
+				<button class="ham" type="button">
+					<span class="br-1"></span>
+					<span class="br-2"></span>
+					<span class="br-3"></span>
+				</button>
+				<!-- FIN MENÚ HAMBURGUESA -->
+			</nav>
+			<!-- Fin NAV-->
+		</header>
+		<!-- FIN HEADER -->
 		<section id="sectionLeftLogin" class="sectionLeftLoginFlex">
 			<a href="../index.html"><img src="../assets/img/logo.png" class="logoLogin"></a>
 			<p class="parrafoLogin">Te ayudaremos a hacer cambios a tú página con prioridad, no dudes en hablarnos.</p>
 		</section>
 		<section id="sectionRightLogin" class="seccionLoginInside">
 			<form action="">
-			<div class="formLoginAccount">
-				<div class="formUserFlex">					
-					<input type="text" name="usuario" class="squarewhite" placeholder="Usuario">
+				<div class="formLoginAccount">
+					<div class="formUserFlex">
+						<input type="text" name="usuario" class="squarewhite" placeholder="Usuario">
+					</div>
+					<div class="formPasswordFlex">
+						<input type="password" name="password" class="squarewhite" placeholder="Contraseña">
+					</div>
+					<div class="formLoginSend">
+						<input type="submit" name="enviar" class="sendButton">
+					</div>
+					<a href="soporte.html" class="helpLogin">
+						<p class="helpLogin">¿Olvidaste tu contraseña?</p>
+					</a>
 				</div>
-				<div class="formPasswordFlex">
-					<input type="password" name="password" class="squarewhite" placeholder="Contraseña">
-				</div>
-				<div class="formLoginSend">
-					<input type="submit" name="enviar" class="sendButton">
-				</div>
-				<a href="soporte.html" class="helpLogin"><p class="helpLogin">¿Olvidaste tu contraseña?</p></a>
-			</div>
 			</form>
 		</section>
-	<!-- FIN LOG IN -->
+		<!-- FIN LOG IN -->
 		<footer>
 			<section>
 				<a href="contacto.html">
@@ -106,4 +114,5 @@
 		<script src="../js/navbar.js"></script>
 	</div>
 </body>
+
 </html>

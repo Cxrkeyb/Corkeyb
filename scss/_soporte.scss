@@ -1,57 +1,68 @@
 /*------ INICIO SECCIÓN SOPORTE ------*/
 /* Color y grosor titulo soporte ayuda */
-.tituloHelp{
-	font-weight: 800;
+.tituloHelp {
+    font-weight: 800;
 }
+
 /* Color, tamaño y grosor enlace continuar ayuda */
-.continueHelp{
-	font-weight: 600;
+.continueHelp {
+    font-weight: 600;
 }
+
 /* Tamaño de iconos en soporte */
-.faSoporte{
-	font-size: 7vw;
-    @media only screen and (min-width:768px) and (max-width:1239px){
+.faSoporte {
+    font-size: 7vw;
+
+    @media only screen and (min-width:768px) and (max-width:1239px) {
         font-size: 10vw;
     }
-    @media only screen and (min-width:0px) and (max-width:767px){
+
+    @media only screen and (min-width:0px) and (max-width:767px) {
         font-size: 15vw;
     }
 }
+
 /* Background, position, margin y border seccion base soporte*/
-.soporteSeccionBase{
-	position: relative;
-	margin: 2vw 1vw 2vw 1vw;
-	border-radius: 1vw;
+.soporteSeccionBase {
+    position: relative;
+    margin: 2vw 1vw 2vw 1vw;
+    border-radius: 1vw;
     padding: 1vw;
 }
+
 /* Display flex, distribuir con espacios*/
-.soporteSquare{
-	display: flex;
-	justify-content: space-around;
-    @media only screen and (min-width:0px) and (max-width:767px){
+.soporteSquare {
+    display: flex;
+    justify-content: space-around;
+
+    @media only screen and (min-width:0px) and (max-width:767px) {
         flex-direction: column;
         align-items: center;
     }
 }
+
 /* Background, Borde circular, display flex, texto centrado, contenido alineado al centro, contenido centrado (jc), texto acorde al cuadro
 , alto y ancho */
-.soporteSquareInside{
-	border-radius: 1vw;
-	display: flex;
-	text-align: center;
-	align-content: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 20vw;
-	width: 30vw;
-    @media only screen and (min-width:768px) and (max-width:1239px){
+.soporteSquareInside {
+    border-radius: 1vw;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vw;
+    width: 30vw;
+
+    @media only screen and (min-width:768px) and (max-width:1239px) {
         width: 26vw;
         height: 34vw;
     }
-    @media only screen and (min-width:0px) and (max-width:767px){
+
+    @media only screen and (min-width:0px) and (max-width:767px) {
         width: 70vw;
         margin: 2vw;
         height: 30vw;
     }
 }
+
 /*------ FIN SECCIÓN SOPORTE ------*/

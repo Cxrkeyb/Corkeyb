@@ -1,62 +1,43 @@
 $tamanioLoginContainerMobile: 92vw;
 $tamanioLoginContainerTablet: 50vw;
+
 /*------ INICIO SECCIÓN LOGIN ------*/
-/* Posicion y altura seccion login base */
-.seccionLoginBase{
-	position: relative;
-	height: 30vw;
-	display: flex;
-	justify-content: center;
-	margin: 2vw;
-	@media only screen and (min-width:0px) and (max-width:1239px) {
-        height: $tamanioLoginContainerMobile;
-    }
-}
 /* Posicion, background, border, alto y ancho seccion login inside*/
-.seccionLoginInside{
+.seccionLoginInside {
 	border-radius: 1vw;
 	padding: 2vw;
 	border: 0.2vw solid $tituloColor;
 	margin: 2vw 2vw 3.5vw 2vw;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
-        width: $tamanioLoginContainerMobile;
+		width: $tamanioLoginContainerMobile;
 		margin: 2vw 2vw 6vw 2vw;
-    }
+	}
 }
-/* Color, grosor y position de login */
-.tituloLogin{
-	font-weight: 800;
-}
-/* Color, tamaño y grosor cuadro login */
-.cuadroLogin{
-	font-weight: 700;
-}
+
 /* Margin, Color azul y subrayado quitado login*/
-.helpLogin{
+.helpLogin {
 	text-decoration: none;
 	font-size: 1.4vw;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
-         font-size: 4vw;
-    }
+		font-size: 4vw;
+	}
 }
-/* Display inline-block, texto centrado y tamaño del contenedor*/
-.formContactoInfo{
-	width: 60%;
-	height: 10vw;
-	display: inline-block;
-	text-align: center;
-}
+
 /* padding y margin  */
-.formLoginAccount{
+.formLoginAccount {
 	font-size: 2vw;
 	align-items: center;
-    padding: 2vw;
+	padding: 2vw;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
-        padding-left: 2vw;
-        font-size: 5.5vw;
-    }
+		padding-left: 2vw;
+		font-size: 5.5vw;
+	}
 }
-.squarewhite{
+
+.squarewhite {
 	height: 3.4vw;
 	width: 25vw;
 	border-radius: 1vw;
@@ -64,6 +45,7 @@ $tamanioLoginContainerTablet: 50vw;
 	font-size: 1.3vw;
 	color: $white;
 	text-align: center;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: 7vw;
 		width: 60vw;
@@ -72,48 +54,58 @@ $tamanioLoginContainerTablet: 50vw;
 		margin: 0.4vw;
 	}
 }
-.sendButton{
+
+.sendButton {
 	height: 3vw;
 	width: 20vw;
 	border-radius: 1vw;
 	cursor: pointer;
 	margin: 0.72vw;
 	font-size: 1.2vw;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: 8vw;
 		width: 15vw;
 		font-size: 3vw;
 	}
 }
+
 /* Display flex, contenido al final y margen */
-.formLoginSend{
+.formLoginSend {
 	justify-content: flex-end;
 	display: flex;
 }
-.formLoginAccount{
+
+.formLoginAccount {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 }
-.logoLogin{
+
+.logoLogin {
 	height: 14vw;
 	width: 14vw;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		height: 20vw;
 		width: 20vw;
 	}
 }
-.sectionLeftLoginFlex{
+
+.sectionLeftLoginFlex {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.parrafoLogin{
+
+.parrafoLogin {
 	font-size: 2vw;
 	text-align: center;
+
 	@media only screen and (min-width:0px) and (max-width:1239px) {
 		font-size: 3vw;
 	}
 }
+
 /*------ FIN SECCIÓN LOGIN ------*/

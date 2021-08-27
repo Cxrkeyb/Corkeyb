@@ -42,7 +42,7 @@ footer {
 .soporteSeccionBase {
   background-color: #cbacf1; }
 
-.seccionInsideReferencias, .seccionBaseReferencias {
+.seccionInsideReferencias {
   background-color: #e6e6e6; }
 
 .seccionBaseReferencias {
@@ -167,12 +167,6 @@ footer {
     .header__SelectedNav {
       font-size: 3vw; } }
 
-/* FIN NAV */
-/* Grid area, quitar subrayado, background-color, display flex, direction, espacios entre ellos y centrado header */
-header {
-  grid-area: header;
-  padding: 0.2vw 0.5vw 0.2vw 2vw; }
-
 nav {
   display: flex;
   align-items: center;
@@ -188,15 +182,17 @@ nav {
   align-items: center;
   font-size: 0.8vw; }
 
+/* FIN NAV */
+/* Grid area, quitar subrayado, background-color, display flex, direction, espacios entre ellos y centrado header */
+header {
+  grid-area: header;
+  padding: 0.2vw 0.5vw 0.2vw 2vw; }
+
 header {
   position: sticky;
   top: 0;
   z-index: 1;
   transition: 0.6s; }
-
-.borderHeader {
-  border: 0.1vw solid black;
-  margin: 0; }
 
 .header__NoSelectedNavText {
   color: #14161F; }
@@ -293,9 +289,6 @@ header {
 .faLogos {
   font-size: 4vw; }
 
-.imageInside {
-  text-align: center; }
-
 .footerFlex__Inside__CoderLogoSize {
   width: 4vw;
   height: 4vw; }
@@ -330,14 +323,9 @@ footer {
       width: 91%;
       margin: 1vw; } }
 
-/* Color titulo, tamaño y grosor beneficios index */
+/* Grosor beneficios index */
 .leftSection__BeneficiosTitulo {
   font-weight: 800; }
-
-/* Color, tamaño y grosor de contenido de lista beneficios y servicios index */
-.leftSection__Lista {
-  font-weight: 900;
-  list-style-type: none; }
 
 /* Tamaños alto, ancho, display flex, transition y justify centrado */
 .leftSection___YoutubeIndex {
@@ -349,15 +337,7 @@ footer {
       width: 70vw;
       height: 50vw; } }
 
-.rightSection__ImageSizeIndex {
-  height: 20vw;
-  width: 30vw; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .rightSection__ImageSizeIndex {
-      height: 35vw;
-      width: 55vw; } }
-
-/* Borde circular, backgroun-color*/
+/* Borde circular, background-color*/
 .border {
   border: 0.12vw solid black;
   border-radius: 0.5vw;
@@ -368,13 +348,6 @@ footer {
 
 .centerSection__ImageInside {
   text-align: center; }
-
-.rightSectionTwo__ImageInside {
-  text-align: center; }
-
-.centerSection__ImageSizeIndex {
-  height: 20vw;
-  width: 30vw; }
 
 .youtubeIndexFlex {
   text-align: end; }
@@ -499,9 +472,6 @@ footer {
   width: 12vw; }
 
 .parrafoCenter {
-  text-align: center; }
-
-.subTitleContent {
   text-align: center; }
 
 .modalContainerResponsive {
@@ -813,36 +783,9 @@ alto, ancho y margen multimedia inside contenido */
 
 /*------ FIN SECCIÓN MULTIMEDIA ------*/
 /*------ INICIO SECCIÓN REFERENCIAS ------*/
-/* Posicion, alto, background, border y margin seccion base referencias*/
-.seccionBaseReferencias {
-  height: auto; }
-
-/* Borde, background y borde circular referencias*/
-.borderReferencias {
-  border: 0.2vw solid black;
-  border-radius: 1vw;
-  margin: 1vw; }
-
-/* Display flex y justify con espacio alrededor*/
-.flexReferencias {
-  display: flex;
-  justify-content: space-around; }
-
-/* background color, marge y borde circular*/
-.seccionInsideReferencias, .seccionBaseReferencias {
-  margin: 1vw;
-  border-radius: 1vw;
-  padding: 2vw; }
-
 /* Quitar puntos de lista dentro de la tabla de referencias */
-.listaTabla {
-  list-style-type: none; }
-
 /*vista mobile y tablet*/
 @media only screen and (min-width: 0px) and (max-width: 1239px) {
-  .flexReferencias {
-    display: flex;
-    flex-direction: column; }
   .multimediaContentRefC {
     width: 98%; }
   .multimediaContentRefC {
@@ -939,41 +882,6 @@ alto, ancho y margen multimedia inside contenido */
     .seccionContactoBase {
       margin: 5vw;
       height: 50vw; } }
-
-/* Colores, tamaños, padding, alineaciones, margin y displays*/
-.formContacto {
-  font-weight: 700;
-  width: 40vw;
-  padding-top: 3vw; }
-  @media only screen and (min-width: 0px) and (max-width: 1239px) {
-    .formContacto {
-      width: 50vw; } }
-
-.formContactoInfo {
-  width: 60%;
-  height: 10vw;
-  display: flex;
-  text-align: center;
-  flex-direction: row; }
-
-.formContactoInfo div {
-  margin-top: 3vw;
-  display: inline-block; }
-
-.formPropositoDiv {
-  padding-top: 4.15vw;
-  display: inline-block;
-  width: 39%;
-  height: 5.85vw;
-  text-align: center; }
-  @media only screen and (min-width: 0px) and (max-width: 1239px) {
-    .formPropositoDiv {
-      display: block; } }
-
-.formCheckbox {
-  width: 100%;
-  display: block;
-  text-align: center; }
 
 .tituloContacto {
   font-size: 1.5vw;
@@ -1112,17 +1020,6 @@ alto, ancho y margen multimedia inside contenido */
 
 /*------ FIN SECCIÓN SOPORTE ------*/
 /*------ INICIO SECCIÓN LOGIN ------*/
-/* Posicion y altura seccion login base */
-.seccionLoginBase {
-  position: relative;
-  height: 30vw;
-  display: flex;
-  justify-content: center;
-  margin: 2vw; }
-  @media only screen and (min-width: 0px) and (max-width: 1239px) {
-    .seccionLoginBase {
-      height: 92vw; } }
-
 /* Posicion, background, border, alto y ancho seccion login inside*/
 .seccionLoginInside {
   border-radius: 1vw;
@@ -1134,14 +1031,6 @@ alto, ancho y margen multimedia inside contenido */
       width: 92vw;
       margin: 2vw 2vw 6vw 2vw; } }
 
-/* Color, grosor y position de login */
-.tituloLogin {
-  font-weight: 800; }
-
-/* Color, tamaño y grosor cuadro login */
-.cuadroLogin {
-  font-weight: 700; }
-
 /* Margin, Color azul y subrayado quitado login*/
 .helpLogin {
   text-decoration: none;
@@ -1149,13 +1038,6 @@ alto, ancho y margen multimedia inside contenido */
   @media only screen and (min-width: 0px) and (max-width: 1239px) {
     .helpLogin {
       font-size: 4vw; } }
-
-/* Display inline-block, texto centrado y tamaño del contenedor*/
-.formContactoInfo {
-  width: 60%;
-  height: 10vw;
-  display: inline-block;
-  text-align: center; }
 
 /* padding y margin  */
 .formLoginAccount {
