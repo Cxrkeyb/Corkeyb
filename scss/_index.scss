@@ -7,7 +7,12 @@ $centrado: center;
 	border-radius: 0.8vw;
 	padding: 3vw;
 }
-
+.marginText{
+	margin-bottom: 1vw;
+	@media only screen and (min-width:0px) and (max-width:1239px) {
+		margin-bottom: 2vw;
+	}
+}
 .cardSection__InsideIndex {
 	@extend .section__InsideIndex;
 	width: 50%;

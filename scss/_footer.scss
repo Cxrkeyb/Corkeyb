@@ -1,14 +1,22 @@
 $size-footer-logos: 4vw;
+$size-footer-logos-adaptable: 6vw;
 
 /*------ INICIO FOOTER ------*/
 /* Tamaño logos redes sociales */
 .faLogos {
 	font-size: $size-footer-logos;
+	@media only screen and (min-width:0px) and (max-width:1239px) {
+		font-size: $size-footer-logos-adaptable;
+	}
 }
 
 .footerFlex__Inside__CoderLogoSize {
 	width: $size-footer-logos;
 	height: $size-footer-logos;
+	@media only screen and (min-width:0px) and (max-width:1239px) {
+		width: $size-footer-logos-adaptable;
+		height: $size-footer-logos-adaptable;
+	}
 }
 
 /* Establecer padding y position de los logos redes sociales*/

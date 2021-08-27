@@ -288,10 +288,17 @@ header {
 /* Tamaño logos redes sociales */
 .faLogos {
   font-size: 4vw; }
+  @media only screen and (min-width: 0px) and (max-width: 1239px) {
+    .faLogos {
+      font-size: 6vw; } }
 
 .footerFlex__Inside__CoderLogoSize {
   width: 4vw;
   height: 4vw; }
+  @media only screen and (min-width: 0px) and (max-width: 1239px) {
+    .footerFlex__Inside__CoderLogoSize {
+      width: 6vw;
+      height: 6vw; } }
 
 /* Establecer padding y position de los logos redes sociales*/
 .footerFlex__Inside {
@@ -315,6 +322,12 @@ footer {
   margin: 0.3vw;
   border-radius: 0.8vw;
   padding: 3vw; }
+
+.marginText {
+  margin-bottom: 1vw; }
+  @media only screen and (min-width: 0px) and (max-width: 1239px) {
+    .marginText {
+      margin-bottom: 2vw; } }
 
 .cardSection__InsideIndex {
   width: 50%; }
