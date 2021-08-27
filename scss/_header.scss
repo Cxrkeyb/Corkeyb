@@ -1,12 +1,13 @@
 $base-font-weight: 700;
 $size-logo-desktop: 6vw;
 $size-logo-desktop-sticky: 5vw;
-$size-logo-mobile-sticky: 8vw;
+$size-logo-mobile-sticky: 20vw;
 $size-logo-mobile: 18vw;
 $size-logo-tablet: 15vw;
 $padding-Logo: 0.2vw;
 $navSizeDesktop: 1.2vw;
 $navSizeDesktopSticky: 1vw;
+$navSizeMobileSticky: 3vw;
 $navSizeMobile: 3vw;
 $navSizeTablet: 2vw;
 
@@ -67,14 +68,21 @@ $navSizeTablet: 2vw;
 /* Grid area, quitar subrayado, background-color, display flex, direction, espacios entre ellos y centrado header */
 header {
 	grid-area: header;
+	padding: 0.2vw 0.5vw 0.2vw 2vw;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	min-height: 8vh;
+}
+.enlaces-menu{
 	text-decoration: none;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	font-size: 0.8vw;
-	padding: 0.2vw 0.5vw 0.2vw 2vw;
 }
-
 header {
 	position: sticky;
 	top: 0;
@@ -95,7 +103,7 @@ header {
 	padding: 0vw 0.5vw 0vw 2vw;
 	transition: 0.6s;
 }
-.sticky .header__LogoNav{
+.sticky nav .header__LogoNav{
 	height: $size-logo-desktop-sticky;
 	width: $size-logo-desktop-sticky;
 	@media only screen and (min-width:0px) and (max-width:767px) {
@@ -103,7 +111,88 @@ header {
 		width: $size-logo-mobile-sticky;
 	}
 }
-.sticky .header__NoSelectedNav{
+.sticky .enlaces-menu .header__NoSelectedNav{
 	padding: 0.5vw 2vw 0.5vw 3vw;
 	font-size: $navSizeDesktopSticky;
+}
+
+.ham{
+	display: none;
+	cursor: pointer;
+	border: none;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	transition: 0.2s 0.1s;
+}
+.ham:hover{
+	transform: rotate(360deg);
+}
+.ham span{
+	display: block;
+	background-color: $black;
+	height: 1.2vw;
+	width: 7vw;
+	margin: 1vw auto;
+	border-radius: 0.1vw;
+}
+@keyframes muestraMenu {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+// DISPOSITIVOS MOVILES
+@media (max-width:768px){
+	nav{
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 25px 0;
+	}
+	.ham{
+		display: block;
+		position: absolute;
+		top: 12vw;
+		right: 2.5vw;
+	}
+	.enlaces-menu{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 50vh;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: none;
+	}
+	.enlaces-menu a{
+		width: 100%;
+		text-align: center;
+		padding: 20px;
+	}
+	.sticky nav .ham{
+		top: 10vw;
+	}
+	.sticky .enlaces-menu .header__NoSelectedNav{
+		padding: 0.5vw 2vw 0.5vw 3vw;
+		font-size: $navSizeMobileSticky;
+	}
+	.sticky nav a .header__LogoNav{
+		left: 37.5vw;
+	}
+}
+
+.enlaces-menu.activado{
+	display: flex;
+	animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado{
+	transform: rotate(-45deg) translate(-10px,8px);
+}
+
+.br-2.animado{
+	opacity: 0;
+}
+
+.br-3.animado{
+	transform: rotate(45deg) translate(-10px, -8px);
 }
